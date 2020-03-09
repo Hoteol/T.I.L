@@ -1,0 +1,2971 @@
+- 영문용어 : ABAP
+- 한글용어 : ABAP
+- 설명 : Advanced Business Application Programming/4. SAP에서 응용프로그램 개발을 위해 만든 4세대 프로그래밍 언어
+--- 
+- 영문용어 : ABAP Dictionary
+- 한글용어 : ABAP Dictionary
+- 설명 : ABAP Dictionary는 application 개발 객체의 논리적 구조와 관계형 데이터베이스의 구조를 표현한다. ABAP Dictionary는 central storage이며 table이나 view, lock object들을 정의하는 기능을 갖는다. 모든 실행환경 요소들, 예를들어, 응용프로그램이나 데이터베이스 interface 등이 ABAP Dictionary로부터 객체들에 대한 정보를 얻는다.
+---
+- 영문용어 : ABAP Query
+- 한글용어 : ABAP Query
+- 설명 : ABAP Development Workbench의 구성요소로서, ABAP programming language나 table, field name에 대한 지식이 없는 사용자들에게 report를 정의하고 실행할 수 있도록 해준다.
+---
+- 영문용어 : ABC analysis
+- 한글용어 : ABC 분석
+- 설명 : ABC분석관리. 중점적 관리라고도 하며, 재고조사, 자산관리를 하는 방법의 하나이다. 미국의 GE(General Electric)에서 시작한 방법의 하나로서 물품, 자재, 부분품 등의 재고품에 대하여 금액이 많고 생산에 큰 영향을 미치는 것부터 차례로 A,B,C의 순서를 정하여 A를 가장 중점적으로 다음에 B,C의 순서로 관리를 하는 방법. ABC분석은 특정 기준에 따라 객체들을 분류한다. <br><br>- A 중요함 <br>- B 덜 중요함 <br>- C 상대적으로 중요치 않음 <br><br>ABC 분석은 MM, PM, LIS, ABAP Query에서 사용된다.
+---
+- 영문용어 : Absorption costing
+- 한글용어 : 통합제조원가
+- 설명 : 고정비(Fixed cost) 및 변동비(Variable cost)에 관계없이 모든 제조 비용을 분석하는 방법으로, 제품에 관련된 모든 비용은 제조 원가로 취급
+---
+- 영문용어 : Access key
+- 설명 : 과표를 입력했을때 자동으로 Tax Account를 결정하는 기준
+---
+- 영문용어 : Account
+- 한글용어 : 계정
+- 설명 : 전통적으로 계정(Account)이라고 하면 경리(재무회계)에서 기표가 이루어지는 대상이 되는 계정과목 또는 계정코드를 의미한다. 그러나 SAP에서는 Account의 개념을 보다 확장하여 사용하고 있으므로 주의를 요한다. SAP에서는 다음과 같이 Account를 다섯 가지의 유형으로 구분하고 있으며, 이러한 유형구분을 Account Type 이라고 한다. <br><br>S : G/L 계정 (전통적인 계정과목/계정코드 ) <br>D : Customer (판매거래처, 기존의 거래처코드) <br>K : Vendor (구매거래처, 기존의 거래처코드) <br>A : Asset (고정자산번호, 기존의 자산번호) <br>M : Material (재고자산(자재) 번호 ) 이렇게 Account의 개념범위를 확장한 것은 계정과목중심의 총계정원장(General ledger)상의 금액과 거래처나 고정자산번호, 자재번호 중심의 보조부(Sub-ledger)상의 금액을 일치시키고, 물류프로세스의 재무회계와의 통합성을 가능하게 하기 위해서이다. <br><br>즉, 전통적으로 AR(매출채권), AP(매입채무), 고정자산 등과 관련된 회계전표를 기표하는 경우 해당 계정코드를 지정하고 금액을 입력한 후, 거래처나 고정자산 관련정보를 전표상의 관리항목으로 관리하는 방식을 택하고 있는데에 반하여, SAP는 해당 Customer, Vendor, Asset 번호를 마치 기존의 계정코드인 것처럼 기표를 하면, 그와 연결이 되는 계정코드(SAP의 G/L Account)는 자동으로 결정되는 방식으로 되어 있다.
+---
+- 영문용어 : Account assignment
+- 한글용어 : 계정지정
+- 설명 : <br>- FI : 차변 항목에 특정 일자에 기표된 거래의 비용과 소득을 할당하는 것. 차변 항목은 다음과 같은 것들이 있다 cost centers orders projects cost objects <br>- CO : 업무 거래시 어느 계정에 전기(posting)할 것인가를 지정하는 것. cf) 추가계정지정 (Additional account assignment)
+---
+- 영문용어 : Account assignment, automatic
+- 한글용어 : 자동계정지정
+- 설명 : FI에서 거래를 전기(posting)하는 경우, 사용자가 입력을 하지 않고 시스템이 적절한 계정으로 개별항목을 자동적으로 지정하는 기능
+---
+- 영문용어 : Account balance
+- 한글용어 : 계정잔액
+- 설명 : 한 계정에 기록된 거래들을 개괄적인 형태로 거래기록대상기간(posting period), 차변 및 대변으로 구분하여 표시하여 줌. 거래기록대상기간의 잔액과 누적잔액도 표시하여 줌.
+---
+- 영문용어 : Account balance interest calculation
+- 한글용어 : 계정잔액이자계산
+- 설명 : 계정잔액의 이자를 계산하는 절차. 예를 들어 회사 종업원의 대출금에 대한 이자를 이 기능에 의하여 계산할 수 있음.
+---
+- 영문용어 : Account determination
+- 한글용어 : 계정결정
+- 설명 : 거래 입력시 금액이 입력되어야 하는 계정을 자동으로 결정해주는 기능
+---
+- 영문용어 : Account group
+- 한글용어 : 계정그룹
+- 설명 : 마스터 레코드(Master Record) 입력을 제어하는 속성들의 요약으로 각 마스터 레코드는 하나의 계정그룹(Account Group)에 지정되어야 한다. 계정그룹에 따라 마스터 레코드에 어떠한 Data가 필요한지가 결정되면 마스터 레코드의 번호가 정해진다.
+---
+- 영문용어 : Account ID
+- 한글용어 : 계좌번호
+- 설명 : 은행의 계좌별로 계좌번호를 일컫는것
+---
+- 영문용어 : Account maintenance
+- 한글용어 : 계정유지
+- 설명 : 한 계정내의 미결사항을 반제하는 것. 즉, 차변입력내용과 대변입력내용을 대응시킴.
+---
+- 영문용어 : Account management
+- 한글용어 : 계정관리
+- 설명 : 계정은 그 관리방식에 따라 미결관리(Open item management)를 하는 계정과 미결관리를 하지 않는(Non-open item Management) 계정으로 나눌 수 있다. 미결관리를 하게 되면 그 계정에 기표된 건별 항목들은 반드시 반제처리(Clearing)에 의해서 그 미결상태가 정리(Cleared)된다. 현금이나 예금과 같은 계정은 업무상으로 미결관리의 의미가 없거나 불가능하므로 미결관리를 하지 않는 계정으로 설정하게 된다. Customer나 Vendor의 경우에는 선택여부에 관계없이 시스템적으로 무조건 미결관리를 하는 것으로 설계되어 있으며, G/L 계정의 경우에만 미결관리여부를 선택할 수 있다. Asset의 경우에는 명시적이지 않으나 미결관리를 하는 개념이며, Material의 경우에는 그렇지 않다. 한편, 계정을 조회하는 경우 잔액조회 뿐만이 아니라, 기표 건별로 조회를 하는 경우도 있는 바, 이러한 선택사항을 Line Item Display라고 한다. 따라서 예금계정의 경우 미결관리는 하지 않으나 건별 조회는 가능하도록 설정(G/L계정마스터에서)할 수 있다. 일반적으로 거의 모든 계정에 대해 건별 조회가 가능하도록 하는데, 이 경우 정보조회에 편리한 반면 DB의 Space를 많이 차지한다는 단점을 가진다.
+---
+- 영문용어 : Account payable
+- 한글용어 : 매입채무
+- 설명 : 기업이 vendor에게 갚아야 할 모든 금액으로 은행차입금, 당좌차월, 외상매입금, customer로부터 받은 계약금 등을 모두 포함함 주) Accounts payable은 일반적으로 외상매입금, 미지급금을 포함한 기업의 모든 채무를 지칭하는 것으로 사용하고 있음
+---
+- 영문용어 : Account reconciliation
+- 한글용어 : 계정조정
+- 설명 : 회계처리가 일반적으로 인정된 회계원칙(GAAP)에 따라 적절히 되었는가를 확인하는 과정으로 일반적으로 총계정원장(G/L)상의 잔액과 보조부상의 잔액을 비교하고 차이를 조정하는 것을 말한다. SAP 시스템에서는 거래를 전기하면 보조부(예를 들면 customer계정이나 vendor계정)에 입력이 되는 동시에 G/L계정(외상매출금계정이나 외상매입금계정. 보조부의 계정과 연결되어 있는 계정을 SAP에서는 특히 조정계정(reconciliation account)이라 함)에 입력이되어 자동조정이 되므로 별도의 계정조정절차가 필요없게 된다. cf) 회계조정(Accounting reconciliation)
+---
+- 영문용어 : Account residence
+- 한글용어 : 계정유지기간
+- 설명 : 한 계정내의 개별항목들 -즉 전표- 이 화면에 표시될 수 있도록 전표파일에 남아있어야 하는 달 수. 기표일(posting date, 혹은 미결계정에 있어서는 반제일)이 기준일의 역할을 한다.
+---
+- 영문용어 : Account type
+- 한글용어 : 계정유형
+- 설명 : 하나의 계정이 어떤 회계 영역에 속하는지를 알려주는 키로서 예를 들면 Asset(고정자산), Customer(고객), Vendor(구매처), Material(자재), G/L 등이 있다. 동일한 계정번호가 서로 다른 계정유형에 사용될 수 있으므로 계정을 파악하기 위해서는 계정번호와 계정유형이 모두 필요하다.
+---
+- 영문용어 : Accounting
+- 한글용어 : Accounting
+- 설명 : 회계시스템그룹(경리,관리,자금...)
+---
+- 영문용어 : Accounting document
+- 한글용어 : 회계전표
+- 설명 : (회계)전표는 항상 표제부(document header)와 적어도 두개이상의 개별항목(line item)으로 구성되어 있다. 전표의 잔액은 반드시 0 이어야 한다. 기표(posting)를 하는 경우, 대상 계정의 월 차변 및 대변잔액이 자동적으로 새롭게 수정된다. 전표는 시스템내에 원시증빙(original document)을 반영하여 준다.
+---
+- 영문용어 : Accounting principle
+- 한글용어 : 기표원칙
+- 설명 : SAP는 Customer, Vendor, Asset 등의 보조부관련 계정을 중심으로 기표하면, 시스템이 자동으로 General Ledger와 Sub-ledger에 동시에 금액을 반영하는 구조로 되어 있으며, 이를 Accounting Principle 이라고 부르기도 한다. Accounting Principle 하에서는 총계정원장과 보조부가 원천적으로 금액이 다를 수가 없으므로, 결산시 많은 시간을 차지하는 Reconciliation 작업이 필요 없게 된다. 이러한 기표방식은 물류와의 통합상황을 가정하면 더 큰 장점을 가진다. 즉, 판매, 구매, 재고관리 등의 업무처리시에는 거래처(Customer, Vendor)나 자재번호를 중심으로 거래처리를 하고 이를 기준으로 재무회계전표가 생성될 때 사전에 정한 G/L 계정으로 자동기표가 생성되게 된다. 참고로, 외상매출금, 외상매입금 등 거래처와 관련된 계정들은 사전에 Customer나 Vendor Master Record에 정의된 계정으로 자동결정되며, 이를 Reconciliation Account 라고 부른다. 고정자산의 경우에는 Asset Class를 경유하여 사전에 정의된 고정자산과 관련된 여러 계정(건물, 감가충당금, 고정자산 처분손실 등)이 자동으로 정해지도록 되어 있으며, 자재(Material)와 관련하여서는 별도의 Customizing 작업에 의해 관련 G/L 계정들이 자동 결정된다.
+---
+- 영문용어 : Accounting transaction
+- 한글용어 : 회계거래
+- 설명 : 다른 EDP거래와는 달리 (회계)거래는 항상 표제부(Document header)와 적어도 2개 이상의 개별항목(line item)으로 구성되어 있다. 차변금액은 반드시 대변잔액과 같아야한다. 거래를 전기(posting)하면 시스템이 계정잔액을 새롭게 수정한다.
+---
+- 영문용어 : Accruals and deferrals
+- 설명 : 미지급비용, 미수수익 및 선급비용, 선수수익 기간이익을 계산하기위해 회사의 수익과 비용을 배분하는 것.
+---
+- 영문용어 : Acoount Assg.group
+- 설명 : 매출집계부문설정
+---
+- 영문용어 : Activity
+- 설명 : 생산 및 제조 실행시 내부적으로 발생하는 생산관련 비용을 cost center에 할당하기 위한 생산 절차 및 단계 또는 제공되는 서비스를 지칭. Activity는 내부적으로 관리 관점에서 지정된 비용 비율(Charge rate)로 사용되는 값들이 지정된 Activity type으로 구분
+---
+- 영문용어 : Activity Based Costing
+- 한글용어 : ABC원가, 활동기준원가
+- 설명 : 실제로 발생되어진 Activity에 의해 산정되는 원가 계산 방법으로, 이렇게 발생되어 모아진 원가 요소들을 제품 또는 고객, 시장영역(Market), 프로젝트 등에 할당
+---
+- 영문용어 : Activity dependant SKF
+- 한글용어 : 활동종속적인 SKF
+- 설명 : Activity에 종속적인 SKF. 부서의 Activity Independent Cost를 해당 부서의 Activity별로 안분하는데 사용될 수 있음
+---
+- 영문용어 : Activity independant SKF
+- 한글용어 : 활동독립적인 SKF
+- 설명 : Activity에 독립적인 SKF
+---
+- 영문용어 : Activity type
+- 한글용어 : Activity type
+- 설명 : 재화나 용역의 형태에 따라 Cost center의 Activity를 구분한 것으로 생산량, 노동시간, 기계가동시간 등이 있음
+---
+- 영문용어 : Activity type category
+- 한글용어 : Activity type category
+- 설명 : Activity Type의 종류를 구분하는데 사용하며, Activity Type의 생산량 입력방식과 비용배부방식에 따라서 그 종류가 결정됨
+---
+- 영문용어 : Activity type group
+- 한글용어 : Activity type group
+- 설명 : Activity Type을 성격이나 특성별로 그룹화함
+---
+- 영문용어 : Actual costing
+- 한글용어 : 실제원가계산
+- 설명 : 실제원가계산 (표준원가가 아닌)
+---
+- 영문용어 : Actual costs
+- 한글용어 : 실적원가/실제원가
+- 설명 : <br>- PP : 특정 회계기간 동안에 특정 오브젝트에 대해서 발생되어진 모든 원가. Actual Cost는 Order에 대한 자품목의 출고, Order에 대한 확정(Confirmation) 또는 출고 및 외부처리(External Processing)와 같은 기표가 발생되는 트랜잭션에 대해서도 Update됨. <br>- CO : 생산효율에 의한 원가로서 표준보다는 공수, 또는 소요자재의 실제 투입량에 의해 계산된 원가.
+---
+- 영문용어 : Additional account assignment
+- 한글용어 : 추가계정지정
+- 설명 : 계정번호, 금액, 포스팅키(posting key) 이외에 필요에 따라 선택적으로 입력되는 개별항목(line item)과 관련된 모든 추가 Data(예:지급조건, 지급방법, Cost center) 등이 포함된다.
+---
+- 영문용어 : Additional tax
+- 한글용어 : 부가세
+- 설명 : 판매 및 구입에 따른 세금(부가가치세)이외에 부과되는 세금. 이러한 세금으로는 투자세(investment tax), 결제세(clearing tax) 또는 베네룩스국가들에서 사용되는 회계제도하에서 부과되는 세금 등이 있다
+---
+- 영문용어 : Adjust standard cost
+- 한글용어 : 표준원가조정
+- 설명 : 표준원가산정(Standard cost estimate) 방법을 이용하여 계산된 계획원가(Planned cost)와 비교시, 제조원가 산정방법.
+---
+- 영문용어 : Adjustment charge
+- 한글용어 : 수정차변기표
+- 설명 : 세금수정금액(tax adjustment amount)과 같이 이미 기록된 하나이상의 거래에 추가적인 차변기표를 하는 것.
+---
+- 영문용어 : Adjustments
+- 한글용어 : 조정
+- 설명 : 한 계정에 이미 전기된 개별항목(line item)을 다른 계정으로 전기하는 것. 예를들어 결산을 하는 경우에 조정이 이루어 진다. Cf) transfer(대체)
+---
+- 영문용어 : Administrative data (MM)
+- 설명 : Material master record에 관한 관리적인 성격의 정보. 다음과 같은 정보를 제공한다 <br>- material 유형과 산업 부문(industry sector) <br>- 어느 사용자가 어느 부문의 데이터를 언제 생성하고 마지막으로 변경했는가 <br>- 어느 사용자가 언제 material master record에 deletion flag를 했는가
+---
+- 영문용어 : ALE (Application Link Enabling )
+- 설명 : ALE는 분산된 Application들의 운영을 지원하는 것으로, 분산되 있으나 통합된 R/3 환경을 보장한다. 업무를 통제하는 메시지 교환을 통해 분산되있는 SAP Application들의 데이터를 일치시킨다. ALE는 다음 세계층으로 구성된다 <br>·application service <br>·distribution service <br>·communication service
+---
+- 영문용어 : Allocation concept
+- 한글용어 : 할당개념
+- 설명 : 한 계정내의 개별항목들(line item)을 어떻게 구분하여 표시할 것인가에 관한 것. <br>Cf) sorting concept (분류개념)
+---
+- 영문용어 : Alternative BOM
+- 한글용어 : 대체BOM
+- 설명 : 동일BOM 그룹내에서 하나의 BOM을 식별하는 사용된다. 예를들어, 다른 Lot size에 따라 다른 생산 절차가 필요하다면, 하나의 제품에 대해 여러개의 BOM을 구성할 수 있다. 이들 Alternative BOM들은 하나의 multiple BOM으로 묶인다.
+---
+- 영문용어 : Archiving (CA)
+- 설명 : Online상에서 더이상 필요치 않은 데이터를 데이터베이스에서 읽어서, Archive file로 저장한다. 일반적으로, Archive된 데이터는 시스템에서 삭제된다. Archiving 수행시, 데이터베이스 테이블들은 그만큼 비워지고 데이터 볼륨이 줄어든다. 따라서, 프로그램 실행시간이 단축되며 새로운 데이터를 입력할 수 있다. Archiving은 2단계 절차로 수행된다 ·Archive 데이터가 논리적 선택 기준에 따라 데이터베이스에서 읽혀지고 Archive file로 기록된다. ·Archive file을 읽어서, deletion flag가 있는 데이터들을 데이터베이스에서 삭제한다.
+---
+- 영문용어 : Archiving object (CA)
+- 설명 : 데이터베이스의 통상적으로 관련있는 데이터들의 논리적 객체. 논리적 객체의 데이터들은 archiving program에 의해 데이터베이스에서 읽혀지고 성공적으로 archive된 후, delete program에 의해 데이타베이스에서 삭제된다.
+---
+- 영문용어 : Assembly
+- 한글용어 : Assembly
+- 설명 : 
+<br>- PP : 생산과정에서 제품을 구성하여 기술적으로 밀접하게 연관되어 있는 구성품목(component)들의 그룹으로, Assembly는 또다른 assembly의 component로 사용될 수 있다.<br> - PM : 기술적인 객체의 일부. 하나의 장비를, 좀 더 명확하게 정의된 단위들로 구분하기 위해, assembly들로 분할할 수 있다. Assembly는 개별적인 객체라기보다는, 오히려 객체범주(SAP 시스템에서 mate- rial과 유사한)이다. Assembly는 maintenance BOM과 maintenance task list에서 필수이다.<br>- CO : 제조공정에서 기술적으로 하나의 일관된 전체를 이루는 특정제품을 구성하는 부품의 집합.
+---
+- 영문용어 : Assembly order
+- 한글용어 : Assembly order
+- 설명 : 미리 생산되어야 하는 부분품들에 대한 생산지시와 기존의 sales order에 따른 완제품의 조립에 대한 요청
+---
+- 영문용어 : Assembly scrap
+- 한글용어 : Assembly scrap
+- 설명 : 품질 기준에 맞지 않는 assembly component의 비율. BOM상의 상위품목에 대한 제조 및 생산실행시 발생되는 scrap으로, 자재소요량계획(MRP)에서 해당 품목(Assembly)의 모든 구성부품(Component)에 적용된다. <br>여기서 제외되는 component들에는 "net operation scrap" 지시자가 설정되어 있는 것들이다. 이는 Material master의 MRP view에서 관리 가능함.
+---
+- 영문용어 : Asset Class
+- 한글용어 : 자산분류
+- 설명 : FI의 GL계정과 고정자산의 Master record와의 관계를 설정한다.
+---
+- 영문용어 : ATP quantity
+- 한글용어 : ATP 수량
+- 설명 : Available-to-promise quantity. 자재소요량계획(MRP) 실행시 가용한 자재 및 품목의 수량으로 새로운 sales order에 대한 가용성 점검시 사용가능. 이 수량은 창고 재고뿐 아니라 producton orders, planned orders 등과 같은 계획 입고량(planned receipt quantity)을 감안하여 계산되며, 이 수량을 이용하여 SD모듈에서는 sales order에 대한 정확한 가용성 검사가 가능하다.
+---
+- 영문용어 : AUD (Automatic Usage Decision)
+- 한글용어 : 자동합격처리
+- 설명 : 관리검사 자재에 대하여서는 입고후 일정한 시간이 경과되면 시스템내에서 자동으로 합격될수 있도록 세팅해주는 기능을 말한다. 그러나 관리검사 자재라도 정해진Lot가 되면 CHECK검사를 실시하고 합격시에는 계속 자동합격처리 되며 불합격시에는 보통검사를 해야한다.
+---
+- 영문용어 : Authorization
+- 한글용어 : 권한
+- 설명 : 실제로 시스템이 사용되는 상태에서는 각 사용자의 직급 또는 속한 부서등에 따라 시스템상에서 접근할 수 있는 정보나 거래처리를 제한할 필요가 있다. 이러한 SAP R/3 시스템에의 접근권한을 통칭하여 Authorization 이라고 한다. SAP가 표준으로 제공하고 있는 기능 및 Configuration을 활용하여 Authorization의 체계를 구성할 수 있으며, 이것이 필요한 경우에는 일부 시스템을 수정할 필요가 있게 된다.
+---
+- 영문용어 : Automatic cost estimate
+- 한글용어 : 자동원가계산
+- 설명 : BOM, Routing 정보에 근거한 제조원가 산정
+---
+- 영문용어 : Automatic reorder point planning
+- 한글용어 : 자동재발주점계획
+- 설명 : Consumption-based planning의 일종임. 가용재고(available stock)의 수준이 재발주점(re-order point) 아래로 내려가게 되면 해당 자재에 대한 entry가 MRP planning file에 생성되며 이에 따라 자재소요량계획(MRP) 실행시 해당자재의 order proposal을 생성하고 시스템은 자동적으로 재발주점(re-order point)과 안전재고레벨(safety stock level)을 결정
+---
+- 영문용어 : Availability check
+- 한글용어 : 가용성점검
+- 설명 : SD모듈의 sales order에 대한 판매수량 검증 및 production order에 대한 생산집행(PAC-Production Activity Control)에서 해당 order에 대하여 자품목에 가용자원을 검증함. Availability check 기능은 다음 항목들을 포함한다. - Material availability (생산오더에서의 자재에 대한 가용성) - Work center capacity (작업장에서의 기계 및 사람에 대한 가용성) - Production resources and tools (생산오더에서의 PRT에 대한 가용성)
+---
+- 영문용어 : Available capacity
+- 한글용어 : 가용능력
+- 설명 : 특정기간 내에서의 제조 및 생산이 가능한 능력(capacity)을 지칭함. Available capacity는 다음 수치를 이용하여 결정된다. - 작업 시작 및 종료 시간 - 휴식시간 - 퍼센트 수치로 표시되는 Performance Efficiency - 한 개로 지정된 capacity내에서의 개별능력(individual capa)의 개수
+---
+- 영문용어 : Average rate
+- 설명 : 외환거래에 쓰이는 환율로 은행매입율과 은행매도율의 산술평균.
+---
+- 영문용어 : Backflush
+- 한글용어 : Backflush
+- 설명 : 특정 order의 자품목에 대한 실제 출고 시기보다 후에 발생한 출고에 대한 자동 기표(Automatic goods issue posting)가 발생하는 형태의 트랜잭션. 일반적으로 Backflush가 적용되는 자재의 출고는 Operation 또는 Order에 대한 확정(Confirmation)이 이루어질 때 실행.
+---
+- 영문용어 : Background processing
+- 설명 : 화면상으로 보여지지 않는 처리. 다른 기능이 화면상에서 병행되어 수행되는 동안 데이터가 Background로 처리될 수 있다.
+---
+- 영문용어 : Backward scheduling
+- 한글용어 : 역방향일정계획
+- 설명 : order 내의 operation들이 order 만기일자로부터 역으로 계획 되는 일정계획의 형태임. Order의 일정 시작(scheduled start) 및 종료 일자(scheduled finish)는 일정계획 형태(scheduling type)의 의해 결정됨.
+---
+- 영문용어 : Balance
+- 한글용어 : 계정잔액
+- 설명 : 한 계정이나 전표의 차변과 대변의 차이. 만일 대변이 차변보다 크면 "대변잔액"이라고 하고, 차변이 크면"차변잔액"이라고 함.
+---
+- 영문용어 : Balance audit trail
+- 한글용어 : 잔액변화기록
+- 설명 : 회계연도 중 한 기간이나 여러 기간 동안에 특정 계정의 모든 거래내역을 기록한 것. 잔액변화기록은 기초의 잔액과 기말까지 그 계정에 전기된 차변과 대변 Entry를 보여준다.
+---
+- 영문용어 : Balance carried forward
+- 한글용어 : 전기이월액
+- 설명 : 전년도로부터의 계정잔액의 이월. 대차대조표의 계정잔액만이 이월된다.
+---
+- 영문용어 : Balance check
+- 한글용어 : 잔액검토
+- 설명 : 전표가 올바로 입력되었는가를 확인하는 절차. 전표의 차변금액은 반드시 대변금액과 같아야 한다.
+---
+- 영문용어 : Balance sheet account
+- 한글용어 : 대차대조표계정
+- 설명 : 반대어손익계산서계정(profit and loss account)
+---
+- 영문용어 : Balance sheet adjustments
+- 한글용어 : 대차대조표조정
+- 설명 : 대차대조표를 만들기전의 준비작업. 다음과 같은 작업들이 포함된다 - 외화로 전기된 채권, 채무, 고정자산 금액을 환산하여 조정 - 조정계정(reconciliation account)에 바뀔경우 채권과 채무를 조정 - 대변잔액을 가진 있는 customer계정이나 차변잔액이 있는 vendor계정의 조정 - 잔여일수에 따라 채권과 채무를 분류하기 위해 조정
+---
+- 영문용어 : Balance verification
+- 한글용어 : 잔액검증
+- 설명 : 회계전표가 정확히 입력되었는지를 확인하는 절차. 차변과 대변의 금액이 반드시 같아야 한다.
+---
+- 영문용어 : Bank buying rate(price)
+- 한글용어 : 은행매입율
+- 설명 : 은행이 재화, 외환이나 증권을 구입하는 교환율.
+---
+- 영문용어 : Bank collection procedure
+- 한글용어 : 은행회수절차
+- 설명 : 채권자가 채무자로부터 서면으로 (은행을 통한) 채권회수승인을 받는 특별한 절차. 은행이 직접 입금을 해주는 경우 이러한 승인을 받아야 한다.
+---
+- 영문용어 : Bank direct debiting procedure
+- 한글용어 : 은행직접입금절차
+- 설명 : 채무자가 자기의 은행구좌로부터 직접 (거래처구좌로)입금을 하라고 서면으로 자신의 거래은행에 지시를 하는 특별한 절차.
+---
+- 영문용어 : Bank master data
+- 한글용어 : 은행마스터데이타
+- 설명 : 은행과 관련된 거래를 수행하기위해 필요한 은행에 관한 정보. 이것은 은행 디렉토리에 저장되며, 필요한 모든 은행에 관한 정보를 갖고있다. 은행 마스터 데이터에는 은행이름, 주소와 그 나라에 고유한 사항 등이 포함된다.
+---
+- 영문용어 : Bank selling rate(price)
+- 한글용어 : 은행매도율
+- 설명 : 은행이 재화나 외환, 증권 등을매도하는 교환율.
+---
+- 영문용어 : Base quantity
+- 한글용어 : 기본수량
+- 설명 : BOM 구조에서 구성부품(component)의 기본 수량. 공정(rounting)에서 표준값(standard values)이 적용되는 수량.
+---
+- 영문용어 : Base unit of measure
+- 한글용어 : 기본단위
+- 설명 : Material 재고가 관리되는 단위. 시스템은 다른 단위로 입력된 양을 기본 단위로 전환한다. 재고관리(Inventory Management)에서, 기본단위는 재고보관 단위와 같다.
+---
+- 영문용어 : Baseline date for payment
+- 한글용어 : 지급기준일
+- 설명 : 지급조건에 있어서의 기준일.
+---
+- 영문용어 : Basic date
+- 한글용어 : 기본일자
+- 설명 : Opening date. planned start date, planned finish date 모두 basic date로 기술될 수 있다. 이들은 자재소요계획에서 계산된다.
+---
+- 영문용어 : Batch (MM)
+- 한글용어 : Batch
+- 설명 : 제품 생산시에 생산단위 수량. Batch의 주요한 특징은 동일 제품에 대한 "동질성(homogeneity)"으로써, 자재관리 모듈인 MM에서는 Batch가 동일 재고로 관리되는 자재에 대한 별도로 관리될 수 있는 부분집합으로 구분되어 처리 가능. 하나의 생산로트(production lot)는 여러 개의 Batch로 분할 가능. 예) production lots, delivery lots, quality grades of a material
+---
+- 영문용어 : Batch Data Communication(BDC)
+- 영문용어 : Batch processing (BC)
+- 설명 : 한번에 많은 분량의 데이터를 처리하는 절차. 일단 시작된 Batch 데이터 처리에는 영향을 미칠 수 없다.
+---
+- 영문용어 : Bill of change
+- 설명 : receivable(받을어음[또는 미수금중 어음상의 채권) customer로부터 회수하기로 되어있는 어음. 차용증서(IOU)와 유사함.
+---
+- 영문용어 : Bill of exchang payment
+- 한글용어 : 어음입금처리
+- 설명 : <br>□ Doc. date 작업일자 <br>□ Posting date 회계기표일자(Doc. date 와 동일) <br>□ Currencu/rate 금액 <br>□ Referrence Doc. 어음번호 <br>□ Pstky 회계계정(Display) <br>□ Account 거래선 번호 <br>□ Text 적요 <br>□ Issue date 어음발행일 <br>□ Drawer 부서코드 <br>□ Drawee 어음발행회사 <br>□ G/L 회계계정 <br>□ Amount 어음금액 <br>□ C.code 삼성전자코드 <br>□ Special G/L ind 회계계정 <br>□ Account type 거래선별(D) <br>□ Open items 세금 계산서 건별 미수 채권금액 <br>□ Amount entered 어음입금액 <br>□ Allocated입금처리할 미수 채권 금액 <br>□ Not assigned 해당미수 채권 금액과 어음입금액의 차이
+---
+- 영문용어 : Bill of exchange
+- 한글용어 : (환)어음
+- 설명 : 본래의 법률상의 거래에서 파생되는 것으로 추상적인 문서의 형태로 지급을 약속하는것. [주]SAP에서는 일반적으로 약속어음을 의미하는 primissory note라는 용어를사용하고 있지 않음. 따라서 bill of exchange은 환어음과 약속어음 모두를 지칭하는 용어로 해석됨.
+--- 
+- 영문용어 : Bill of exchange collection
+- 한글용어 : (환)어음추심회수
+- 설명 : 어음대금을 회수하는 방법중의 하나로서 은행이 만기에 지급인에게 어음을 제시 하는일을 인수하는 것. 은행이 어음회수를 인수하게 되면 고객에게 회수비용(수수료)를 부과하게 된다.
+---
+- 영문용어 : Bill of exchange deposit
+- 한글용어 : (환)어음대금회수기록
+- 설명 : 어음대금의 회수는 SAP 시스템에서 다음과 같이기록된다 -만기전 할인 -만기결제 -어음의 양도(수출업무에서)
+---
+- 영문용어 : Bill of exchange list
+- 한글용어 : (환)어음목록
+- 설명 : 모든 어음채권에 대하여 만기일, 금액 발행인(수취인)의 이름과 주소, 이전 보유자의 이름과 주소, 지급지, 지급인의 이름과 주소 등을 기록한 것.
+--- 
+- 영문용어 : Bill of exchange payment request
+- 한글용어 : 어음발행요청
+- 설명 : 고객에게 채무를 어음으로 지급할 것을 요청하는 것. 이 절차는 스페인, 이태리, 프랑스에서 보편적으로 쓰임. 어음발행요청은 SAP 시스템에서 주의 항목(noted item)으로 기록된다.
+---
+- 영문용어 : Bill of exchange usage
+- 한글용어 : (환)어음의 대금회수방법
+- 설명 : SAP에서는 다음과 같이 구분한다. <br>-할인을 위한 제시 <br>-추심회수를 위한 제시 <br>-어음의 양도(factoring of forfaiting, 수출업무에서)
+---
+- 영문용어 : Bill of material (BOM)
+- 한글용어 : 부품구성표 (BOM)
+- 설명 : <br>○ PP : 제품이나 어셈블리(assembly)를 이루는 구성부품(component)들의 구조화된 리스트. BOM은 각 component의 객체번호, 수량, 단위를 포함한다. <br>BOM은 다음과 같은 여러 조직구조 및 기능분야에서 사용되는 중요한 정보들을 포함한다. <br>- 자재소요량계획 (Material Requirement Planning) <br>- 생산을 위한 자재 공급 (Provision of Materials for Production) <br>- 생산원가 (Product Costing) SAP R/3 시스템에서, 다음과 같은 BOM들을 생성할 수 있다 <br>- material BOM - equipment BOM - document structure - functional location BOM - standard BOM - sales order BOM <br><br>○ CO : 특정 제품 또는 조립부품의 구성품을 일목요연하게 보여주는 목록. 이 명세서에는 각 부품의 번호, 수량과 측정단위가 나타나 있다.
+---
+- 영문용어 : Billing
+- 설명 : ZORB order type 입력시 수주금액 입력항목(자재)으로 사용
+---
+- 영문용어 : Billing date
+- 설명 : 세금계산서 발행일짜
+---
+- 영문용어 : Billing item
+- 설명 : 세금계산서 금액 내역을 구성하는 자재
+---
+- 영문용어 : Billing plan
+- 설명 : ZORB order type 입력시 billing 금액에 대하여 billing schedule을 입력하여 billing Doc.을 생성시 사용
+--- 
+- 영문용어 : Billing sched.
+- 설명 : 대금 지불 일정기준을 입력하는 field로 “03”으로 입력
+---
+- 영문용어 : Bill-to party
+- 한글용어 : Bill-to party
+- 설명 : 납품한 제품 또는 서비스에 대한 송장을 수령하는 사람 또는 회사.
+---
+- 영문용어 : Blocked stock (MM)
+- 설명 : 회사에 속하지만 사용해서는 안되는 material 재고. Blocked stock은 “가용하지 않음(not available)”으로 간주된다.
+---
+- 영문용어 : BOM category
+- 한글용어 : BOM 유형
+- 설명 : 다른 유형의 객체들(material이나 item of equipment)을 표현하기 위해 BOM을 분류하는 것. 각각의 객체에 대해 특정 데이터를 관리한다. <br><br>다음과 같은 BOM들이 있다 <br>- Material master에 연결되는 BOM (material BOM) <br>- Equipment master에 연결되는 BOM (equipment BOM) <br>- Document BOM (document info record에 연결되는 BOM) <br>- Functional location BOM (functional location에 연결되는 BOM) <br>- Standard BOM <br>- Sales order BOM (sales order에 연결되는 BOM)
+---
+- 영문용어 : BOM explosion
+- 한글용어 : BOM 전개
+- 설명 : BOM의 모든 component들을 결정하고 나열하는 기능. 제품의 구조를 보거나 각 component의 총량을 보기위해 BOM을 전개한다. Multiple BOM에 대해, 적절한 alternative BOM을 자동 결정하는 절차를 주어진 company분야 내에서(BOM application) 정의할 수 있다.
+---
+- 영문용어 : BOM header
+- 한글용어 : BOM header
+- 설명 : BOM 전체에 다음과 같은 일반적인 정보를 포함하는 부분. <br>- Object number/plant/usage <br>- Texts <br>- Quantity data <br>- Validity data <br>- General data <br>- Administrtive data <br>- Item category
+---
+- 영문용어 : BOM item
+- 한글용어 : BOM 품목
+- 설명 : Assembly에 사용되는 하나의 객체(material이나 document)에 대한 정보를 포함하는 component 부분. BOM item들은 그들의 특징에 따라 item category별로 묶인다. BOM item들은 item number에 따라 정렬된다.
+---
+- 영문용어 : BOM status
+- 한글용어 : BOM 상태
+- 설명 : 서로 다른 어플리케이션 분야에서의 BOM 처리를 제어
+---
+- 영문용어 : BOM usage
+- 한글용어 : BOM 사용처
+- 설명 : BOM의 용도를 결정한다. 용도에 따라 다음과 같이 구분된다 - 회사의 다른 영역(engineering/design, production)들에서 사용되는 개별적 BOM - 회사의 모든 영역에서 사용되는 하나의 BOM
+---
+- 영문용어 : Bottleneck work center
+- 한글용어 : 병목작업장
+- 설명 : Finite capacity scheduling을 목적으로 능력소요량계획(CRP-Capacity Requirement Planning) 실행시 bottleneck work center는 결정되며, 이 work center를 중심으로 순방향(forward) 및 역방향(backward) 일정계획이 수립됨.
+---
+- 영문용어 : Branch account
+- 한글용어 : 지점계정
+- 설명 : SAP에서 customer나 vendor의 본점과 지점의 관계를 표시하기 위해 사용하는 계정. 지점계정으로 입력된 구매요청서, 배달증명서, invoice 등은 본점계정으로 전기된다. 모든 지점계정은 반드시 본점계정에 연결되어 있다.
+---
+- 영문용어 : Budgeted balance sheet
+- 한글용어 : 예산대차대조표
+- 설명 : 어느 특정일에 모든 계획들(판매계획, 생산계획, 투자계획, 인적자원계획, 현금흐름표)을 고려하여 만든 대차대조표.
+---
+- 영문용어 : Bulk material
+- 한글용어 : Bulk marerial
+- 설명 : Bulk material은 가격이 낮고 소량이 사용되며, order 비용계산시(costing) 고려되지 않는다. 이러한 종류의 자재는 해당 work center에서 중요하게 지정하지 않는다.
+---
+- 영문용어 : Business area
+- 한글용어 : Business Area
+- 설명 : 특별한 활동을 수행하는 회사내부의 부서와 같이 하나의 회사코드내의 경제적 단위로서 내부대차대조표나 내부손익계산서를 만드는 경우에 사용된다. 이러한 보고서들은 법률상의 요건들(일반적으로 인정된 회계원칙)을 충족시키는 것은 아니다. 유사어손익센터(profit center) (주사업부와 반드시 일치하는 개념은 아니나 FI측면에서 회사단위이하에서 관리하고자 하는 하나의 회사조직상의 단위를 지칭하는 것으로 이해하면 될 것임)
+---
+- 영문용어 : Business data
+- 설명 : Sales와 shipping 및 billing 에 관련된 고객에 대한 Business 정보를 나타내주는 view
+---
+- 영문용어 : Business partners
+- 한글용어 : 거래처
+- 설명 : 자금부서와 거래하는 거래처를 일컫는것으로 BP를 생성하고 연관되는 BP와 Relationship Type을 설정하고 권한부여 및 Release를 하여 거래를 생성할수있다. FI의 Customer와 연결한다.
+---
+- 영문용어 : By-product
+- 한글용어 : 연산품
+- 설명 : 주산품(main product)가 생산되면서 동시에 생성되는 제품/자재
+영문용어 : Call horizon (PM)
+설명 : 보전(maintenance) 계획에 대한 order가 생성되는 시점을 결정한다. Call horizon은 보전 주기에 대한 비율로 입력된다. 예 주기가 250일이고 call horizon이 80%이면, 200일 후에 order가 생성된다(= 80% * 250일).
+---
+- 영문용어 : Capacity
+- 한글용어 : 능력
+- 설명 : - PP : 특정 시간동안 Work center가 작업을 수행하는 능력. Capacity들은 capacity category에 따라 구분되고, work center에 계층적으로 구성되어 할당 된다. - CO : 기간당 산출물 생산능력을 말한다. Capacity는 생산능력유형에 따라 구별되며 특정 작업장(Work center)하에서 계층구조를 갖는다.
+---
+- 영문용어 : Capacity category
+- 한글용어 : 능력구분
+- 설명 : Work center에 할당되어 있는 capacity를 구별해 주는 명세(description). 하나의 work center에 하나의 capacity category가 부여되지만, 여러 개의 work center가 하나의 capacity category를 가질 수 있음.
+---
+- 영문용어 : Capacity requirement planning
+- 한글용어 : 능력소요량계획
+- 설명 : 능력소요량계획(CRP-Capacity Requirement Planning)은 가용능력(available capacity)과 능력요구량(capacity required)을 결정하여 비교하고, 능력을 조정(capacity leveling)하는 기능이며, 다음과 같은 계획단계에서 그 기능을 지원한다. - Rough-cut planning - Production rate planning - Detailed planning
+---
+- 영문용어 : Capacity requirements
+- 한글용어 : 능력소요량
+- 설명 : 특정시간에 특정 order에서 필요로 하는 능력소요량을 나타내며, work center에 할당되어 있는 여러 개의 능력(capacity)으로 분할되어 표시됨. Capacity requirements는 다음의 항목들에 의해 발생되어짐. - Work center - MRP에서 발생되어지는 Planned order
+---
+- 영문용어 : Capacity scheduling
+- 한글용어 : 능력일정계획
+- 설명 : Finite scheduling과 동일한 의미이며, 능력(capacity)을 고려하여 일정계획을 나타냄. Finite scheduling은 order내의 operation들에 대한 시작일자와 종료일자를 계산하게 됨.
+---
+- 영문용어 : Cash concentration
+- 한글용어 : 현금집중관리
+- 설명 : 현금집중관리에 있어서는 여러 은행 구좌들의 잔액이 사전에 정한 최소잔액을 초과하는 경우 하나의 목표계정(target account)으로 집중되어 관리된다. 결과적으로 목표계정은 현금관리잔액(cash management closing balance)을 유지하게 되어 여러가지의 재무적 투자활동에 사용된다.
+---
+- 영문용어 : Cash discount
+- 한글용어 : 현금할인
+- 설명 : <br>- CO : 일정기일까지 대금이 지급될 경우 예정 대금액으로부터 공제되는 돈. <br>- TR : 사전에 약정된 특정기간내에 채무자가 대금지급을 하는 경우의 지급금액의 감소액(사전에 약정한 이자상당액을 차감한 금액을 지급하게 됨)
+---
+- 영문용어 : Cash discount base amount (Cash discount basis)
+- 한글용어 : 현금할인기준금액
+- 설명 : 현금할인이 부여되는invoice상의 금액
+---
+- 영문용어 : Cash discount terms
+- 한글용어 : 현금할인조건
+- 설명 : 특정기간내에 지급이 이루어지는 경우 현금할인을 받을 수 있는 권리. SAP에서는 3개까지의 지급조건을 사용하여 여러 형태의 현금할인을 부여할 수 있도록 해준다.
+---
+- 영문용어 : Cash forecast
+- 한글용어 : 현금예측
+- 설명 : 현금예측은 유동성의 측면에서 보조부계정들의 변화모습을 보여준다. 현금 예측은 앞으로 회수되거나 지급될 금액과 관련된 기대되는 현금흐름에 기초를 두고 이루어 진다.
+---
+- 영문용어 : Cash management and forecast
+- 한글용어 : 현금관리 및 예측
+- 설명 : 유동성 혹은 준유동성 재무자원에 관한 중단기 계획. <br>Cf) cash management position (현금관리 포지션)
+---
+- 영문용어 : Cash management position
+- 한글용어 : 현금관리포지션
+- 설명 : 현금관리포지션은 은행계정의 단기적인 변화모습을 보여준다. 이러한 표시는 다음의 두가지 원천으로부터 자료를 가져온다. <br>-현금관리와 예측과 관련된 G/L계정의 FI기표 <br>-지급통지(payment advice)와 같은 계획목적으로 입력된 메모기록 (memo record).
+---
+- 영문용어 : Cashed checks
+- 한글용어 : 수표대금회수보고
+- 설명 : 은행에 제시된 금액이 실제로 현금으로 회수된 것을 보고하는 절차. 이를 위해 은행은 테이프나 디스켓과 같은 데이터 매체(data medium)를 생성하는데 이를 통해 필요한 입력이 SAP 시스템으로 이루어 진다.
+---
+- 영문용어 : Catalogs
+- 한글용어 : 카다로그
+- 설명 : 검사규격에서 해당검사규격이 어떤 Select-Set 을 가지고 있는지 조회하고, 규격생성시에는 입력용으로 사용한다.
+---
+- 영문용어 : CBO
+- 한글용어 : CBO
+- 설명 : SAP가 표준으로 제공하고 있는 기능이나 프로세스가 회사의 실정에 비추어 부족하거나 부적합 하다고 판단이 되는 경우에는 일부기능을 개발하거나 표준 기능/프로세스를 변경하는 경우가 있다. <br>- CBO(Customer Bolt-On) : Enhancement라고 불리기도 하는데, SAP R/3의 표준기능, 테이블에 영향을 미치지 않는 상태에서 추가하고 기능을 개발하는 것을 말한다. 추가적인 Report의 개발은 일반적으로 CBO라고 표현하지 않는다. <br>- Modification : SAP의 표준기능을 직접 변경하는 것으로서, 기술적으로는 Source code나 표준 Table의 필드를 변경하는 작업을 말한다. <br><br>일반적으로 SAP사는 Modification은 권고하지 않는데, 그 이유는 SAP의 전체적인 기술구조에 대한 명확한 이해가 없는 상태에서 표준 Source code나 테이블을 건드리는 작업이 예기치 못한 다른 영향을 미칠수도 있기 때문이다. 또한 Modification의 내용은 Version up시 반영이 되지 않으므로 이를 계속적으로 유지보수 해야 하는 부담도 회사가 감수해야 한다.
+---
+- 영문용어 : Change document
+- 한글용어 : 변경전표
+- 설명 : Master record, Table, Transaction 등의 변경 Data를 담고있는 기록.
+---
+- 영문용어 : Change master record
+- 한글용어 : 변경마스터레코드
+- 설명 : 변경관리에 요구되는 모든 정보를 포함하는 데이터 레코드. 데이터는 영역에 따라 달리 저장된다. Change master record는 기술 데이터(변경이유 등)와 제어기능 데이터(valid-from date, indicator for object type 등)를 포함한다. 또한, 시스템이 자동으로 갱신하는 데이터(change data)를 포함한다.
+---
+- 영문용어 : Change number
+- 한글용어 : 변경번호
+- 설명 : 변경마스터레코드(change master record)를 구별하게 해주는 유일한 번호. Change number를 이용하여 변경되는 모든 변경 사항들은 change master record에 의해 관리되고 조정됨.
+---
+- 영문용어 : Characteristic
+- 한글용어 : 특징
+- 설명 : 객체들을 설명하고 구분하기 위해 사용하는 객체의 특성. 예) 길이, 색상, 무게 등
+---
+- 영문용어 : Characteristic type (QM)
+- 설명 : 검사 특성은 특성 유형에 따라 구분된다 <br>·정량 특성(quantitative characteristic); 특성들의 측정값이나 유도값(예를들어, 평균값)을 기록한다. <br>·정성 특성(qualitative characteristic); 특성들의 숫자가 아닌 코드값이나 유도값 (예를들어, 결함 수)을 기록한다.
+---
+- 영문용어 : Characteristic value assignment
+- 한글용어 : 특성값할당
+- 설명 : 해당 오브젝트의 특성에 대한 값 할당.
+---
+- 영문용어 : Chart of accounts
+- 한글용어 : 계정과목일람표
+- 설명 : 회사의 경리(또는 재무회계)시스템에서 기표가 이루어지는 계정과목/계정코드들을 모은 것을 일반적으로 Chart of Accounts(COA)라고 하는데, SAP에서도 동일한 의미로 사용하고 있다. 다만 좀 더 정확하게 표현하면 G/L Account 들의 묶음이라고 할 수 있는데, G/L Account의 구체적인 의미는 다음에 살펴보기로 한다. <br>SAP를 Customizing하는 경우 Company code를 정의하면서, 그 회사가 어떤 COA를 사용할 것인가를 정의하도록 되어 있다. 이 때 하나의 시스템을 여러 회사가 공유하는 경우, 두개 이상의 회사가 같은 COA를 사용하는 것으로 정의할 수 있다. <br>즉, COA와 Company code의 관계는 1:N 이다. 이런 이유로 SAP의 FI의 조직구조를 설명하는 경우 COA를 Company code의 상단에 표시하는 경우가 있는데, 이는 COA와 Company code의 연결관계를 나타낸 것일뿐 COA가 조직코드는 아닌 것에 유의하여야 한다. 회사가 실제 기표에 사용하고 있는 COA를 Operative Chart of Accounts 라고 부르기도 하는데, 연결회계 등의 그룹차원의 Data 집계를 위해 Operative COA 기준으로 기표된 것들을 그룹계정으로 전환할 수도 있는데, 이러한 그룹계정의 묶음을 Group Chart of Accounts 라고 한다. 한편 Operative COA 이외에 그 나라에서 통용되는 계정들로 전환을 하는 것이 필요한 경우도 있는데, 이러한 목적의 COA를 Country Chart of Accounts 라고 한다.
+---
+- 영문용어 : Chart of accounts index
+- 한글용어 : 계정과목일람표
+- 설명 : 하나 혹은 여러 회사코드에 사용되는 모든 G/L계정 마스터 레코드를 체계적으로 모은 목록. 계정과목일람표는 계정번호, 계정과목명과 각각의 G/L계정 마스터 레코드에 관한 통제정보를 갖고 있다. 하나의 client에 대해 여러개의 계정과목일람표를 만들 수 있으며 각 회사코드는 반드시 하나의 계정과목 일람표에 지정되어져야 한다.
+---
+- 영문용어 : Chart of accounts index
+- 한글용어 : 계정과목일람표목록
+- 설명 : 한 client내에서 사용되는 모든 계정과목일람표의 목록.
+---
+- 영문용어 : Chart of Depreciation
+- 한글용어 : 감가상각일람표
+- 설명 : 감가상각영역(Dep.area)포함하고 있으며 주어진 국가 혹은 경제영역에서 필요한 모든 평가조건(Valuation terms)과 상각조건(Depreciation terms)를 정의 및 관리한다. 새로 생성시에는 기존의 것을 Copy해서 사용한다. Client에는 n개의 COD를 갖지만 일반적으로 한국가에 하나의 COD를 갖는다. 또 각각의 Company Code는 하나의 COD를 가지면 관계는 n:1이자만 보통 1 COA와 1COD를 사용한다.
+---
+- 영문용어 : Check of accounts index(check with bill of exchange)
+- 한글용어 : 수표지급부환어음
+- 설명 : 구매자금융을 할 수 있게 해주는 금융절차(독일에서 보편적으로 사용). 구매자는 수표로 대금을 지급하는 동시에 판매자에게 환어음을 발행하도록 한다 (구매자가 환어음을 만들어 판매자가 발행인으로서 어음상에 서명을 하는 형식을 취한다). 구매자는 동 환어음을 인수하여 은행에 어음을 제시하여(환어음상에 구매자는 수취인으로도 표시되어 있는 것으로 보임) 할인을 함으로써 만기일까지 구매자금의 차입의 효과를 얻는다. 참고반환어음(returned bill of exchange)
+---
+- 영문용어 : Class
+- 한글용어 : 클래스
+- 설명 : 공통 특성(characteristic)을 갖는 유사한 객체들의 그룹. 이러한 형태의 오브젝트들에는 다음과 같은 예가 있다. 
+<br>- materials 
+<br>- batches 
+<br>- documents
+---
+- 영문용어 : Class hierarchy
+- 한글용어 : 클래스계층구조
+- 설명 : 클래스계층구조(class hierarchy)는 클래스에 의한 다중탐색경로(multiple search path)를 제공하며, 특정 클래스에서 탐색을 실행하는 도중 하위의 클래스가 발생되면 하위 클래스로 탐색경로를 변경하게 함.
+---
+- 영문용어 : Classification
+- 한글용어 : 분류법
+- 설명 : 객체들을 class에 할당하고, 클래스의 특성들에 대한 값들을 입력하여, 객체 검색시 사용할 수 있게 하는 기능.
+---
+- 영문용어 : Clearing
+- 한글용어 : 반제
+- 설명 : 계정의 미결 항목들을 반제 즉 대금처리가 끝나거나 결제된 것으로 처리하는 과정. 미결항목으로 반제 할 수 있다. <br>예) 고객이 송장에 대한 대금을 지불하면 해당 미결항목을 결제된 대금으로 반제할 수 있다.
+---
+- 영문용어 : Clearing
+- 한글용어 : 반제
+- 설명 : 계정내의 미결사항을 정리(예지급)하는 절차. 미결항목은 계정의 반대쪽(차변 또는 채변)에 동일한 금액을 입력함으로써 반제된다. 예 고객이 대금을 지불하면 이와 관련된 외상매출금이 반제된다. 유사어정산(settle)
+---
+- 영문용어 : Clearing account
+- 한글용어 : 관리목적용 임시계정
+- 설명 : 일시적인 기표가 이루어지는 계정. 관리목적용 임시계정은 다음과 같은 이유로 반복적으로 반제가 이루어 지는 보조계정이다 <br>- 거래상의 시간차이( 미송장입고 재고자산계정, 미입고 매입채무계정) <br>- 조직상의 업무배분(은행정리계정) <br>- 불분명한 거래 cf) 중간계정(interim account)
+---
+- 영문용어 : Clearing business area
+- 한글용어 : 반제업무영역
+- 설명 : 업무영역간의 채권과 채무를 계산하기 위해 사용되는 전표상의 추가계정지정.
+---
+- 영문용어 : Clearing procedure
+- 한글용어 : 반제 절차
+- 설명 : 미결항목을 반제하는 절차. SAP 시스템은 두가지 절차를 제공한다. <br><br>- 계정의 반제 <br>- 미결항목을 반제시키면서 전표를 전기(posting)하는 것 계정을 반제할 때는 동일한 통화로 입력된 항목만을 반제 할 수도 있고, 추가 Data의 입력이 불가능하다. <br><br>이 첫번째 절차는 임시 계정을 반제할 때 사용할 수 있다. 반제와 동시에 전기(posting)가 되는 두번째 절차에는 예를 들어 고객으로부터 받은 대금의 전기(해당 미결항목의 반제)와 이 대금으로 결제된 송장의 반제를 하나의 Transaction 으로 동시에 처리할 수 있다.
+---
+- 영문용어 : Clearing tax
+- 한글용어 : 결제세
+- 설명 : 몇 나라에서 부가가치세이외에 부과하는 세금. vendor가 계산을 하여 부가가치세가 면제되는 customer에게 부과된다. vendor는 거래징수한 세금을 과세당국에 납부해야 한다.
+---
+- 영문용어 : Clearing transaction
+- 한글용어 : 반제거래
+- 설명 : 대금의 회수 또는 수표의 지급과 같이 반제절차를 수행하게 하는 거래.
+---
+- 영문용어 : Client
+- 한글용어 : 클라이언트
+- 설명 : <br>- R/3시스템에서 지칭하는 조직적으로 최상위 독립 단위. <br>- 통상적/조직적/기술적인 용어로서, 개별적인 master record와 테이블들을 갖는 R/3 시스템의 독립적인 단위. <br>- 일반적으로 C/S 환경하에서 End User들이 사용하고 있는 PC들을 Client라고 부르지만 SAP R/3상에서의 Client는 이와는 다른 의미를 갖는다. 한 회사에 SAP를 설치한다고 하면 일반적으로 하나의 Database Sever를 설치하는 것을 의미하는데(SAP는 3-tier Acrchitecture를 기본으로 하고 있는데, 이는 DB Server-Application Server-Presentation의 구조를 의미한다), DB상에서 Data들이 나누어지는 최상위 단위가 Client 이다. (예외적으로 국가나 통화등에 대한 정의사항등과 같이 특정 client 와 무관하게(client independent) 관리되는 Data들도 있다) <br>따라서, SAP R/3 시스템에 Logon을 하는 경우 User name, Password와 함께 반드시 Client(숫자 3자리)의 이름을 입력해야 한다. 기술적으로는 시스템 내에 존재하는 Data들이 저장되어 있는 Table 등의 대부분은 Client를 Key field에 포함하고 있는 것으로 이해할 수 있다. <br>한편 업무적으로는 Client는 Data집계의 최상위 단위이므로 그룹전체를 의미하는 것으로 볼 수도 있으나 (SAP내에서 사용되는 조직구조를 설명하는 경우 Client가 계층구조상의 최상위 단위로 제시되는 경우가 흔함), 실질적으로 그룹 대부분의 회사가 하나의 DB Server하의 하나의 Client를 사용하고 있는 상황이 아니라면 그 의미는 아니라고 볼 수 있다.
+--- 
+- 영문용어 : Closing
+- 한글용어 : 마감
+- 설명 : 다음과 같은 마감 절차들과 관련된 업무들의 계획과 수행 <br>- 일일마감 <br>- 월간마감 <br>- 년말마감
+---
+- 영문용어 : Closing period (PP)
+- 설명 : 분석 대상의 라이프사이클을 open과 closed 기간으로 구분하는 기간. 분석 시작과 결산 기간 사이의 데이터는 동결된다. 결산 기간 이후의 기간에 대한 분석 데이터는 그 이후부터 계산될 수 있다.
+---
+- 영문용어 : Closing(operations)
+- 한글용어 : 결산(마감)절차
+- 설명 : 일일마감, 월말결산, 연말결산에 필요한 모든 절차의 준비와 수행.
+---
+- 영문용어 : CO
+- 한글용어 : SAP-CO Module
+- 설명 : Controlling. 업무상으로 관리회계에 해당. 간접비 관리, ABC, 제조원가 회계 및 손익분석 기능을 수행하며, 표준원가 개념에 입각한 시스템이 구성됨. 현재 국내 기준으로는 실적원가 정보를 산출해야 하므로 CO는 내부목표 관리용으로 사용 가능.
+---
+- 영문용어 : CO-CEL
+- 한글용어 : CO-CEL Sub Module
+- 설명 : Cost center accounting. 원가요소를 관리하는 SAP-CO의 sub module
+---
+- 영문용어 : Code (PM)
+- 설명 : 손상과 오작동 데이터의 key. 손상 원인과 수리 내용이 보전 이력(maintenance history)에 입력된다. 예를들어, 손상에 대한 code 그룹이 있는데, code 10은 과열을 나타내고 code 20은 비정상 소음을 나타낸다.
+---
+- 영문용어 : Code (QM)
+- 설명 : 결과, 관찰, 결정 내용들을 코드화된 형식으로 기술하는 검사 목록의 항목. Code들은 code 그룹을 이룬다.
+---
+- 영문용어 : Code group (PM)
+- 설명 : 설비 관리에서 code들을 묶는 key. 내용이 유사하거나 어떤 방식으로 관계가 있는 code들이 평가 목적상 code 그룹으로 묶인다. 예를들어, 모터 손상에 관한 모든 code들을 하나의 그룹으로 묶고, 펌프 손상에 관한 모든 code들을 다른 그룹으로 묶을 수 있다.
+---
+- 영문용어 : Code group (QM)
+- 설명 : 내용이 같거나 어떤 방식으로 관계가 있는 code들을 묶어서 분류하는 기준. 검사 목록에 있는 항목들(code들)이 code 그룹에 할당된다.
+---
+- 영문용어 : Code-Group
+- 한글용어 : 코드그룹
+- 설명 : 외관 불량항목을 모은 대분류 그룹을 말한다. 정성적인 검사의 불합격 판정시 선택하여 사용한다. <br>(Ex. MA000 = 외관불량코드, MC000 =구조불량코드 )
+---
+- 영문용어 : Collection
+- 한글용어 : 매출채권 회수
+- 설명 : 만기가 된 매출채권, 특히 어음의 회수.
+---
+- 영문용어 : Collective order
+- 한글용어 : 일괄오더
+- 설명 : 여러 생산 단계에 걸쳐 연결되어 있는 계획오더(planned order)나 생산오더(production order)들의 묶음. Collective order 내에서 가장 상위의 생산오더의 material에 대해서만 입고가 가능하다. Collective order는 하나의 구조를 이루는 assembly들의 작업 단계들을 포함 할 수 있다.
+---
+- 영문용어 : Commitments
+- 한글용어 : 약정사항
+- 설명 : 다음과 같은 모든 형태의 약정사항과 부채; <br>-미실행 주문(outstanding orders, 확인된 주문에 대한 배달약속) <br>-미실행 구매주문(open purchasing orders, 주문에 대한 인수약속) <br>-어음채무(bill liability, 은행의 총어음사용한도승인금액)
+---
+- 영문용어 : Company 
+- 한글용어 : 회사
+- 설명 : Company는 관련 상법에 따라 개별적 재무제표를 작성할 수 있는 최소의 조직 단위이다. Company는 하나 이상의 company code로 구성될 수 있다. 하나의 Company 안에 있는 모든 Company Code는 동일한 Chart of Accounts와 동일한 Fiscal Year를 사용해야 한다.
+---
+- 영문용어 : Company code
+- 한글용어 : 회사코드
+- 설명 : 독립적인 회계단위. 법률상으로 요구되는 대차대조표와 손익계산서는 회사코드수준에서 이루어 진다. 독립적인 회사들의 계정들을 동시에 관리하기 위해서 하나의 client에 대해 여러개의 회사코드를 만들 수 있다.
+---
+- 영문용어 : Complete delivery
+- 설명 : 입력된 자재에 대하여 전체 total delivery가 가능한 date(선택사항)
+---
+- 영문용어 : Completion confirmation
+- 한글용어 : 완료확정
+설명 : 완료확정(completion confirmation)은 생산오더(production order) 추적기능의 일부분으로 Operation들과 sub-operation들이 어디까지 진행되었나 기록하며, SAP 시스템은 부분(partial) 확정과 최종(final) 확정 기능을 지원한다. 완료확정은 다음과 같은 정보를 제공한다 <br>- operation이 수행된 work center <br>- operation을 수행한 사람 <br>- operation에서 발생한 생산과 불량의 양 <br>- operation별로 소비된 활동(activity)의 양
+---
+- 영문용어 : Component
+- 한글용어 : 구성부품
+- 설명 : BOM의 일부로 사용되는 객체로서, material은 material 번호를 입력하여 BOM의 component로 등록하고, document는 document 번호, document type, document part, document version을 입력하여 BOM의 component로 등록된다.
+---
+- 영문용어 : Component scrap
+- 한글용어 : 구성부품스크랩
+- 설명 : 해당자재가 구성부품(component)일 경우 품질요구에 맞지않는 component의 양적 비율. 해당품목이 자품목으로 구성되어 있는 assembly 생산을 위해 자품목 소요량 계산시 적용되어 소요량을 계산해 주게 되고, material master 또는 BOM에서 관리.
+---
+- 영문용어 : Computer Aided Test Tool (IMG)
+- 설명 : CATT는 반복적인 업무 처리를 묶어서 자동화하는 SAP tool이다.
+---
+- 영문용어 : Condition type
+- 설명 : 가격 유형을 입력하는 field 가격 유형을 입력하는 field <br>□ PR00 판매 제품의 표준 판가 금액 <br>□ ZCOS 판매 제품의 견적원가
+---
+- 영문용어 : Conditions
+- 한글용어 : 조건
+- 설명 : 공급업체(vendor)와 협상이 이루어지는 지불조건(초과청구나 할인). Condition은 net price나 effective price에 영향을 미친다.
+---
+- 영문용어 : Configuration
+- 한글용어 : Configuration
+- 설명 : SAP R/3는 ERP시스템의 특성상 이미 완성이 되어 있는 상태이므로, 그대로 설치하기만 하면 사용할 수 있다. 그러나 회사가 원하는 프로세스나 기능을 수행하기 위해서는 회사의 실정에 맞도록 시스템을 조정하는 작업이 필요하다. <br>범용성이라는 특성을 갖고 있는 만큼 SAP는 각 프로세스나 기능별로 수 많은 선택 가능한 조건(parameter)들을 담고 있는데, 이러한 parameter 들을 회사가 원하는 방식으로 설정하는 작업을 Customizing 또는 Configuration 이라고 한다. <br>SAP R/3를 Implementation 하는 과정을 보면 먼저 현재의 프로세스를 정리하고 또는 TO-BE 프로세스를 도출하여 확정하는 Process Define 단계를 밟고 그것을 실현할 수 있도록 Customizing 작업을 하게 된다. 그런데 실질적으로 Implementation 전체의 과정에서 시간이 많이 소요되는 부분은 Customizing 단계가 아니라 Process Define 단계이다. <br>즉, 프로세스와 그 구현안이 확정이 된 상태에서는 SAP 시스템을 잘 이해하고 있기만 하면 Customizing 작업자체에는 시간이 많이 소요되지는 않는다. 물론 SAP가 담고 있는 기능들과 그것을 위해 Customizing 이 가능한 부분과 대체안을 체계적으로 아는 데에는 많은 Study와 노력이 필요하다. <br>참고로 Customizing 작업을 위해 과거(2.X Version 까지)에는 메뉴방식으로 작업단계를 구성하였으나, 이를 변경하여 현재에는 Customizing 작업을 Tree 형식으로 구조화한 "IMG(Implementation Guide)"를 제공하고 있다. <br>IMG는 SAP가 표준으로 제공하고 있는 것을 기반으로 하여 회사가 원하는 항목들만 선택한 Enterprise IMG와 특정 SAP Implementation 작업에서 필요한 항목들만을 모은 Project IMG를 구성하는 것도 가능하다.
+---
+- 영문용어 : Consignment
+- 한글용어 : 위탁관리
+- 설명 : Vendor(외부 공급자)가 고객(구매자)의 위치에 있는 material 재고를 관리하는 업무 형태. Vendor는 material이 위탁 저장소에서 출고될 때까지 소유권을 보유한다. 위탁 재고에 대한 지불은 material이 출고될 때 요구된다. 이러한 이유로, vendor는 위탁 재고의 출고 상황을 규정에 따라 통보 받는다.
+---
+- 영문용어 : Consolidation system (ABAP)
+- 설명 : SAP 시스템 그룹에서, 통합시스템(integration system)으로부터 테스트가 끝난 개발물을 전송받는 시스템. 결합시스템은 마지막 테스트가 수행되는 품질 보증 시스템이거나, 보다 적은 규모의 경우, 생산시스템(production system)일 수 있다.
+---
+- 영문용어 : Consumable material
+- 한글용어 : 소모품
+- 설명 : 가액기준으로 비용계정 또는 자산계정에 전기(posting)하여 처리하는 구매자재 또는 서비스
+---
+- 영문용어 : Consumption
+- 한글용어 : 소비-master planning/MRP에서
+- 설명 : 기준계획(master planning) 또는 자재소요량계획(MRP-material requirement planning)에서의 소비(consumption)란 계획독립소요량(planned independent requirement)와 판매오더(sales order)로 부터의 독립소요량(independent requirement)에 대한 비교 소비량을 의미. 소요량형태(requirement type)에 따라 planned independent requirement 수량은 생성되는 sales order 수량에 의해 감소됨.
+---
+- 영문용어 : Consumption mode
+- 한글용어 : 소비모드
+- 설명 : Consumption mode는 수요관리(demand management) 및 주생산일정계획(MPS-Master Production Schedule), 자재소요량계획(Material Requirement Planning)에서 사용되며, 판매오더(sales order) 및 종속소요량(dependent requirements)을 소비하게 함. 소비(consumption)는 판매오더(sales order)의 앞이나 뒤에 놓인 계획독립소요량(planned independent requirement)에서 발생됨.
+---
+- 영문용어 : Consumption-based planning (PP)
+- 설명 : 재고 소요량과 과거 소비값이 중심적 역할을 하는 MRP 절차. Consumption-based planning은 다음 절차로 좀 더 세분화된다 ·reorder point planning ·forecast-based planning
+---
+- 영문용어 : Contack person
+- 한글용어 : 접촉인
+- 설명 : 공급업체의 판매 또는 영업부서와 접촉하는 고객 직원.
+---
+- 영문용어 : Contingent claims
+- 한글용어 : 우발채권
+- 설명 : 대차대조표에 표시되지 않은 채권. 지급보증을 받은 금액이 한 예이다.
+---
+- 영문용어 : Contingent liability
+- 한글용어 : 우발채무
+- 설명 : 대차대조표에 표시되지 않은 우발상황이나 채무. 어음상의 피소구권, 지급보증, 제품보증 등이 포함된다.
+---
+- 영문용어 : Continuous flow production
+- 한글용어 : 연속흐름생산
+- 설명 : PP생산방식 중의 하나로써, 생산내의 operation들이 완전히 겹쳐지는(overlapping) 생산방식. 짧은 실행시간을 갖는 operation들이 확장되어 최장(longest) operation과 동일한 실행시간을 갖음. 최장 operation 시간은 실행기간(duration)을 결정지으며, operation에서 발생되는 queue time은 확장됨.
+---
+- 영문용어 : Contract
+- 한글용어 : 일괄계약
+- 설명 : <br>○ PP : SAP logistics system에서 사용되는 "outline agreement"(또는 longer-term, volume purchasing arrangement)의 한 형태. "일괄계약"은 vendor와 고객사이에 발생되는 장기간의 협약이다. 그 협약은 구매 회사에서 필요에 따라 발행하는 각각의 release order들로 채워진다. SAP 시스템은 다음과 같은 종류의 계약을 제공한다 <br> - Quantity contracts - Value contracts - Consignment contracts <br><br>○ CO : 공급업체와 체결하는 장기계약으로 고객 필요에 따라 생성되는 개별적인 release order에 의해 이행된다.
+---
+- 영문용어 : Control account
+- 한글용어 : 통제계정
+- 설명 : 외상매출금, 외상매입금, 고정자산계정과 같이 보조부에 기록된 거래금액의 (부분)합계를 관리하는 G/L계정. 참고 조정계정(reconciliation account)
+---
+- 영문용어 : Control key
+- 한글용어 : 제어키
+- 설명 : Operation 또는 sub-operation이 오더처리, 원가계산, 능력계획 등과 같은 기능 내에서 어떠한 기능을 갖게되는지 결정하는 키로 다음과 같은 사항들이 관리되게 됨. <br>- External processing <br>- Compete confirmation <br>- Printing <br>- Scheduling <br>- Costing
+---
+- 영문용어 : Control totals
+- 한글용어 : 합계통제
+- 설명 : 전표금액이 올바로 입력되었는지를 확인하기 위하여 사용하는 합계금액. 기표를 하는 경우 시스템이 자동적으로 합계통제금액을 계산한다.
+---
+- 영문용어 : Controlling
+- 한글용어 : Controlling
+- 설명 : 경영의사결정과 그 수행을 준비하기위한 회사경영의 하위기능.
+---
+- 영문용어 : Controlling area
+- 한글용어 : Controlling area
+- 설명 : FI가 회사코드(Company Code)를 중심으로 모든 거래처를 집계하는 것에 반하여, CO에서는 관리회계의 목적상 회사 이상의 차원에서 Data를 집계하는 것을 지원한다. 이러한 관리회계상의 최상위 조직단위를 Controlling Area라고 하며, 그 성격상 회사코드를 Controlling Area에 연결하도록 되어 있다. <br>즉, 하나의 Controlling Area에는 여러 회사코드가 연결될 수 있다. 따라서 여러 회사가 하나의 SAP 시스템을 사용하고 있고, 관리회계의 목적상으로는 각종 손익 Data 등을 마치 하나의 조직으로 간주하고 분석하는 것도 가능하다. 하나의 회사가 하나의 시스템을 사용하는 경우에는 결과적으로 Controlling Area와 회사코드는 1:1의 관계로 설정될 것이다.
+---
+- 영문용어 : Conversion date
+- 한글용어 : 환산일
+- 설명 : 하나의 금액을 다른 통화로 환산하는 기준일.
+---
+- 영문용어 : Conversion rate
+- 한글용어 : 환율
+- 설명 : 두 통화의 교환비율로 하나의 통화를 다른 통화로 환산하는 경우에 사용된다.
+---
+- 영문용어 : CO-OM
+- 한글용어 : CO-OM Sub Module
+- 설명 : Overhead Management Controlling. 간접비를 관리하는 SAP-CO의 sub module로서 다음과 같은 기능이 있다. <br>- CCA(Cost Center Accounting) <br>- ABC(Activity Based Accounting) <br>- OPA(Order & Project Accounting)
+---
+- 영문용어 : CO-PA
+- 한글용어 : CO-PA Sub Module
+- 설명 : Profit Analysis Controlling. 수익성을 관리하는 SAP-CO의 sub module로서 다음과 같은 기능이 있다. <br>- PA(Profitability Analysis) <br>- PCA(Profit Center Accounting)
+---
+- 영문용어 : CO-PC
+- 한글용어 : CO-PC Sub Module
+- 설명 : Product Cost Controlling. 제품원가를 계산/관리하는 SAP-CO sub module로서 실적원가/계획원가/표준원가와의 비교분석 기능을 지원하며 다음과 같은 기능이 있다. - Product Cost Planning - Cost Object Controlling - Actual Costing
+---
+- 영문용어 : Co-product
+- 한글용어 : 부산품
+- 설명 : 재고평가가 이루어지는 특정 자재의 생산기간 동안 부수적으로 생산되는 재고평가가 가능한 또 다른 자재. 연산품(by-product)과는 다르게 부산품(co-product)는 원가에 대한 계획(planned) 및 추정(monitored)이 가능함.
+---
+- 영문용어 : Correspondendce
+- 한글용어 : 통신문서
+- 설명 : 회사가 발송하고 수신하는 서면으로 작성된 모든 의사소통 수단, 주문 확인서, 지급통지서, 독촉장 등이 포함된다.
+---
+- 영문용어 : Cost breakdown
+- 한글용어 : 원가분할
+- 설명 : 제조원가 계산시 개별원가 항목에 대한 상세 출처개요(origin overview)를 포함. 사용된 자재를 포함하여 원가를 포함하는 개별 문서가 유지보수 되며, 다음과 같은 정보를 포함함. <br>- Production cost centers <br>- 저장된 Activity standard rates <br>- External activities <br>- Overhead rates
+---
+- 영문용어 : Cost center
+- 한글용어 : Cost center
+- 설명 : 회사이하의 조직단위를 표현할 수 있는 것으로는 Cost Center가 있다. 전통적인 회계시스템상의 부서, 과, 팀 등과 가장 유사한 코드로 볼 수 있는데, 필요에 따라 그 이하의 단위로 Cost Center를 설정하거나, 생산공정을 하나의 Cost Center로 놓을 수도 있다. Cost center는 간접비를 관리하는 기본 단위이고, 기본적으로 SAP에서는 관리회계 View의 조직코드이지 재무회계 View의 단위는 아니라는 것에 유의해야 한다. 예를 들어 매출채권을 Cost Center별로 관리하는 방식은 지원되지 아니한다. 특징적으로 Cost Center는 계층구조(Hierarchy)를 설정하는 것이 가능하다. 따라서 회사의 실제 조직구조를 Cost Center Hierarchy로 표현하는 것이 가능하며, 표준계층구조(Standard Hierarchy) 이외에, 여러 가지 다른 형태의 계층구조를 표현하는 것도 가능하다. 계층구조를 표현하기 위해 각각의 중간 마디들은 Cost Center Group 이라고 한다.
+---
+- 영문용어 : Cost center accounting (CCA)
+- 한글용어 : Cost center accounting
+- 설명 : Cost center를 기초단위로 간접비를 관리하는 기능으로, 조직간 간접비 배부에 사용됨
+---
+- 영문용어 : Cost center type
+- 한글용어 : Cost center type
+- 설명 : Cost center를 책임영역, 지역, 원가계산방법 등의 다양한 기준을 가지고 구분하는 구분자
+---
+- 영문용어 : Cost collector
+- 한글용어 : 원가취합자
+- 설명 : 자재 또는 run schedule header에 대한 실제 발생 원가를 취합할 수 있는 내부오더(Internal order)로 시스템에 의해서 생성되거나 수작업으로 작성함.
+---
+- 영문용어 : Cost component
+- 한글용어 : 원가구성요소
+- 설명 : 원가항목 출처에 대한 그룹.
+---
+- 영문용어 : Cost element
+- 한글용어 : 원가요소관리
+- 설명 : 재무회계(FI)에서 금액표현의 가장 기본적인 단위가 계정(G/L Account)인 것처럼, 관리회계(CO)에서는 Cost Element가 기본 단위이다. <br>쉽게 표현하면 Cost Element는 CO의 계정과목이라고 할 수 있다. Cost Element는 Primary cost element와 Secondary cost element로 나누어 진다. <br>Primary Cost Element는 재무회계에서 사용하는 비용계정들을 CO의 관점에서 부르는 용어이다. <br>따라서, FI의 Chart of Accounts 상의 모든 비용계정은 CO의 Primary Cost Element가 될 수 있다. <br>그러나 FI의 모든 비용계정들이 Cost Element가 되는 것은 아니므로, FI의 비용계정들에 대해여 CO에서 Primary Cost Element 로 등록하는 작업이 필요하게 된다.
+---
+- 영문용어 : Cost element accounting
+- 한글용어 : 원가요소관리
+- 설명 : 원가요소(Cost Elements)를 관리하는 SAP-CO의 기능
+---
+- 영문용어 : Cost element category
+- 한글용어 : Cost element category
+- 설명 : Cost element의 용도에 따른 구분자
+---
+- 영문용어 : Cost Object
+- 한글용어 : Cost Object
+- 설명 : <br>- PP : 발생된 원가가 부가되어(value-added) 생성된 단위. Cost object는 자재 또는 제품이 될 수 있으며, production/process order, networks 및 WBS element 또는 run-schedule Header 등이 있다. <br>- CO : 비용이 집계되어질 수 있는 객체로서 Cost center, internal order, project 등이 있다.
+---
+- 영문용어 : Cost object controlling
+- 한글용어 : Cost object 관리
+- 설명 : <br>- PP : Cost element accounting(unit cost) 또는 cost center accounting으로 부터의 costing에 의해 cost object에 직접 발생되는 cost accounting 분야. 총회계 기간에 대한 cost object 조회 기능 등이 포함되어 있음. <br>- CO : 표준원가를 근간으로 한 실적원가계산. PP의 생산흐름에 따라 원가계산을 지원하는 기능
+---
+- 영문용어 : Cost origin
+- 한글용어 : 원가출처
+- 설명 : 원가(cost)가 다른 cost object에 할당되지 전의 activity 출처.
+---
+- 영문용어 : Cost roll-up
+- 한글용어 : 원가취합
+- 설명 : 완제품으로 추가되기 위한 반제품의 원가 취합 행위. 이러한 기능으로 다중 원가 취합이 가능. 취하위의 low-level code에서부터 시작하여 상위 low-level code로 취합됨.
+---
+- 영문용어 : Costing object
+- 한글용어 : Costing object
+- 설명 : 원가계산이 수행되는 대상. 자재, 생산오더, 고객주문 등이 있다.
+---
+- 영문용어 : Costs
+- 한글용어 : 원가/비용
+- 설명 : 재화나 용역의 생산 및 판매를 위해 필요한 유/무형의 경제적 재화의 사용가치.
+---
+- 영문용어 : Country variant
+- 한글용어 : 국가고유특성
+- 설명 : 특정나라의 거래를 입력하기 위한 그 나라 고유의 거래입력화면의 버전.
+---
+- 영문용어 : CPI-C (BC)
+- 설명 : Common Programming Interface-Communication. 프로그램 간의 통신을 정의하는 CPI의 일부분. 이들의 정의는 다음의 네 영역으로 나뉜다 <br>·session setup <br>·session control <br>·communication <br>·end of session
+---
+- 영문용어 : Credit
+- 설명 : 입금액
+---
+- 영문용어 : Credit account
+- 설명 : 관리 고객번호
+---
+- 영문용어 : Credit control area
+- 설명 : 비용관리 영역으로 지정된 값 입력(C100)
+---
+- 영문용어 : Credit control area
+- 한글용어 : 신용관리영역(여신관리영역)
+- 설명 : 고객에 대한 신용(여신)한도를 특정하고 점검하는 회사내의 조직단위. 신용관리 영역은 하나 이상의 회사코드를 포함할 수 있다. 하지만 하나의 회사코드를 하나 이상의 신용관리영역에 지정할 수는 없다.
+---
+- 영문용어 : Credit exposure
+- 설명 : 미수금 총액
+---
+- 영문용어 : Credit limit
+- 설명 : 여신한도 총액
+---
+- 영문용어 : Credit limit
+- 한글용어 : 신용한도(여신한도)
+- 설명 : 고객에게 부여할 수 있는 최대 신용금액.
+---
+- 영문용어 : Credit limit used
+- 설명 : 한도 사용비율
+---
+- 영문용어 : Credit memo
+- 한글용어 : 대변메모
+- 설명 : 손상된 제품의 반환과 같이 customer로부터의 채권을 줄이는 거래. 이와 반대로 vendor에게 상품을 반환하는 경우의 차변메모(debit memo)는 채무액을 줄여 준다.
+---
+- 영문용어 : Credit rep. group
+- 설명 : 여신한도 관리 부서
+---
+- 영문용어 : Current credit limit assign
+- 설명 : 여신한도 총액을 설정하는 field □ Total amount 총 한도 금액 □ Largest indiv. limit 회당 거래한도 최대금액
+---
+- 영문용어 : Curreny
+- 한글용어 : 통화
+- 설명 : 한 나라의 법적인 지불수단.
+---
+- 영문용어 : Cust. cred.group
+- 설명 : 영업형태별 고객 여신 분류
+---
+- 영문용어 : Customer
+- 한글용어 : 고객
+- 설명 : (주 SAP에서는 반드시 일반적인 상거래의 거래대상이 아닌 경우에도, 보조부와 마스터 레코드를 통하여 관리를 할 필요가 있는 자산계정 (예;전도금)의 대상을 customer로 부르기도 한다)
+---
+- 영문용어 : Customer group
+- 설명 : 영업형태별 site분류
+---
+- 영문용어 : Customer master record
+- 한글용어 : 고객마스터레코드
+- 설명 : 거래를 기록하는데 필요한 고객에 대한 모든 정보를 포함하고 있는 데이타 레코드. 고객주소와 은행 Data 등이 포함된다.
+---
+- 영문용어 : Customer price procedure
+- 설명 : 고객분류별 가격 책정 분류방법으로 일반적으로 “1”standard를 사용
+---
+- 영문용어 : Customizing
+- 한글용어 : Customizing
+- 설명 : SAP R/3는 ERP시스템의 특성상 이미 완성이 되어 있는 상태이므로, 그대로 설치하기만 하면 사용할 수 있다. 그러나 회사가 원하는 프로세스나 기능을 수행하기 위해서는 회사의 실정에 맞도록 시스템을 조정하는 작업이 필요하다. <br>범용성이라는 특성을 갖고 있는 만큼 SAP는 각 프로세스나 기능별로 수 많은 선택 가능한 조건(parameter)들을 담고 있는데, 이러한 parameter 들을 회사가 원하는 방식으로 설정하는 작업을 Customizing 또는 Configuration 이라고 한다. SAP R/3를 Implementation 하는 과정을 보면 먼저 현재의 프로세스를 정리하고 또는 TO-BE 프로세스를 도출하여 확정하는 Process Define 단계를 밟고 그것을 실현할 수 있도록 Customizing 작업을 하게 된다. <br>그런데 실질적으로 Implementation 전체의 과정에서 시간이 많이 소요되는 부분은 Customizing 단계가 아니라 Process Define 단계이다. <br>즉, 프로세스와 그 구현안이 확정이 된 상태에서는 SAP 시스템을 잘 이해하고 있기만 하면 Customizing 작업자체에는 시간이 많이 소요되지는 않는다. 물론 SAP가 담고 있는 기능들과 그것을 위해 Customizing 이 가능한 부분과 대체안을 체계적으로 아는 데에는 많은 Study와 노력이 필요하다. 참고로 Customizing 작업을 위해 과거(2.X Version 까지)에는 메뉴방식으로 작업단계를 구성하였으나, 이를 변경하여 현재에는 Customizing 작업을 Tree 형식으로 구조화한 "IMG(Implementation Guide)"를 제공하고 있다. <br>IMG는 SAP가 표준으로 제공하고 있는 것을 기반으로 하여 회사가 원하는 항목들만 선택한 Enterprise IMG와 특정 SAP Implementation 작업에서 필요한 항목들만을 모은 Project IMG를 구성하는 것도 가능하다.
+---
+- 영문용어 : Cycle counting (MM)
+- 설명 : 회계년도 내에 정기적으로 재고를 계수하는 재고 관리 방법. 그 기간은 material에 대한 cycle counting indicator 설정에 따른다. Cycle counting은, 예를들어, slow-moving item 보다 자주 계수되는 fast-moving item에 유리하다.
+---
+- 영문용어 : Daily closing
+- 한글용어 : 일일마감
+- 설명 : 거래를 합리적으로 처리하기 위하여 하루의 업무를 마감하면서 취하는 조치
+---
+- 영문용어 : Debit
+- 설명 : 대금청구액
+---
+- 영문용어 : Debit memo(direct debiting) procedure
+- 한글용어 : 직접입금에 의한 대금회수 절차
+---
+- 영문용어 : Defect(QM)
+- 설명 : 검사계획상에 기술된 명세와의 불일치. 불일치는 객체에 결함을 발생시킨다.
+---
+- 영문용어 : Delivery block
+- 설명 : 선생산 주문 오더입력시 출하관련하여 block을 지정함으로써 계약전 자재출고를 방지하기 위한 기능으로 사용
+---
+- 영문용어 : Delivery costs
+- 설명 : 자재원가에 부가해서 주문자에 의해 발생하는 비용
+---
+- 영문용어 : Delivery date
+- 설명 : 상품이 납입되거나 서비스가 제공되는 일자, 납기일은 고객이 요구한 일자 이거나 혹은 계약종료일자로 사용할수 있다.
+---
+- 영문용어 : Delivery date (MM,SD)
+- 설명 : 물품이 배달되거나 용역이 수행되는 날자. Delivery date는 고객이 요구하는 배달일자일 수도 있고 vendor가 확정하는 일자일 수도 있다
+---
+- 영문용어 : Delivery note
+- 설명 : 출하(delivery)에 필요한 정보를 담은 문서로 다음과 같은 작업에 필요한 정보르 제공
+---
+- 영문용어 : Delivery plant
+- 설명 : 출하장소
+---
+- 영문용어 : Delivery schedule
+- 설명 : scheduling agreement상의 각 품목별로 합의한 납기 일정, MRP작업이 수행되면 정기적 으로 이 값이 갱신된다.
+---
+- 영문용어 : Delivery schedule (scheduling agreement) (MM)
+- 설명 : Scheduling agreement("outline agreement"나 longer-term purchasing arrangement)의 항목에 해당하는 material의 전체 양에 대하여 일부씩 계속되는 배달 일정
+---
+- 영문용어 : Delivery schedule (purchasing document) (MM)
+- 설명 : 구매 문서(purchase requisition, purchase order, scheduling agreement)의 항목에 해당하는 material의 전체 양에 대하여 일부씩 계속되는 배달 일정
+---
+- 영문용어 : Delivery scheduling
+- 한글용어 : Delivery scheduling
+- 설명 : 출고일자를 토대로 출하와 관련된 모든일자를 결정한다. 원하는 적하일자를 맞추기 위해 Picking 및 Packing이 수행되어야 하는 일자를 시스템에서 결정한다.
+---
+- 영문용어 : Delivery unit
+- 설명 : Delivery 기본 수량 및 설정단위
+---
+- 영문용어 : Demand management
+- 한글용어 : 수요관리
+- 설명 : 수요관리는 완제품과 중요 어셈블리에 대하여 소요량과 요구일자를 결정하는 것이 목적이며, 완제품의 계획과 생산/조달에 사용되는 전략을 기본값으로 지정하며 변경도 가능하다. 수요관리의 결과는 독립소요량(Independent requirement)의 형태를 갖는 demand program이며, 수동으로 수행될 수도 있고 선행 계획 결과(sales plan, aggregate production plan, forecast)를 이용하여 수행될 수도 있다.
+---
+- 영문용어 : Demand program
+- 한글용어 : 수요프로그램
+- 설명 : 수요프로그램(Demand program)은 완제품이나 중요 어셈블리에 대한 소요량의 일자 및 수량을 독립소요량의 형태로 갖고 있음.
+---
+- 영문용어 : Depeciation area
+- 한글용어 : 감가상각영역
+- 설명 : 각각의 고정자산들은 대차대조표(Balance sheet),원가회계(Cost-accounting) 혹은 법인세(Net worth tax) 목적으로 평가할 수 있는데 특정목적의 위한 자산평가를 보여준다. 감가상각영역에서 이 목적에 맞게 필요한 평가 parameter 및 value를 관리할수 있다.
+---
+- 영문용어 : Dependent requirements
+- 한글용어 : 수요소요량
+- 설명 : 상위 어셈블리(assembly)의 생산요구에 의해 발생되는 계획 자재소요량. MRP 절차에서, 종속소요량은 계획오더(planned order)의 생산에 필수적으로 필요한 구성부품(component)들에 대해 자동 생성된다.
+---
+- 영문용어 : Development system (ABAP)
+- 설명 : SAP 시스템 그룹에서, 개발과 customizing 작업이 수행되는 시스템.
+---
+- 영문용어 : Direct procument
+- 한글용어 : 직접조달
+- 설명 : 직접조달은 재고로 보관하지 않는 조달을 수행한다. 직접 조달되는 품목(component)들은 BOM의 item category가 "Non-stock item"으로 설정된다. 계획 실행시, 직접 조달되는 구성부품(component)에 대하여 종속소요량은 생성되지 않으며, 대신 구매요청서(purchase requisition)가 바로 생성된다.
+---
+- 영문용어 : Disaggregation
+- 한글용어 : 분할
+- 설명 : 상위 계획 데이터에서 제품그룹(product group)내의 각 멤버(member)들의 데이터로 분해하는 SOP(Sales & Operation Planning) 기능.
+---
+- 영문용어 : Discount ledger
+- 한글용어 : 어음할인장
+- 설명 : 모든 어음에 대하여 만기일, 금액 발행인의 이름 및 주소, 이전 보유자의 이름과 주소, 지급지, 지급인의 이름과 주소, 할인내역 등을 기록하는 장부.
+---
+- 영문용어 : Discount type
+- 설명 : 견적 및 수주 order 입력후 금액 할인시 사용하는 DC type <br>□ HA00 header level에서 percentage로 DC주는 방법 <br>□ RA00 Item별 percentage discount 주는 방법 <br>□ RB00 item별 value값(금액)으로 DC주는 방법
+---
+- 영문용어 : Discounting
+- 한글용어 : (어음)할인
+- 설명 : 아직 만기가 되지 않는 (환)어음을 은행에 예치하여 만기일까지의 이자(할인)와 수수료를 공제한 금액만큼을 받음.
+---
+- 영문용어 : Distribution channel
+- 한글용어 : 유통경로
+- 설명 : 판매용 material이나 service가 고객에게 도달되는 경로. 전형적인 유통 경로에는 도매, 소매, 직판이 있다. 유통경로는 하나 이상의 판매 조직(sales organization)에 할당된다.
+---
+- 영문용어 : Division
+- 한글용어 : Division
+- 설명 : 유통을 감독하고 특정 판매자재의 수익성을 관리하기 위해 설치된 조직단위. 분할납품, 단가, 지급조건 등 고객별로 특수한 사항을 제품군별로 지정할 수 있다.
+---
+- 영문용어 : Document
+- 한글용어 : 전표
+- 설명 : 거래행위의 증빙자료. SAP는 SAP전표와 송장, 수표, 은행잔고 명세서 등과 같은 일반적인 전표를 구별한다. SAP전표에는 회계전표, 샘플전표, 반복입력전표 등이 있다. 회계전표는 시스템에 사업거래를 기록하고 샘플전표와 반복입력전표는 Data입력을 간편하게 하기위해 사용된다. Document라는 용어는 SAP의 모듈 전체에서 사용된다. <br>즉, FI의 Accounting (FI) Document, CO의 CO Document, MM의 Material Document, SD의 SD Document 또는 Sales Document 등이 그 예이다. 재무회계상의 거래나, 물류상의 Transaction에 대해 SAP는 그 거래처리의 내용을 담고 있는 Object를 Document라고 부르기도 한다. <br>예를 들어 MM의 Material Document라 함은 자재전표로 해석할 수도 있으며, 원재료, 제품 등의 입고, 출고, 이동 등의 기록을 담고 있다. FI의 Document는 회계전표(Accounting Document)를 말한다. <br>FI의 회계전표는 Header와 Line Item의 2단계 구조로 되어 있으며, Header에는 그 전표에서 공통적으로 사용되는 사항들(예를들어, 전표유형, 기표일자, 증빙일자, 거래통화, 회사코드, 적요, 참조번호 등)이 저장되며, Line Item에는 차/대변 각각의 계정관련 사항들(Account, Posting key, 금액, Cost center, 참조번호, 적요 등)이 저장된다.
+---
+- 영문용어 : Document currency
+- 한글용어 : 전표통화
+- 설명 : 전표가 전기(posting)될때 사용되는 통화.
+---
+- 영문용어 : Document date
+- 한글용어 : 증빙일자
+- 설명 : 구매처 송장과 같은 전표가 원래 준비된 일자. 이 날짜는 전기일자(posting date)와 일치하지 않을 수 있다.
+---
+- 영문용어 : Document entry
+- 한글용어 : 전표입력
+- 설명 : SAP 시스템에 거래를 수동 또는 자동으로 기록하는 절차로 거래의 특성에 따라 조금씩 다른 일련의 Data 입력화면에 입력한 Dialog Interface를 통해 자동으로 Data 입력이 진행된다.
+---
+- 영문용어 : Document flow
+- 설명 : WIN-21 시스템에서 수주->출하->매출까지 관련된 모든 생성 정보에 대한 문서를 Document 상의 형태로 Display
+---
+- 영문용어 : Document header
+- 한글용어 : 전표헤더
+- 설명 : 증빙일자(document date)나 전표번호와 같이 전표전체에 적용되는 정보를 갖고 있는 전표의 일부분.
+---
+- 영문용어 : Document number
+- 한글용어 : 전표번호
+- 설명 : 한 회계연도에 있어서 하나의 회사코드내의 각각의 전표를 구분하여 주는 key.
+---
+- 영문용어 : Document principle
+- 한글용어 : 전표작성원칙
+- 설명 : SAP의 회계전표에는 "하나의 전표에는 하나의 거래를 기록(One Invoice(Transaction) = One Document)"하는 원칙이 적용되며 이를 Document Principle 이라고도 한다. <br>즉, 기존의 회계전표에는 여러 거래의 내용을 축약하거나 복합하는 이른 바, "복합분개"의 형식으로 기표를 하는 관행이 허용되었으나, SAP에서는 이것이 제한되고 있다. 하나의 전표에 여러 거래를 기록하면, 정보가 혼재 된다는 업무상의 제약도 있을 수 있으나, SAP의 구조상 복합분개를 하게 되면 전표생성자체가 불가한 경우가 있거나, 전표생성은 되더라도 이후의 프로세스나 정보추출에 장애를 받게 되는 경우가 발생한다. (예를 들어 관계사와의 거래와 일반거래처와의 거래를 한번에 기표 처리하는 것을 불가능하며, AR과 AP 발생거래를 하나의 전표로하는 경우 차후의 부가세정보추출이나 CO-PCA로의 Data 이체상에 문제가 발생할 수 있음). <br><br>따라서, Document Principle은 차후의 정보 Processing을 원할하게 하는것을 보장한다. 다만 End User 입장에서는 이러한 원칙 때문에 전표입력이 기존 시스템보다 번거롭거나 복잡해지는 것으로 느낄 수도 있으므로, 전표입력을 쉽게 하는 CBO를 행하기도 하는데, 신재무시스템에서도 "유형별 전표입력" 기능을 개발하여 사용자의 편의를 돕고 있다.
+---
+- 영문용어 : Document type
+- 한글용어 : 전표유형
+- 설명 : 기표되어야 할 거래와 어떤 형식의 계정을 계정에 기표를 할 수 있는가(예 customer계정, vendor계정, G/L계정)를 구분하여 주는 key. <br>전표유형은 전표의 filing을 통제하고 전기되어야 할 계정유형(account type)을 결정하여 준다.
+---
+- 영문용어 : Document 관련 주요용어
+- 한글용어 : Document 관련 주요 용어
+- 설명 : <br>- Document Type (전표유형) : 전표의 유형구분 <br>- Posting Date (기표일자) : 회계기록이 반영되는 기준일 <br>- Document Date (증빙일자) : 세금계산서일자 등 거래발생일 <br>- Document Number (전표번호) : 회계전표에 부여되는 일련번호 <br>- Header Reference Number : Header에 자유롭게 입력할 수 있는 참조번호. 신재무에서는 삼성전표번호를 담는 Field로 활용하고 있음. <br>- Posting Key : 차/대변 구분, 입력할 Account Type의 구분역할을 수행함. <br>- Line Item상의 참조번호(Allocation) : 각각의 차/대변 분개에 대해 자유롭게 부여할 수 있는 번호로서, 미결키로 사용하는 것도 가능함. 값을 자동 생성하는 기능도 있다.
+---
+- 영문용어 : Down payment
+- 한글용어 : 계약금(선수금,선급금)
+- 설명 : 아직 생산되거나 제공되지 않은 재화나 용역에 대한 지급액. 계약금(선수/선급금)은 대차채조표상에서 다른 채권이나 채무와 별도로 표시된다. 즉 지급한 계약금(선급금)은 자산으로, 지급받은 계약금(선수금)은 부채로 재무제표에 표시된다
+---
+- 영문용어 : Down payment request
+- 한글용어 : 계약금지급요청
+- 설명 : 어느 특정시점에 계약금(선수/선급금)을 지급하여 달라는 요청. 계약금지급요청은 시스템에서 별도로 저장된다. 계약금지급요청은 월 차변 및 대변잔액을 새로운 금액으로 수정하지는 않지만(참조주의항목[noted item]) 독촉이나 자동지불 거래시에 이용된다.
+---
+- 영문용어 : Drawee(of a bill of exchange)
+- 한글용어 : (환어음의) 지급자(인수자)
+- 설명 : (어음의)지불요구를 받는 자. 지급자는 어음의 만기일에 약속한 금액을 지불할 의무가 있다.
+---
+- 영문용어 : Drawer(of a bill of exchange)
+- 한글용어 : (환어음)의 발행인
+- 설명 : 환어음을 발행하는 자. 발행인은 지급자에게 어음대금을 지급할 것을 지시하며 미래에 발생할 수 있는 소구에 대하여 2차적인 책임을 진다. 만일 지급자가 어음 대금을 상혼하지 않으면 발행인이 채무를 부담하게 된다
+---
+- 영문용어 : Dual MRP
+- 한글용어 : 이중 MRP
+- 설명 : 자재소요량계획(MRP)의 특별한 기능이며, 혼합소요량계획(Mixed requirement planning)의 sub-category이다. 이러한 방법을 사용하여 계획된 자재는 순소요량(Net-requirement quantity)으로 계산할 수 없으며, 총소요량(Gross-requirement quantity)으로만 계산이 가능하다. 순소요량으로 계산시 Stock requirement list에는 단순히 조회의 목적으로만 표시된다.
+---
+- 영문용어 : Due date
+- 한글용어 : 만기일
+- 설명 : 채무자가 채권자에게 상환을 해야 하는 기일. 특히 어음거래를 시스템에 입력하는 경우에는 반드시 만기일을 입력해야 한다.
+---
+- 영문용어 : Due date (FI)
+- 설명 : 채권자의 청구를 채무자가 이행해야되는 일자.
+---
+- 영문용어 : Due date for net payment
+- 한글용어 : 무현금할인지급만기일
+- 설명 : 현금할인을 받을 수는 없는 상태이지만 미지급채권을 지급해야 하는 만기일.
+---
+- 영문용어 : Dunning area
+- 한글용어 : 독촉영역
+- 설명 : 독촉절차를 위해 사용되는 회사코드내의 조직단위. 독촉절차의 관리와 독촉장의 송부는 독촉영역별로 분리되어 수행된다. 독촉영역은 부서, 유통채널, 판매조직, 손익센터(profit center) 또는 활동영역(business area) 등으로 정의할 수 있다.
+---
+- 영문용어 : Dunning block indicator
+- 한글용어 : 독촉방지표시자
+- 설명 : 특정 customer계정이나 개별항목들(line items)에 대하여 독촉절차가 수행되지않도록 하는 표시자. 독촉방지표시자는 customer의 마스터 레코드나 개별항목에 입력시킬 수 있다.
+---
+- 영문용어 : Dunning key
+- 한글용어 : 독촉구분키
+- 설명 : 미결 항목이나 통지항목(notified item, 예지급통보된 항목) 등과 같이 별도로 독촉절차를 취해야할 항목을 구분해주는 key.
+---
+- 영문용어 : Dunning level
+- 한글용어 : 독촉수준
+- 설명 : 한 항목에 대해 몇번 독촉을 하였는가를 특정하는 자리수.
+---
+- 영문용어 : Dunning procedure
+- 한글용어 : 독촉절차
+- 설명 : 어떻게 customer나 vendor를 독촉할 것인가에 관한 절차. 각각의 절차는 독촉수준의 수, 독촉의 빈도, 독촉장의 문구 등을 결정하여 준다. 유사어독촉유형(dunning type)
+---
+- 영문용어 : Duration (PM)
+- 설명 : Network이나 작업보전절차(maintenance task list)의 operation을 수행하는데 요구되는 시간.
+---
+- 영문용어 : Dynamic Modification Rule
+- 설명 : 검사엄격도 적용수준을 정해놓은 규칙을 말하며 합격,불합격의 결과에따라 정해진 Lot수가 되면 보다 수월한검사,또는 까다로운검사 등으로 이동함.
+---
+- 영문용어 : Dynamic menu
+- 설명 : menu bar의 내용을 전체적으로 조회 가능하게 리스트 해주는 기능
+---
+- 영문용어 : Dynamic modification rule (QM) 
+- 설명 : 검사단계(inspection stage)를 정의하는 규칙과 검사단계 변경의 원인이되는 조건. 이전 검사의 결과(검사 이력)는 현재의 품질 수준을 결정하는데 이용된다.
+---
+- 영문용어 : EC (Enterprise Controlling)
+- 한글용어 : EC (Enterprise Controlling)
+- 설명 : 기업내부의 성장 및 투자 목표를 점검하는 기능으로 EIS, 비즈니스 계획/예산, 연결 재무제표, 그리고 수익센터 회계 등으로 구성됨.
+---
+- 영문용어 : Edit
+- 설명 : 예상물량/견적/수주오더 입력후 입력 정보에 대하여 부분적으로 수정 및 check 할 수 있는 메뉴 기능 <br>□ Select 입력 자재에 대한 선택 기능키 <br>□ Fast change of 입력정보에 대한 부가 제한 사항 설정키 <br>□ Item availability 자재별 가용성 check 수행 <br>□ Incompletion log 불완전 입력정보에 대한 display기능 <br>□ Creat item 추가 자재 입력시 사용 <br>□ Delete item 입력 자재 삭제시 사용
+---
+- 영문용어 : Effective price (MM)
+- 설명 : 모든 조건들(세금, 배달 비용, 할인 등)을 고려하여 계산된 가격.
+---
+- 영문용어 : Electronic Data Interchange(EDI)
+- 설명 : 전사적으로 수행되는 업무 관련자들 간의 데이터 전자 교환. 하드웨어, 소프트웨어, 통신서비스가 달라도 가능하다.
+---
+- 영문용어 : EM (Enterprise Modeling)
+- 한글용어 : EM (Enterprise Modeling)
+- 설명 : SAP R/3의 시스템 및 조직 구조에 대한 기본 축을 만드는 작업.
+---
+- 영문용어 : Engineering change management
+- 한글용어 : 엔지니어링변경관리
+- 설명 : 객체 변경의 이력을 저장한다. 시스템은 이 기능을 이용하여 BOM, Routing, Plan 등에 관련된 변경정보를 문서화하여 저장한다. 변경마스터레코드(Change master record)가 생성되어 고유번호가 채번되고, 이렇게 생성된 변경번호를 참조하여 모든 변경사항이 문서화 된다. 다음 객체 타입들에 대해 변경 이력관리가 가능하다. <br>- Bill of material <br>- Task lists <br>- Documents : 문서들을 그룹화하고 유효기간을 설정하기 위해 사용 <br>- Material master : material의 변경상태(change status)에 개정수준(revision level)을 할당하기 위해 사용
+---
+- 영문용어 : Enterprise Data Model
+- 설명 : SAP EDM은 의미상의 데이터 모델이다. 정보 객체들(entities)과 서로간의 관계를 보여준다.
+---
+- 영문용어 : Entry automatic
+- 한글용어 : 자동입력
+- 설명 : 다음과 같은 거래를 입력하는 경우 시스템이 자동으로 계산을 하여 전기 (posting)를 하여 준다 <br>- 매출부가가치세(output tax)와 매입부가가치세(input tax)의 전기 <br>- 외환차손익의 전기 <br>- 현금할인비용 및 이익의 전기 모든 자동입력은 별도의 개별항목으로 기록된다. <br>Cf) Automatic Posting (자동전기)
+---
+- 영문용어 : Equipment (PM)
+- 설명 : 장비나 장비의 일부로 설치되는 독립적 단위. 각각의 equipment는 개별 equipment master record를 갖는다. 설비관리 외에, equipment는 다음 영역에서 사용된다 <br>·생산(production resources and tools) <br>·품질 보증(test equipment) <br>·자재관리(serialized materials) <br>·판매 유통(customer equipment)
+---
+- 영문용어 : equipment bill of material (PM)
+- 설명 : 설비 구조를 기술하고 유지보수 목적으로 예비 부품들을 설비에 할당하기 위해 사용하는 리스트. 설비 BOM은 각각의 설비에 대해 혹은 설비 그룹에 대해 생성할 수 있다.
+---
+- 영문용어 : Equipment category (PM)
+- 설명 : 용도에 따라 설비를 구분하기 위해 사용하는 indicator. 예를들면, 가능한 설비 범주는 다음과 같다 <br>·use as a mechanical system(기계류) <br>·use as a device(주변장치류) <br>·use as a production resource or tool(생산자원 도구류) <br>·use as a customer equipment(고객 장비류)
+---
+- 영문용어 : Equipment hierarchy (PM)
+- 설명 : 상위설비와 하위설비들로 구성되는 계층구조. 설비 계층은 임의의 수의 레벨들로 구성된다. 각각의 상위설비에 임의의 수의 하위설비들을 할당할 수 있다. 하위설비는 임의의 수의 또다른 하위설비들로 구성되는 상위설비가 될 수 있다. Functional location에 설비 계층의 최상위 설비를 설치할 수 있다.
+---
+- 영문용어 : Equipment status (PM)
+- 설명 : 설비의 가용성과 유용성을 나타내는 상태(status). 설비 상태는 시간이 경과됨에 따라 변화되는 설비의 상태를 정의하여, 보전대상 설비에 적용할 수 있다
+---
+- 영문용어 : Equipment task list (PM)
+- 설명 : 설비와 연결된 보전 작업 절차. 다음 용도에 사용할 수 있다 <br>·설비에 대한 유지보수 업무를 정의하고 관리한다 <br>·지정된 설비에 대한 유지보수 계획과 주문들을 준비한다.
+---
+- 영문용어 : Equipment type (PM)
+- 설명 : 설비 범주를 세분한 것으로, 더 상세한 설명이 가능하도록 한다. <br>예 설비 범주 “수송수단” 설비 유형 “자동차”,“트럭”,“지게차”
+---
+- 영문용어 : ERP (Enterprise Resource Planning)
+- 한글용어 : 전사적자원계획
+- 설명 : "전사적자원계획"이라고 직영되며 정보의 통합을 통해 기업의 모든 자원을 최적으로 관리하자는 개념임. ERP는 1970년대의 MRP(Material Requirement Planning), 1980년대의 MRPⅡ(Manufacturing Resource Planning)가 보다 확장된 통합정보시스템임.<br> ERP라는 용어를 처음 사용한 것은 가트너 그룹이며, "고객회사, 하청회사 등 상하위 공급체계와 설계, 영업, 원가회계 등 회사내 연관부서의 업무를 동시에 고려하지 않고서는 제조에 관한 올바른 의사결정을 내릴 수 없다"는 인식을 전제로 함. ERP는 시스템 구성과 사용자 편이성의 측면에서 기존 MRP, MRPⅡ의 단점인 비유연성을 최소화한 시스템이며, 기술적인 측면에서는 신기술인 객체지향기술, 분산 Data 처리, 개방형 구조, 라이트사이징 등을 받아들인 분산화, 개방화된 시스템임.
+---
+- 영문용어 : Evaluation (CA)
+- 설명 : 평가는 테이블이나 리스트의 형태로 회사나 회사그룹에 대한 데이터를 편집하는 것이다
+---
+- 영문용어 : Exception message
+- 한글용어 : 예외메시지
+- 설명 : 계획 실행시 발생하는 예외적 상황에 대한 정보로써, MRP list 및 Stock requirement list에 표시된다.
+--- 
+- 영문용어 : Exchange rate
+- 한글용어 : 환율
+- 설명 : 두 통화간의 관계. 환율은 특정금액을 다른화폐로 전환할 때 사용된다.
+---
+- 영문용어 : Exchange rate difference
+- 한글용어 : 외환차손익
+- 설명 : 외화표시자산, 부채를 환산하는 경우 발생하는 차이.
+---
+- 영문용어 : Execution time
+- 한글용어 : 실행시간
+- 설명 : 실행시간은 operation에 대한 준비시간(setup time), 처리시간(processing time), 해체시간(teardown time)들의 총합으로 구성된다.
+---
+- 영문용어 : Export credit insurance
+- 한글용어 : 수출신용보험
+- 설명 : 고객이 지급불능상에 빠질 경우에 발생하는 손실에 대비한 보험. 장기매출채권에서 주로 발생한다.
+---
+- 영문용어 : External processing
+- 한글용어 : 외부처리
+- 설명 : 동일 Plant가 아닌 다른 조직에서 수행되는 작업이다. 작업오더(Work order) 처리시, 시스템은 외부적으로 수행되는 작업에 대해 구매요청서(Purchase requisition)를 생성한다. 구매부서는 Purchase requisition을 Purchase order로 전환한다.
+---
+- 영문용어 : External procurement(MM)
+- 설명 : 외부 공급자로부터의 원자재, operating supplies(MRO items), trading goods나 services 들을 조달하는 것.
+---
+- 영문용어 : Factory calendar
+- 설명 : 작업 일자들이 순차적으로 번호가 매겨지는 달력. 공장 달력은 공휴일 달력(public holiday calendar)에 근거하여 정의된다. 공장달력의 유효기간은 공휴일 달력의 유효기간 내에 있어야 한다. 작업일에 해당하는 평일을 지정해야 한다. 예 ·월요일부터 금요일은 작업일이다. ·토요일, 일요일, 공휴일은 비 근무일이다.
+---
+- 영문용어 : FI (Finance)
+- 한글용어 : FI (Finance)
+- 설명 : 총계정원장, 외상 매출/매입, 특수원장, 고정자산회계, 연결재무제표로 구성되며, GAAP, IAS와 GoB 등의 국제적으로 통용되고 있는 회계 표준을 모두 이용할 수 있어서 다양한 국가의 특이한 비즈니스 요구사항을 모두 충족시킬 수 있음.
+---
+- 영문용어 : Field status
+- 한글용어 : 필드상태
+- 설명 : 개별 항목(Line Item)을 입력할 때 특정 필드가 필수요소인지, 선택사항인지, 아니면 필요없는 내용인지를 명시하는 표기. 필드상태는 주로 총계정원장과 전기키(Posting Key)에 따라 좌우된다.
+---
+- 영문용어 : Final confirmation
+- 한글용어 : 최종확정
+- 설명 : 최종 확정은 완료된 operation에 대한 확정이다.
+---
+- 영문용어 : Financial budgeting
+- 한글용어 : 재무예산
+- 설명 : 판매계획, 생산계획, 구매계획, 투자계획, 인적자원계힉 등의 결과나 요구사항을 고려한 이용가능한 재무적 자원을 중,장기적으로 이용하여 만든 것.
+---
+- 영문용어 : Fiscal year
+- 한글용어 : 회계연도
+- 설명 : 회사가 정기적으로 대차대조표와 손익계산서를 작성하는 기간으로 일반적으로 12개월임. 12개월보다 적은 기간을 하나의 회계연도로 하는 것도 허용됨.
+---
+- 영문용어 : Fiscal year(FI)
+- 설명 : 일반적으로 회사가 재고목록과 대차대조표를 작성하는 12달간의 기간. 회계년도는 달력 년도(1년)에 일치할 수 있지만 꼭 그래야 되는 것은 아니다. 어떤 상황에서는, 12달 보다 적은 회계년도가 허용되기도 한다. (short fiscal year)
+---
+- 영문용어 : Fixed lot size
+- 한글용어 : 고정로트크기
+- 설명 : Lot size를 결정하는 static lot-sizing 절차의 하나. 이 절차를 선택하면, 계획실행시 부족수량(Shortage quantity)이 발견될 때, 주문제안(order proposal)이 지정된 lot size 만큼의 수량으로 생성된다.
+---
+- 영문용어 : FI의 조직구조(Organization Structure)
+- 한글용어 : FI의 조직구조
+- 설명 : <br>- SAP의 재무회계관련 모듈에서 사용하고 있는 조직코드는 회사코드(Company Code)와 Business Area이다. <br>- Company Code는 일반적으로 "법률적으로 독립적인 회사단위로서 외부공표목적의 재무제표가 산출되는 범위"로 정의할 수 있다. 따라서 상법상으로 등기되어 있는 회사(삼성전자, 삼성전관 등)를 하나의 Company Code로 등록하는 것이 자연스럽다. 그런데 여기서 시스템적으로 중요한 것은 Company code가 재무제표가 산출되는 단위라는 것이다. 즉, SAP내에서 일어나는 모든 회계상의 거래는 Company code로 설정된 단위로 집계되어 대/차 균형이 맞는 재무제표를 산출하는 것이 시스템적으로 보장된다는 것이다. 따라서 어떤 회사가 회사 이하의 단위(예를 들어 사업부)에서 완벽한 형태의 재무제표를 산출하기를 원하는 경우 사업부를 Company code로 설정할 수도 있다. 물론 이 경우에 파생될 수 있는 추가적인 Issue(결산이나 기표방식 등)에 대해서는 깊은 검토가 전제되어야 한다. <br>- Business Area는 회사가 아닌 단위로서 재무제표가 산출될 수 있도록 하는 단위이다. 여기서 유의할 것은 시스템적으로는 Business Area와 Company code간에 연결관계는 없다는 것이다. 따라서 하나의 시스템을 여러 회사가 공유하는 경우 회사차원을 넘는 Business Area 중심의 재무제표를 산출하는 것도 가능하다. 그러나 현실적으로 하나의 회사가 하나의 시스템을 사용하는 것을 가정하면, 일반적으로는 Business Area는 회사이하의 조직단위로 설정하여 활용하고 있다. 따라서 사업부, 사업본부 등을 Business Area로 설정하는 것이 일반적이다.
+---
+- 영문용어 : Float
+- 한글용어 : 여유시간
+- 설명 : Scheduling시 지연을 막기 위해 order나 operation을 일정에 늦어지지 않게 시작하기 위한 여유시간.
+---
+- 영문용어 : Float after production
+- 한글용어 : 생산후여유시간
+- 설명 : 생산일정계획(Production scheduling)에서 사용되는데, 계획종료일자(Scheduled finish date)와 오더종료일자(Order finish date) 사이의 buffer 역할을 해주는 기간.
+---
+- 영문용어 : Float before production
+- 한글용어 : 생산전여유시간
+- 설명 : 오더의 기본시작일자(Basic start date)와 계획시작일자(Scheduled start date) 사이에서 일정계획을 위한 Buffer 역할을 해 주는 기간.
+---
+- 영문용어 : Flow type
+- 한글용어 : 거래형태
+- 설명 : 자금 입출금에 대한 거래형태를 정의한것으로 향후 Cashflow에서 조회되어 Posting 대상건이 된다
+---
+- 영문용어 : Forecast
+- 한글용어 : 예측
+- 설명 : 연속된 시간상에서 미래의 값에 대한 추정. SAP에서는 여러 가지 예측 모델을 지원함.
+---
+- 영문용어 : Forecast model
+- 한글용어 : 예측모델
+- 설명 : 다음은 SAP에서 제공하는 기본적인 예측 모델들이다 <br>- Constant model <br>- Trend model <br>- Seasonal model <br>- Seasonal trend model
+---
+- 영문용어 : Forecast requirement
+- 한글용어 : 예측소요량
+- 설명 : 예측모델을 사용한 예측기능의 실행에 의해 생성된 결과로써의 소요량이다.
+---
+- 영문용어 : Forecast-based planning
+- 한글용어 : 예측기준계획
+- 설명 : 소비기준계획(Consumption-based planning)의 특별한 기능으로 예측기능을 사용한 미래의 소요량을 산출. 자동재발주점계획(Automatic re-order point planning)과 같이 미래의 소요량을 위한 예측값들은 통합된 예측 프로그램들에 의해 결정된다. 그러나 재발주점계획과는 달리 이렇게 산출된 값은 계획실행의 기본값이 되고 요구되는 수량은 일정에 따라 계획되어진다.
+---
+- 영문용어 : Foreign currency
+- 한글용어 : 외국통화
+- 설명 : 하나의 회사코드와 국가에서 쓰이는 통화(자국통화, local currency)이외의 통화.
+---
+- 영문용어 : Foreign currency balance sheet account
+- 한글용어 : 외화계정
+- 설명 : 외화로 관리되는 계정. 예를 들어 외화계정은 외화은행계정을 나타내는 데에 사용된다.
+---
+- 영문용어 : Foreign currency valuation
+- 한글용어 : 외화평가(외화환산)
+- 설명 : 외화로 기표된 자산 및 부채의 값을 현지통화로 계산하는 절차. 외화평가는 개별적으로, 즉 미결항목수준에서 발생한다. 한 계정이 미결항목으로 관리되지 않는 경우 계정잔액이 평가된다.
+---
+- 영문용어 : Forfeiting(factoring)
+- 한글용어 : 매출채권(어음)의 특수양도
+- 설명 : 무역에서 사용되는 금융의 한 종류. 안전성이 충분히 있는 경우 은행이나 금융기관에게 수출업자가 매출채권이나 어음을 상환청구불능조건으로(은행이나 금융기관이 매출채권의 회수에 따른 위험을 인수하게 된다) 양도하고 은행등은 수출업자에게 현금을 지급한다. 수출업자는 이를 통하여 추가적인 유동성을 확보하게 되고 매출채권은 대차대조표에 표시되지 않는다.
+---
+- 영문용어 : Formula
+- 한글용어 : 공식
+- 설명 : CAPP를 통해 표준값을 결정하는데 사용되는 계산식. 계산식은 연산대상과 함수들로 이루어진 특성들로 구성된다. CAPP 계산식을 사용하여, 중간 결과와 최종 결과를 계산할 수 있다.
+---
+- 영문용어 : Formula key
+- 한글용어 : 공식키
+- 설명 : 가변크기품목(Variable sized item)의 수량을 계산하는 알고리즘(Variable-size item formula)을 나타낸다.
+---
+- 영문용어 : Forward scheduling
+- 한글용어 : 순방향일정계획
+- 설명 : Order의 operation이 planned start date를 기점으로 미래로 계산되어지는 일정계획(scheduling)의 형태. 이를 통해, order의 scheduled start date와 schedule finish date가 계산된다.
+---
+- 영문용어 : Full costs
+- 한글용어 : 전체원가
+- 설명 : 자재 및 직접인건비 등이 포함되는 고정비(Fixed cost), 변동비(Variable cost)의 완제품 총 제조원가
+---
+- 영문용어 : Functional area
+- 설명 : 회계상에서 경비를 제조경비,일반관리비,판매관리비,기술개발비 등으로 구분하는 Organization Unit
+---
+- 영문용어 : Functional location (PM)
+- 설명 : 기술적 시스템의 요소(예를 들면, 종합시스템에서 기능적 단위). 기능 위치는 다음 기준에 따라 구성된다 <br>·functional <br>·process-related <br>·locational <br>설비가 기능 위치에 설치된다(기능 위치에 개별 객체들을 설치/대치). 설비가 기능 위치에서 사용되는 시간은 연대 주문(chronological order)에 기록된다.
+---
+- 영문용어 : Functional location BOM(PM)
+- 설명 : 기능 위치의 구조를 나타내고, 예비품(spares)을 유지보수 목적으로 기능 위치에 할당 하는데 사용하는 리스트. 기능 위치 BOM은 각각의 기능 위치에 대하여 생성하거나 기술적 객체들의 그룹에 대하여 생성할 수 있다.
+---
+- 영문용어 : Functional location category(PM)
+- 설명 : 각각의 기능 위치들을 사용 방법에 따라 구분하는 지시자. 각 범주는 파라미터들로 기술된다. 기능위치 범주의 수는 필요한 파라미터 배열의 수에 따른다.
+---
+- 영문용어 : Functional location task list(PM)
+- 설명 : 특정 기능 위치에 연결되는 보전작업절차. 다음 용도로 기능위치 task list가 사용될 수 있다 ·특정 기능 위치에 대한 작업을 정의하고 관리한다. ·특정 기능 위치에 대한 유지보수 계획과 주문을 작성한다.
+---
+- 영문용어 : G/L account master record
+- 한글용어 : 총계정원장 계정마스터 레코드
+- 설명 : G/L계정의 관리나 데이터의 입력을 통제하는 정보를 갖고 있는 데이타 레코드. 통화등이 한 예이다.
+---
+- 영문용어 : G/L account(FI)
+- 설명 : 총계정원장의 계정.
+---
+- 영문용어 : Gantt chart
+- 한글용어 : 간트챠트
+- 설명 : 특정기간의 일정계획 등을 조회, 변경 가능한 챠트.
+---
+- 영문용어 : General ledger
+- 한글용어 : 총계정원장
+- 설명 : 모든 총계정원장의 계정을 갖고 있는 장부. 대차대조표와 손익계산서는 총계정원장을 근거로 하여 만들어 진다
+---
+- 영문용어 : General maintenance task list(PM)
+- 설명 : 기술적 객체와 관련한 보전 작업이 수행되는 표준화된 작업 순서. 일반보전작업절차는 특정 객체와 연결되어 있지 않다. 이는 유지보수 작업과 관련되는 모든 operation, material, maintenance resource(보전자원)들을 포함한다. 일반보전작업절차는 보전주문시 작업일정 계획수립을 돕는다. 무엇보다도, 보전계획시 참조하거나 복사할 수 있어서, 보전계획 생성을 보다 쉽게 해준다.
+---
+- 영문용어 : Goods issue
+- 한글용어 : 출고
+- 설명 : 자재를 외부로 이동시키거나 고객에게 납품함으로서 창고재고가 감소되는 것을 나타내는 재고관리 용어.
+---
+- 영문용어 : Goods movement(MM)
+- 설명 : 재고의 변경을 일으키는 event(예를들어, goods receipt, goods issue, stock transfer,transfer posting). 각각의 movement에 대한 증거로 material document가 생성된다. G/L 계정을 갱신하는 movement가 일어나면, material document 외에 추가적으로 accounting document가 생성된다. G/L 계정은 자동계정결정(automatic account determination) 절차에 의해 갱신된다.
+---
+- 영문용어 : Goods receipt
+- 한글용어 : 입고
+- 설명 : 물품이나 materials의 회사 내부로의 이동을 의미하는 재고관리 용어. 다음과 같은 종류의 입고들이 있다 <br>- 구매 order를 참조하는 입고 <br>- 생산 order를 참조하는 입고 <br>- 그외의 입고(참조가 없는)
+---
+- 영문용어 : Goods receipt processing time(MM)
+- 설명 : Material을 검사하고 저장소(storage)에 넣는 절차에 요구되며, material을 수령하고 재고에 반영하는데 걸리는 기간. 입고처리시간은 일정계획시 고려된다.
+---
+- 영문용어 : Gross price(MM)
+- 설명 : 할인이나 초과청구를 고려하기 전의 가격.
+---
+- 영문용어 : Gross requirements planning
+- 한글용어 : 총소요량계획
+- 설명 : 자재소요계획의 일종으로, 총소요량계획 에서는 창고재고와 (총)소요량의 비교가 수행되지 않는다. 이것은 모든 소요량에 대한 주문제안(order proposal)이 발생되는 것을 의미한다.
+---
+- 영문용어 : Group
+- 한글용어 : 그룹
+- 설명 : 하나의 회사(controlling company)에 의해 공통적인 관리를 받는 법률상으로 독립된 회사의 집합. 법률상으로 그룹은 연결재무재표를 작성하여야 한다. (주 우리나라의 경우 연결기업회계기준과 주식회사 외부감사에 관한 법률에 의하여 연결재무재표의 작성범위가 규정되어 있다)
+---
+- 영문용어 : Group-Code
+- 한글용어 : 그룹코드
+- 설명 : 코드그룹에서 정의한 대분류항목에 대한 세부 불량 항목들의 집합체를 말한다. <br>(EX. MAOOO(Code-Group) - AOO1(건조 불량)Group-Code - AOO2(결방향불량) “ - AOO3(광택 불량) “
+---
+- 영문용어 : Guarantee of payment
+- 한글용어 : 지급보증
+- 설명 : 지급보증제공자(guarantor)가 제3자(주채무자)의 채권자에게 주채무자의 의무이행을 책임질 것을 약속하는 계약. 지급보증에 재무제표에 대한 주석사항으로 공시된다.
+---
+- 영문용어 : Head office account
+- 한글용어 : 본점계정
+- 설명 : SAP내의 customer나 vendor에게 존재하는 본점과 지점의 관계를 나타내는데에 사용되는 계정. 구매요청서, 배달증명서(deliveries), invoice는 지점계정에 기록이 되지만, 반제는 본점계정을 통하여 이루어 진다.
+---
+- 영문용어 : Header
+- 설명 : 예상물량/견적/수주오더 입력후 입력 정보에 대하여 상위레벨에서 business data, pricing(전체 입력정보에 대한 금액), partner, purchase order data 등을 선택하여 사용하는 메뉴 □ Pricing 입력된 order의 상위레벨에서 가격작업 수행 <br>□ Purchase order data 진행성 ZORB order type 자가소비 order 입력시 별도의 계정 관리를 위한 입력 항목 <br>● Purchase order no. 계약명 입력 <br>● Ordering method 제품코드 또는 부서코드 입력 <br>● Supplement 납품성 자가소비(“A")입력, 공사성 자가 소비는 (B)입력 <br>● Name 귀속계정 입력(품위서상에 있는 7자리 코드) <br>● Your reference 투자 품의 번호 <br>● Telephone 회계 단위(3자리) + 귀속부서(5자리)
+--- 
+- 영문용어 : House bank
+- 한글용어 : 은행지점코드명
+- 설명 : 은행의 고유번호를 지칭함
+---
+- 영문용어 : Human resource
+- 설명 : 인사관리 그룹
+---
+- 영문용어 : IDoc (EDI)
+- 설명 : Intermediate Document(중개 문서).
+---
+- 영문용어 : IDoc interface (EDI)
+- 설명 : SAP시스템과 상대시스템 간의 IDoc type과 데이터교환방법(port definition)에 대한 정의. 상대 시스템으로는 다음과 같은 것들이 가능하다. ·EDI subsystem ·R/3 System ·R/2 System ·third-party software
+---
+- 영문용어 : IM (Invest Management)
+- 한글용어 : IM (투자관리)
+- 설명 : 계획에서 산정까지 투자 프로세스를 지원하며, 기업 전체 예산 편성, 투자 조치, 감가상각 예측, 고정자산의 자동 발생이 주요 기능임.
+---
+- 영문용어 : Implementation Guide (IMG)
+- 설명 : 요구에 맞는 SAP시스템을 구성하는 tool. 'IMG'라고 부르기도 한다. 각 업무에 대해, 구현가이드는 다음과 같은 역할을 한다 <br>·구현 절차의 모든 단계들을 설명한다. <br>·SAP의 표준(factory) 설정을 알려준다. <br>·시스템 구성작업(activities)을 설명하고 상호간에 일어나는 activity들을 open한다
+---
+- 영문용어 : Inbox (OA)
+- 설명 : Inbox는 사용자에게 보내지는 문서들과 resubmission들이 있는 folder이다.
+---
+- 영문용어 : Incoming inspection(QM)
+- 설명 : 고객이나 주문부서 혹은 대리인이 발의하여 참여하는 수용검사(Acceptance inspection). Incoming inspection 수행자는 다음과 같다 <br>·물품이나 용역을 받는 부서 <br>·수령 부서의 참석하에 vendor <br>·수령 부서가 권한이임한 제삼자
+---
+- 영문용어 : Incoming payment
+- 한글용어 : 현금입금처리
+- 설명 : <br>□ Document date 입금일자 <br>□ Reference doc. 현금입금은행 계좌번호 <br>□ (Band data) account 현금 입금계정(1020100당좌예금, 1020200 보통예금) <br>□ Amount 입금액 <br>□ Bank charge 은행 수수료 <br>□ (Open item selection) account 거래선 코드 <br>□ Discount 현금입금시 할인액 <br>□ Cash 현금입금시 할인율 <br>□ Allocated 해당채권 data에 할당되는 금액 <br>□ Not assign 해당 채권 data 금액과 입금액과의 차이
+---
+- 영문용어 : Individual capacity
+- 한글용어 : 개별능력
+- 설명 : 세부적인 능력 소요량 계획을 위하여 사용자는 하나의 능력(capacity)을 여러 개의 sub-capacity로 나누어 가용능력(available capacity)을 계산하고, planning table에서 이러한 개별 능력에 요구되는 능력(capacity required)들을 할당하고 계획가능.
+---
+- 영문용어 : Industry sector
+- 한글용어 : 산업부문
+- 설명 : 산업 부문. 산업부문은 회사의 활동에 따라 회사들을 그룹화한다(예 : 공장공학과 건설, 기계공학, 화학산업, 제약산업). 예를들어, 산업부문을 통해 화면상의 데이터 필드들의 선택, 화면들의 순서, material type에 material의 할당 등이 관리된다.
+---
+- 영문용어 : Information structure (LIS)
+- 설명 : Logistics Information System에서 데이터가 수집되는 구조. 정보 구조는 필드들의 그룹을 정의한다. 이는 운영 어플리케이션(예를들어, 판매나 구매)으로부터 데이터를 수집하는데 사용된다. 운영 어플리케이션에서 일어나는 사건들(구매주문이나 판매주문)과 관련된 데이터가 정기적으로 정보구조에 갱신된다. 정보구조는 분석과 평가의 근거를 이룬다. 정보구조는 다음들로 구성된다 <br>·time unit(시간 단위) structure를 시간 참조한다. <br>·characteristics(특성) 다른 정보가 축적되는데 참조하는 정보(예를들어, 구매조직이나 판매조직) <br>·key figures(주 특징) characteristics를 참조하여 축적되는 정보(예를들어, invoiced sales나 invoice value)
+---
+- 영문용어 : In-house production time
+- 한글용어 : 내부생산시간
+- 설명 : 조직(공장) 내부에서 Material을 생산하는데 요구되는 시간. 주문 수량에 따라 혹은 주문 수량에 관계없이 내부생산시간을 입력할 수 있다. 모든 operation들의 리드타임과 float before production, float after production을 합하여 계산한다.
+---
+- 영문용어 : Input tax
+- 한글용어 : 매입부가가치세
+- 설명 : 판매처에 의하여 부과되는 세금. 매입부가가치세는 과세당국에 환급을 요청할 수 있다.
+---
+- 영문용어 : Inquiry type
+- 설명 : 예상물량을 입력하기 위한 order type 으로 “ZQ"로 입력
+---
+- 영문용어 : Insp.Characs
+- 한글용어 : 검사특성
+- 설명 : 각 검사규격내에 검사항목이 어떤것이 있는지 조회 및 입력시 사용하며 규격의 특성에 따라 검사항목이 많을수도 있고 적을수도 있다.
+---
+- 영문용어 : Inspection (PM)
+- 설명 : 기술적 시스템(예를들어, 기계)의 실제 상태를 결정하는 작업. 검사는 운영중인 시스템의 점검과 관련된다. 검사는 지정된 간격(time, number of units 등)으로 수행된다.
+---
+- 영문용어 : Inspection catalog (QM)
+- 설명 : 검사 목록에, 검사에 필요한 모든 목록들이 저장된다. SAP 시스템에서, 각 목록은 목록 유형을 할당받는다. 각 목록은 내용에 따라 code들을 묶는 code group을 포함한다. 다음 용도의 목록들이 있다 <br>·characteristic attributes <br>·defects <br>·usage decisions <br>·measures
+---
+- 영문용어 : Inspection characteristic (QM)
+- 설명 : 검사를 수행하는 근거가 되는 특성. 검사 특성은 질적인 것과 양적인 것으로 구분된다(특성 범주).
+---
+- 영문용어 : Inspection level (QM)
+- 설명 : 미리 정의된 검사계획에 근거하여 검사한 결과의 신뢰성 정도.
+---
+- 영문용어 : Inspection lot (QM)
+- 설명 : 검사 목적상 항상 일정하다고 생각되는 조건들하에 축적되는 제품이나 material의 정의된 양.
+---
+- 영문용어 : Inspection management (QM)
+- 설명 : 검사lot 생성에서 용도결정(usage decision)에 이르기 까지의 절차들을 포함한다.
+---
+- 영문용어 : Inspection method (QM)
+- 설명 : 검사 방법은 검사가 수행되는 절차를 정의한다. SAP 시스템에서는, 대체 검사방법을 주검사특성(master inspection characteristic)에 할당할 수 있다.
+---
+- 영문용어 : Inspection operation(QM)
+- 설명 : 검사를 위한 활동들이나, work center에 있는 테스트설비가 갖는 하나 이상의 검사 특성들을 포함한다. SAP 시스템에서, 일정계획을 위한 데이터, 작업부하할당(work load assignment), 용량계획을 검사 operation에 할당할 수 있다.
+---
+- 영문용어 : Inspection Plan
+- 한글용어 : 검사규격
+- 설명 : 각 제품별로 입고되는 자재를 검사하기위한 수입검사 규격과 출하를 위한 출하검사규격을 총칭해서 말하며 모든 검사의 기준이 된다. 사내 품질규칙과 같이 관리되기 위해서는 가능한 규격번호는 동일하게 하는것이 유리하다 Ex. 8CI-3001 청소기 Ass'y-Dust Cover 검사규격, 8CI-3001 SAP내의 Ass'y-Dust Cover 검사규격
+---
+- 영문용어 : Inspection plan (QM)
+- 설명 : Material이나 제품에 대한 검사 수행에 관련된 데이터나 정보를 포함한다.
+---
+- 영문용어 : Inspection sample (WM)
+- 설명 : 검사 lot에서 추출된 material의 양. 들어오는 물품(goods)이 요구 기준에 맞는지 확인하고자 이 표본량을 검사한다. 검사 표본은 일반적으로 받은 물품(goods)의 총량에서 가져와 검사 영역(inspection area)에 임시 저장된다. WM 시스템을 이용하여, 검사표본을 창고에 있는 나머지 수령 양과 함께 일반 storage bin에 저장할 수 있다. 나중에 검사절차에서 검사 표본을 쉽게구분할 수 있다.
+---
+- 영문용어 : Inspection stage (QM)
+- 설명 : 검사이력과 선정의된 규정에 기초한 검사 상태의 설명. 검사 단계에 검사 엄격도나 skip을 할당할 수 있다.
+---
+- 영문용어 : Inspection stock (QM)
+- 설명 : 품질 검사용으로 예약된 재고. 검사 재고는 사용이 허용되지 않는다.
+---
+- 영문용어 : Integration system (ABAP)
+- 설명 : 개발을 수행하여 결합 시스템(consolidation system)으로 전송하는 SAP 시스템. 통합 시스템은 R/3 응용 프로그램들이 생산 환경(production environment)에서 사용되지않는 테스트 시스템이나 개발 시스템들로만 구성된다.
+---
+- 영문용어 : Intercompany document number
+- 한글용어 : 관계회사전표번호
+- 설명 : 하나의 관계회사간 거래에서 발생하는 모든 전표에 하나의 번호가 부여된다.
+---
+- 영문용어 : Intercompany posting
+- 한글용어 : 관계회사간 기표
+- 설명 : 두개 이상의 회사코드가 관련되는 기표. 시스템은 관련되는 각 회사코드에 대해 전표를 생성하여 준다. 관계회사간 거래를 사용하여 중앙집중적인 판매나 지급(central sales or payment)을 기록하게 된다.
+---
+- 영문용어 : Interest on arrears
+- 한글용어 : 연체이자
+- 설명 : 채무지급의 만기일이 지난 경우에 customer에게 부과하는 이자.
+---
+- 영문용어 : Interest on the balance
+- 한글용어 : 계정잔액이자계산
+- 설명 : 어떤 계정잔액에 대하여 이자를 계산하는 절차. 예를 들어 종업원대여금에 대한 이자를 이 기능에 의하여 계산한다. 만기가 지난 customer계정등에 대해 연체이자를 계산하는 것과는 구별된다.
+---
+- 영문용어 : Interoperation time
+- 한글용어 : 작업간시간
+- 설명 : 작업간시간에는 다음 요소들이 포함된다. <br>- Move time : 특정 operation에서 다음 operation으로의 이동 시간 <br>- Wate time : operation 실행 후 대기 시간 <br>- Queue time : Operation float <br>- Float before/after production
+---
+- 영문용어 : Inventory
+- 설명 : 실재 재고 레벨을 결정하기 위한 회사 자산을 physical하게 세는 것, book inventory figure는 계량 계수, 측량 혹은 guessing 을 통해 결정된 실제 physical inventory figure와 비교된다. 기록된 모든 차이는 즉시 입력 되어서 inventory figure는 이에 의거해서 조정된다. 적어도 1년에 한번은 회사에서의 모든 자재에 대해 법적으로 재고 tasking 이 필요한다.
+---
+- 영문용어 : Inventory management
+- 한글용어 : 재고관리
+- 설명 : SAP R/3 시스템에서, 다음과 같은 업무를 포함하는 logistics의 한 부분이다 <br>- 수량과 금액 둘 다에 기초한 material의 재고 관리 <br>- 모든 재고이동(goods receipts, goods issues, physical stock transfers, trnasfer postings)을 계획하고, 입력하고, 기록하는 것 <br>- 물리적 재고조사 실제로 계수하거나 다른 방법으로 측정하여 가지고 있는 재고의 양을 파악
+---
+- 영문용어 : Inventory posting
+- 한글용어 : 재고기표
+- 설명 : 대차대조표가 준비되기 전의 반제품 또는 완제품에 대한 가치를 결정하는 제조원가 산정절차.
+---
+- 영문용어 : Investment tax
+- 설명 : 몇 나라에서 자본투자에 대해 부과하는 세금.
+--- 
+- 영문용어 : Invoic list sched.
+- 설명 : 세금계산서 발행일정 기준을 입력하는 필드로 “03”으로 입력
+---
+- 영문용어 : Invoice
+- 한글용어 : 송장
+- 설명 : 고객이 제공받는 재화나 용역에 관한 정보를 보여주는 전표로 재화난 용역의 종류, 수량, 세액 및 금액 등에 관한 내용을 볼 수 있다.
+---
+- 영문용어 : Invoice reference
+- 한글용어 : 송장연결번호
+- 설명 : 지급조건을 복사(copy)하고 올바른 항목에 대해 지급보증을 하기 위해, 개별항목(line item)과 기표된 invoice의 개별항목사이를 연결하는데 사용된다. 송장연결 번호는 시스템이 전표의 개별항목에 invoice의 전표번호를 부여함으로써 만들어진다. 예를들어 부분지급(partial payment)이나 invoice와 관련된 대변메모(credit memo)의 경우에 사용된다.
+---
+- 영문용어 : Invoice verification
+- 한글용어 : 송장검증
+- 설명 : 공급업체(vendor)로부터 입력되는 송장을 구매오더(purchse order) 또는 입고문서와 비교, 점검하여 대금지불의 여부를 결정함. 다음과 같은 항목에 대한 검증작업이 이루어짐. <br>- Delivery-date <br>- Price <br>- Quantity
+---
+- 영문용어 : Item category
+- 한글용어 : 품목유형
+- 설명 : BOM 항목들의 유형(특성/기능)을 구분하는데 사용되며 다음과 같은 종류가 있다. <br>- Stock item (재고품목) <br>- Non-stock item (비재고품목) <br>- Variable-seze item (가변크기품목) 항목 범주는 다음과 같은 항목들에 영향을 미침. <br>- 화면순서 <br>- 필드선택 <br>- 기본값지정 <br>- 자재입력 트랜잭션 <br>- 자재소요량 계획 <br>- 하위항목(sub-item)
+---
+- 영문용어 : Item category (MM)
+- 설명 : 항목의 특징을 나타내는 구분자. 항목 범주는 다음 사항들이 항목과 관련하여 필수인지 혹은 허용되있는지를 결정한다 <br>·material number <br>·additional account assignment <br>·inventory management in the SAP R/3 System <br>·goods receipt <br>·invoice receipt
+---
+- 영문용어 : Item category (PP)
+- 설명 : BOM 항목들의 유형을 구분하는데 사용된다. BOM 항목 범주의 예 <br>·stock item(재고 항목) <br>·non-stock item(비 재고 항목) <br>·variable-size item(가변 크기 항목) 항목 범주는 다음에 영향을 미친다 <br>·화면 순서 <br>·필드 선택 <br>·기본 값 <br>·material 입력 <br>·자재 소요량 계획 <br>·하위 항목(sub-items)
+---
+- 영문용어 : Item interest calculation
+- 한글용어 : 개별항목이자계산
+- 설명 : 하나의 개별항목의 만기일과 지급일사이의 기간에 대한 이자계산 유사어 만기일이자계산(due date interest)
+---
+- 영문용어 : JIT (Just-in-time)
+- 한글용어 : JIT
+- 설명 : 낭비를 배제하고 생산성을 높이는 두가지 목적 달성을 위해 사용되는 작업 관리 이론. 실제 작업진행에서 JIT개념은 모든 단계에서의 재고레벨을 낮추게 되며, 제조 및 생산 단계에서 이어지는 작업단계를 고려하여 적절한 시간(Just-in-time)에 구매오더를 작성하게 함.
+---
+- 영문용어 : Job (BC)
+- 설명 : 특수 제어명령에 의해 시간에 맞춰 하나씩 실행되는 일련의 프로그램들.
+---
+- 영문용어 : Journal
+- 한글용어 : 분개장
+- 설명 : 회계연도 중 특정기간동안에 기입된 모든 사항들을 정리해 놓은 목록으로 흔히 전표 유형에 따라 분류한다. 원하는 때에 언제든지 준비할 수 있다.
+---
+- 영문용어 : Kanban
+- 한글용어 : 간반
+- 설명 : 표준용기를 사용하거나 각 용기에 부착되어 있는 카드와 함께하는 로트크기에 의해 제어되는 JIT 생산방식의 실행 방법. 필요자재가 공급되어질 작업(operations) 또는 공급자(suppliers)에게 신호를 전송하는 pull system.
+---
+- 영문용어 : Lead time
+- 한글용어 : 리드타임
+- 설명 : 작업(Operation)에서, operation의 가장빠른 시작시간(the eraliest start)과 가장늦은 종료시간(the latest finish) 사이의 기간. Order에서 주문시작일자(order start date)와 주문종료일자(order finish date) 사이의 기간. Operation의 리드타임은 queue time, execution time, wait time으로 구성된다. <br>Order의 리드타임은 operation들의 실행 시간과 이동 시간(transit time), 생산 전후 여유시간(order floats before and after production) 들로 구성된다.
+---
+- 영문용어 : Lead time scheduling
+- 한글용어 : 리드타임일정계획
+- 설명 : 리드타임 스케쥴링은 정확한 생산일자를 계산하고 용량소요량(capacity requirements)을 생성한다. 공정(routing)을 이용한 리드타임 스케쥴링의 경우 일반적으로 리드타임 스케쥴링은 routing을 이용하여 수행된다. <br>이 경우, operation들 각각에 대한 시작 및 종료 일자와 시간을 계산한다. material master를 이용한 리드타임 스케쥴링의 경우 MRP 수행시, 리드타임 스케쥴링은 자재마스터에 지정된 시간을 이용하여 수행될 수 있다. 이경우 생산 시작과 종료일자를 계산하고, 용량 소요량은 계산하지 않는다.
+---
+- 영문용어 : Ledger
+- 한글용어 : 원장
+- 설명 : 시스템이 유지보수하는 일련의 연관관계를 가진 계정 잔액들은 적어놓은 장부. 한 예로 시스템은 항상 G/L계정들을 기록하는 원장을 관리한다.
+---
+- 영문용어 : Line item
+- 한글용어 : 개별항목
+- 설명 : 거래의 세부내역을 담고있는 전표의 일부분으로 금액, 계정번호 및 항목이 대변항목인지 차변항목인가 등을 비롯한 기타 거래의 종류에 따라 포함 되어야 할 정보.
+---
+- 영문용어 : Line item display
+- 한글용어 : 개별항목표시
+- 설명 : 계정내의 개별항목의 표시. 이에 대한 전제조건은 계정들이 개별항목표시가 되도록 관리되어야 한다는 것이다. 시스템에 의하여 customer나 vendor계정에 있어서는 항상 개별항목표시가 가능하다. 하지만 G/S계정의 개별항목표시를 하기위해서는 그 계정의 마스터 레코드에 미리 설정을 해 놓아야 한다.
+---
+- 영문용어 : Liquidity
+- 한글용어 : 유동성
+- 설명 : 개인이나 회사가 예정된 지급의무를 신속하게 처리할 수 있는 능력.
+---
+- 영문용어 : List of charts of accounts
+- 한글용어 : 계정과목일람표목록
+- 설명 : 한 client내에서 사용될 수 있는 모든 계정과목일람표의 목록
+---
+- 영문용어 : Local currency
+- 한글용어 : 현지통화
+- 설명 : Local ledger를 관리하는 회사의 통화(국가 통화). 반대 foreign currency
+--- 
+- 영문용어 : Local currency amount
+- 한글용어 : 현지통화금액
+- 설명 : 회사통화로 기록이 되어 있는 금액. 만일 어떤 금액이 외국통화로 생성이 되면, 시스템이 자동적으로 현지통화로 환산을 한다.
+---
+- 영문용어 : Location (PM)
+- 설명 : 공장내 장비의 위치.
+---
+- 영문용어 : Logistics
+- 설명 : 물류시스템 그룹(영업, 제조, 자재...)
+--- 
+- 영문용어 : Lot
+- 한글용어 : 로트
+- 설명 : 재고로 저장되거나, 생산되는 양.
+---
+- 영문용어 : Lot size
+- 한글용어 : 로트크기
+- 설명 : 생산하거나 조달하는 수량이며, 다음의 항목들에 대한 기준이 된다. <br>- Multiple BOM에 있는 대안의 선택 <br>- 생산 지시의 기초가 되는 routing의 선택 <br>- 대체 operation들 중에서 operation의 선택 <br>- 물품의 판매나 구매시 가격 결정
+---
+- 영문용어 : Lot-sizing procedure
+- 한글용어 : 로트크기결정절차
+- 설명 : 주문 및 생산량에 대한 로트크기(lot size)를 계산하기 위해 사용되는 자재소요량계획의 절차. 로트크기결정절차(Lot-sizing procedure)는 다음 세 그룹으로 나뉜다. <br>- Static lot-sizing procedures(정적 lot 크기결정절차) <br>- Period lot-sizing procedures(정기 lot 크기결정절차) <br>- Optimum lot-sizing procedures(최적 lot 크기결정절차)
+---
+- 영문용어 : Low-level code
+- 한글용어 : 로우레벨코드
+- 설명 : 해당 조직 내에서 특정 자재가 제품구조(prodcut structure)에서 제일 하위에 위치할 경우의 번호. Low-level code는 MRP실행 시에 자재가 계획되어지는 순서(sequence)를 제어. 제어순서는 low-level code 0->1->2->…이다.
+---
+- 영문용어 : Main work center (PM)
+- 설명 : 보전 작업이 수행될 때 부하(charge)의 대부분을 차지하는 work center
+---
+- 영문용어 : Maintenance activity type (PM)
+- 설명 : 보전 활동의 유형. 활동은 수리, shutdown(조업 중지), 정기 활동, 검사 등으로 구분된다. 비용 평가시, 유지보수 활동유형을 이용하여 데이터를 분류할 수 있다.
+---
+- 영문용어 : Maintenance item (PM)
+- 설명 : 정기적인 보전을 필요로하는 장비들에 대해 수행하는 검사 및 예방 보전활동의 설명. 보전 대상은 보전항목이나 대상리스트(object list)를 이용하여 직접 지정할 수 있다. 필수 활동들은 보전항목에 할당된 task list에 기술된다.
+---
+- 영문용어 : Maintenance notification (PM)
+- 설명 : 회사 내부적인 통지를 입력하고 관리하는 수단. 보전 통지서에, 장비의 상태를 기술하고, 필요한 보전작업을 요청하고 수행되는 작업을 기록한다. 보전통지서의 유형은 다음들이 있다 <br>·malfunction report(오작동 보고) <br>·maintenance request(보전 요청) <br>·activity report(조치 보고) 이 데이터는 보전 이력에 저장되고 평가와 정기보전 계획에 중요하다.
+---
+- 영문용어 : Maintenance order (PM)
+- 설명 : 보전작업을 문서화하는 수단. 보전 order는 다음 용도로 사용된다 <br>·보전작업을 목표지향적으로 계획한다. <br>·보전작업의 실행을 추적한다. <br>·보전작업으로 발생되는 비용을 입력하고 결산한다. 시스템은 보전 order 데이터를 보전이력에 입력한다. 이 데이터는 평가와 정기보전 계획에 아주 중요하다.
+---
+- 영문용어 : Maintenance plan scheduling (PM)
+- 설명 : 보전계획에 call date를 생성한다. Call date에 맞추어 보전 order를 생성한다. 보전계획의 유형에 따라, 일정계획은 다음에 근거한다 <br>·time <br>·performance <br>·both time and performance
+---
+- 영문용어 : Maintenance planner group (PM)
+- 설명 : 공장에서 일어나는 보전 작업의 계획과 처리를 책임지는 그룹.
+---
+- 영문용어 : Maintenance planning plant (PM)
+- 설명 : 보전작업이 계획되고 준비되는 공장. 보전작업은 자신의 공장이나 다른 공장의 장비에 관련될 수 있다. 보전계획 공장은 customizing에 보전계획 공장으로 지정되있는 정규 공장이다. 자신의 보전업무를 계획하지 않는 보전공장은 계획하는 공장에 할당된다. 계획은 계획공장에서 입력되고 보전공장에 대해 수행된다.
+---
+- 영문용어 : Maintenance plant (PM)
+- 설명 : 장비가 설치되는 공장. 보전공장의 계획 책임은 계획공장에 의해 결정된다. 보전공장은 계획공장에 할당된다.
+---
+- 영문용어 : Maintenance request (PM)
+- 설명 : 보전 부서에 활동을 요청하는 보전업무. 보전 요청은 오작동이나 손상에 의해 발생되는 것이 아니라, 투자, 재건설, 재배치의 경우에 주로 발생한다.
+---
+- 영문용어 : Maintenance status (MM)
+- 설명 : 사용자 부서가 자재마스터레코드를 이미 관리했다는 것을 보여주는 지시자. 자재마스터레코드는 다른 어플리케이션 영역들에 사용을 허가하는 특정 상태를 갖는다. 예) 구매는 다음 상태들을 필요로 한다 <br>·E = Purchasing <br>·D = MRP <br>·B = Accounting
+---
+- 영문용어 : Maintenance task list (PM)
+- 설명 : 설비 관리에서 사용되는 모든 보전작업절차에 대한 일반적 용어. 다음과 같은 것들이 있다 <br>·general maintenance task lists(일반 보전작업절차) <br>·equipment task lists(설비 작업절차) <br>·functional location task lists(기능위치 작업절차)
+---
+- 영문용어 : Major defect (QM)
+- 설명 : 위급한 결함과는 다르며, 고장을 유도하거나 정교한 항목이 요구기능을 수행하는 능력을 감소시키는 결함을 이른다.
+---
+- 영문용어 : Make-to-order production
+- 한글용어 : 수주생산방식
+- 설명 : 일반적으로 특정제품이 한번만 제조 및 생산되는 경우에 사용하며 유사제품도 생산될 수 있다.
+---
+- 영문용어 : Malfunction report (PM)
+- 설명 : 장비의 오작동을 기술하는 보전 통지서. 예를들어, 생산 근로자가 운영 장비가 제대로 작동하지 않거나, 전혀 작동하지 않거나, 빈약한 결과를 발생시키는 상황을 보전 부서에 알리기 위해 오작동 보고서를 사용할 수 있다.
+---
+- 영문용어 : Manual cost estimate
+- 한글용어 : 수작업원가계산
+- 설명 : 수작업으로 입력된 원가항목 또는 단위원가 산정방법(Unit costing)에 의해서 계산된 원가.
+---
+- 영문용어 : Manufacturing cost
+- 한글용어 : 제조원가
+- 설명 : <br>- PP : 직접 인건비와 같이 직접적으로 제조 및 생산 행위에 사용된 원가와 생산 간접비(Production overhead), 특별 직접비(Special direct cost)등으로 구성된다. 제품제조원가(Cost of goods manufactured)의 일부분이 된다. <br>- CO : 직접가공비, 제조간접비, 특수간접비 등으로 구성된다. 가공비는 제조원가의 일부가 된다.
+---
+- 영문용어 : Marginal cost
+- 한글용어 : 한계비용
+- 설명 : Activity에 따라서 다양하게 변경되는 제조원가이다. 직접재료비(Direct materials), 직접인건비(Direct labor), 간접비의 변동비 부분(Variable portion of overhead) 등이 포함된다.
+---
+- 영문용어 : Master data
+- 한글용어 : 마스터데이터
+- 설명 : 일반적으로 SAP의 Data들의 종류는 Configuration Data, Master Data, Transaction Data로 구분하는데, Configuration Data는 Customizing 작업에서 설정한 값들을 의미하는 것이고, Transaction Data는 물류, 회계 등에 걸쳐 실제의 거래처리를 한 Data들을 의미한다. Master Data는 Master Record라고도 부르는데, 각종 모듈에서 사용되는 주요 기준 정보들을 말한다. 각 모듈별로 사용되는 중요한 Master Data에는 다음과 같은 것들이 있다. <br>- FI : G/L 계정, Customer, Vendor, Asset, Bank 등 <br>- CO : Cost Center, Cost Element, Activity Type 등 <br>- 물류 : Material, BOM, Routing, 가격결정관련 기준정보 등
+---
+- 영문용어 : Master inspection characteristic (QM)
+- 설명 : 여러 검사계획에 사용할 수 있고 독립적으로 평가될 수 있는 검사계획 마스터레코드. 마스터 검사특성들은 검사계획을 쉽게 하고 표준화 한다. 검사계획 생성시 사용자는 마스터 검사특성의 데이터를 이용하거나 검사계획에 맞는 특성들을 생성할 수도 있다. 마스터 검사특성을 검사 계획특성에서 참조하거나 복사할 수 있다.
+---
+- 영문용어 : Master plan
+- 한글용어 : 기준계획표
+- 설명 : 일정 기간의 생산량에 대한 명세(Specification).
+---
+- 영문용어 : Master planning
+- 한글용어 : 기준계획
+- 설명 : 기준계획표(Master plan)를 작성하기 위하여 수요관리(Demand management) 내에서의 모든 Activity를 포함한 계획이다. 기준계획(Master planning)을 위해 다음과 같은 생산전략(Production strategy)들이 시스템에 준비되어 있다. <br>- Make-to-stock production <br>- Make-to-order production <br>- Planning with final assembly - Planning without final assembly <br>- Planning at assembly level <br>- Production by lot size for sales or stock orders
+---
+- 영문용어 : Master production scheduling (MPS)
+- 한글용어 : 주생산계획-MPS
+- 설명 : 주생산계획에서 회사 이익에 크게 영향을 미치거나 중요 자원을 사용하는 부품이나 제품들을 집중하여 계획할 수 있다. 주계획항목(MPS item)들은 주생산계획을 위한 MRP 실행을 위해 MPS item 지시자가 설정된다.
+---
+- 영문용어 : Master recipe
+- 한글용어 : 기준배합서
+- 설명 : 일단의 생산실행(One production run)을 위한 자재 또는 제품에 대한 배합식 표시. 기준배합서(Master recipe)에는 특정 Plant에서의 프로세스에 대한 상세 정보들이 기술되어 있으며, 프로세스오더(process order)에 대한 기본 정보가 됨.
+---
+- 영문용어 : Master schedule item
+- 한글용어 : 주계획항목
+- 설명 : 자재회전율(Material turnover) 또는 해당 자재의 복잡도에 의해 완성품에 지대한 영향을 미치는 자재이어서 중요하게 취급되어야 하는 어셈블리 또는 반제품 등을 지칭함. 이러한 자재에 대한 특별 계획 단계가 주생산일정계획(MPS) 이다.
+---
+- 영문용어 : Match code
+- 한글용어 : Match code
+- 설명 : 특정필드에 입력할 값을 선택할 때 다른 조건에 의해 값을 선택할 수 있도록 하는 기능.
+---
+- 영문용어 : Material
+- 한글용어 : 자재
+- 설명 : 사고 팔거나, 소비되거나, 생산되는 물질(substance)이나 상품(commodity). material은 용역일 수도 있다.
+---
+- 영문용어 : Material acct. assgnmt. grp
+- 설명 : 자재특성별 계정 분류
+--- 
+- 영문용어 : Material Allocation
+- 한글용어 : 자재할당
+- 설명 : 검사규격에 해당되는 자재 및 업체코드를 할당하는 것을 말하며 당사에 입고되는 모든자재는 어떤규격 이던지 최소한 하나의 규격에 할당되고 Spec등이 입력되어야 하며 동일자재라 하더라도 업체가 이원화된경우 각각 입력되어야 한다. 이정보가 입력되지 않을시 입고자체가 되지않는다.
+---
+- 영문용어 : Material BOM
+- 한글용어 : 자재BOM
+- 설명 : Material master를 참조하여 생성되는 BOM으로, 다른 항목범주(Item category)의 항목들(재고 항목 - stock item, 비재고 항목 - non stock item, 문서 항목 - document item, 텍스트 항목 - text item)을 포함할 수 있다.
+---
+- 영문용어 : Material cost
+- 한글용어 : 자재원가(재료비)
+- 설명 : 직접 자재비와 간접 자재비로 구성되며, 제조원가의 일부분임.
+---
+- 영문용어 : Material description (MM)
+- 설명 : 40자에 이르는 짧은 텍스트로서 material의 간단한 설명이다. Material description은 언어별로 정의가 가능하다.
+---
+- 영문용어 : Material document (MM)
+- 설명 : 하나 이상의 material movement의 증거를 이루며 관련 어플리케이션의 정보 자원이 되는 문서. Material document는 하나 이상의 항목들을 포함하며 물품 이동을 수반하는 전표(GR/IR slip)로 프린트될 수 있다. *GR goods receipt IR invoice receipt
+---
+- 영문용어 : Material group (MM)
+- 설명 : 같은 속성을 갖는 material들을 함께 묶는 key.
+---
+- 영문용어 : Material Ledger
+- 한글용어 : 자재원장
+- 설명 : Material 에 관련된 Transaction Data 를 모아두는 원장으로서, Material 의 재고단가를 계산하는데 사용된다. 실적원가 계산시 기초가 되며, 여러 화폐코드와 다양한 방법으로 재고평가할 수 있다.
+---
+- 영문용어 : Material master
+- 한글용어 : Material master
+- 설명 : 사용되는 모든 자재와 이 자재에 속하는 모든 데이터는 자재 마스터에서 관리된다.
+---
+- 영문용어 : Material master record
+- 한글용어 : 자재마스터레코드
+- 설명 : Material을 관리하는데 요구되는 모든 데이터를 포함하는 레코드. 데이터가 여러 영역에 걸쳐 저장되며, Material master record는 서술적 데이터(크기, 무게)와 제어기능 데이터(material 유형, 산업부문)를 포함한다. 이들 데이터 외에, 시스템에 의해 자동 갱신되는 데이터(재고 레벨)도 포함한다.
+---
+- 영문용어 : Material overhead costs
+- 한글용어 : 자재간접비
+- 설명 : 전통적인 통합제조원가 측면에서 보면 자재 간접비는 다음과 같은 항목들에서 발생한다. <br>- Procurement of material <br>- Verification of material <br>- Storage of material <br>- Acceptance of material
+---
+- 영문용어 : Material pricing group
+- 설명 : 자재의 특성별 가격분류
+---
+- 영문용어 : Material requirements planning(MRP)
+- 한글용어 : 자재소요량계획-MRP
+- 설명 : <br>- PP : Order proposal 생성시 미래의 모든 소요량(독립소요량, 종속소요량 등)을 고려하여 계획하는 소요량계획의 일반적 용어. <br>- CO : 특정공장, 회사, 그룹 등에서 필요한 모든 자재의 기준생산일정계획 또는 구매계획을 수립하기 위한 활동을 총칭하는 용어.
+---
+- 영문용어 : Material statistics group
+- 설명 : 자재통계그룹
+---
+- 영문용어 : Material status (MM)
+- 설명 : Material의 사용을 제한하는 material master record의 지시자. 예를들어, material에 "test part"라는 상태를 할당하여, 특정 기능에 대한 material의사용을 제한할 수 있다. Material에 허용되지 않은 사용에 대해 에러 메시지나 경고를 낼 수 있다
+---
+- 영문용어 : Material stock (MM)
+- 설명 : 현재 자산의 일부. Material 재고는 공장이나 저장위치(storage location) 레벨에서 관리된다.
+---
+- 영문용어 : Material type
+- 한글용어 : Material type
+- 설명 : 자재를 분류하는 지시자. 원자재, 반제품, 완제품 등을 구별하며 화면순서 및 필드선택, 계정결정 등의 통제기능을 갖는다. <br>- HAWA : 매입상품자재 type <br>- KMAT : Configuration BOM 구성자재 type (주문형 생산제품) <br>- HALB : KMAT를 구성하는 하위자재 type <br>- ROH : 원자재 type <br>- HADO : 하도급 자재 type <br>- FERT : 사내생산제품 자재 type
+---
+- 영문용어 : Material valuation
+- 한글용어 : 재고평가
+- 설명 : Material의 재고 가치(value)를 결정하는 것으로 평가 관련 데이터는 다음들을 포함한다 <br>- 평가 가격(valuation price) <br>- 평가 클라스(valuation class)에 할당 <br>- 평가 절차의 선택 : 표준단가(standard price), 이동평균단가(moving average price)
+---
+- 영문용어 : Max. part. delivery
+- 설명 : 분할 납품 가능횟수를 입력하는 화면으로 기본적으로 “9”를 입력
+---
+- 영문용어 : Maximum lot size
+- 한글용어 : 최대로트크기
+- 설명 : 자재 조달(procurement)시 초과되어서는 안되는 수량.
+---
+- 영문용어 : Maximum permitted credit limit
+- 설명 : 고객의 partner 고객 여신한도 총액을 설정하는 필드 □ Total amount 고객과 고객파트너와 총한도 총액 □ Individual limit 회당 각 주문회사별 거래 한도 최대액
+---
+- 영문용어 : Measurement document (PM)
+- 설명 : 어느 측정 지점(measuring point)에서의 측정 기록. 측정 문서는 다음 데이터를 포함한다 ·측정 일자와 시간 ·측정 결과 ·measurement reading 수행자 이름 ·처리 상태(processing status) ·정확한 측정 환경을 나타내는 여러 지시자
+---
+- 영문용어 : Measuring point (PM)
+- 설명 : 상태가 기술되는 장소 예 ·원자로 안의 온도 ·wind wheel의 회전 속도 상태는 measurement reading으로 기술된다. 측정 지점는 SAP 시스템에서 마스터데이터로 관리된다.
+--- 
+- 영문용어 : MES (Manufacturing Execution System) - PP
+- 한글용어 : 생산실행관리
+- 설명 : 다양한 생산실행 관련 기능을 제공하는 PP 모듈의 기능으로서, 다음의 세부기능들을 지원함 <br>- Plant Management <br>- Inventory Management <br>- Manufacturing Process Management & Plant Data Collection <br>- Product Tracking & Genealogy <br>- Document Management <br>- Quality Management
+---
+- 영문용어 : Message line
+- 설명 : 작업수행결과를 Display 해주는 기능
+---
+- 영문용어 : Midpoint scheduling
+- 한글용어 : 중간점일정계획
+- 설명 : 오더내의 특정 작업(operation) 또는 Activity를 기준으로 일정계획을 수립함. 이러한 operation 또는 activity는 중앙에 위치하여야 하기 때문에 다른 operation 들은 모두 이 방향으로 계획을 수립해야 함.
+---
+- 영문용어 : Milestone
+- 한글용어 : Milestone
+- 설명 : Milestone은 특정 사건에 대한 Activity로 표현가능하며, 생산오더(Production order) 또는 프로젝트(Project)에서 사용함.
+---
+- 영문용어 : Milestone confirmation
+- 한글용어 : Milestone 확정
+- 설명 : 완료확정(completion confirmation)의 한 유형. 일련의 operation들이 자동 확정된다. Operation은 control key를 통해 milestone operation으로 지정된다. Milestone으로 지정된 operation을 확정하면, 시스템은 자동적으로 선행 operation들을 확정한다. 여러개의 operation들이 milestone으로 지정되면, 처리 순서대로 확정해야 한다. 각각의 milestone operation들의 선행 operation들은 시스템이 확정한다. 이미 수작업으로 확정한 operation들은 milestone 확정에 의해 영향받지 않는다.
+---
+- 영문용어 : Minimum delivery qty
+- 설명 : 최소 delivery 입력수량
+---
+- 영문용어 : Minimum lot size
+- 한글용어 : 최소로트크기
+- 설명 : 최소 lot 크기를 입력하면, 그보다 적은 양으로 소요량을 충당할 수 있더라도, 시스템이 최소 lot 크기보다 적은 주문제안(order proposal)을 생성하지 않도록 할 수 있다. 이 양은 소요량 계획시 lot 크기 계산에 고려된다.
+---
+- 영문용어 : Minimum order qty
+- 설명 : 최소 주문 입력수량
+---
+- 영문용어 : Minimum send-ahead quantity
+- 한글용어 : 최소전송수량
+- 설명 : 두개의 작업장(Work center)이 겹쳐질 경우(overlapped) 다음 Work center로 보내져야 할 최소단위 수량.
+---
+- 영문용어 : Missing parts
+- 한글용어 : 부족자재
+- 설명 : Missing parts 양은 소요량이 가용수량을 초과하는 수량이다.
+---
+- 영문용어 : MM (Material Management)
+- 한글용어 : MM 모듈
+- 설명 : 자재(제품 포함)에 대한 정보를 관리하며, 구매 및 자재관리 업무를 수행함. <br>주요 기능으로는 자재 정보관리(Material Master), 구매(Purchasing), 자재관리(Material Management), 창고관리(Inventory Management), 송장검증(Invoice Verification), 자재단가정보관리(Valuation), 재고조사(Inventory Survey) 등 이다.
+---
+- 영문용어 : Modification
+- 한글용어 : Modification
+- 설명 : SAP가 표준으로 제공하고 있는 기능이나 프로세스가 회사의 실정에 비추어 부족하거나 부적합 하다고 판단이 되는 경우에는 일부기능을 개발하거나 표준 기능/프로세스를 변경하는 경우가 있다. <br>- CBO(Customer Bolt-On) : Enhancement라고 불리기도 하는데, SAP R/3의 표준기능, 테이블에 영향을 미치지 않는 상태에서 추가하고 기능을 개발하는 것을 말한다. 추가적인 Report의 개발은 일반적으로 CBO라고 표현하지 않는다. <br>- Modification : SAP의 표준기능을 직접 변경하는 것으로서, 기술적으로는 Source code나 표준 Table의 필드를 변경하는 작업을 말한다. <br>일반적으로 SAP사는 Modification은 권고하지 않는데, 그 이유는 SAP의 전체적인 기술구조에 대한 명확한 이해가 없는 상태에서 표준 Source code나 테이블을 건드리는 작업이 예기치 못한 다른 영향을 미칠수도 있기 때문이다. 또한 Modification의 내용은 Version up시 반영이 되지 않으므로 이를 계속적으로 유지보수 해야 하는 부담도 회사가 감수해야 한다.
+---
+- 영문용어 : Modified standard cost estimate
+- 한글용어 : 수정표준원가산정
+- 설명 : 계획기간(planning period)내에서 하나의 제품에 대해 산정되는 제품제조원가(cost of goods manufactured)의 제조/생산원가 형태임.
+--- 
+- 영문용어 : Month-end closing
+- 한글용어 : 월간마감
+- 설명 : 하나의 전기기간을 마감하기 위하여 수행되는 모든 업무.
+---
+- 영문용어 : Monthly debits and credits
+- 한글용어 : 월 차변금액과 대변금액
+- 설명 : 한 계정에 전기된 모든금액의 합계로서, 거래기록대상기간(posting period)과 차변 및 대변으로 구분되어 표시된다. 각 거래기록대상기간의 잔액과 누적잔액도 표시된다.
+---
+- 영문용어 : Move time
+- 한글용어 : 이동시간
+- 설명 : 하나의 Work center에서 다른 Work center로 이동할 경우 발생하는 시간. Move time은 작업간 시간(Interoperation time)의 일부분임.
+---
+- 영문용어 : Movement type (MM)
+- 설명 : Material의 이동유형을 나타내는 key(예를들어, 입고, 출고, 물리적 재고이전). 이동 유형에 따라, 재무회계 시스템의 계정이 기표되는 방법과 material 마스터레코드 의 재고 필드가 갱신되는 방법을 결정하는 기표규칙(posting rule)이 달라진다.
+---
+- 영문용어 : Moving average price
+- 한글용어 : 이동평균단가
+- 설명 : 자재의 이동(Material movement) 및 송장의 입력(Invoice entry) 등에 의해 계속적으로 자재 가격이 변경되는 형태로 자재평가(Material valuation)에 이용됨.
+---
+- 영문용어 : MRP controller
+- 한글용어 : MRP 담당자
+- 설명 : 계획조직 내에서 Material 그룹에 대해 책임을 지는 담당자. 자재 소요량계획(MRP)의 대상이 되는 자재는 MRP controller에 힐당되어야 함.
+---
+- 영문용어 : MRP element
+- 한글용어 : MRP 요소
+- 설명 : MRP 리스트나 재고/소요 리스트에 항목으로 조회되는 모든 객체들을 가리키는 용어. 예를들어, 객체들로는 계획 order, 구매 order, 예약(reservation)이나 판매 order들이 있다.
+---
+- 영문용어 : MRP group
+- 한글용어 : MRP 그룹
+- 설명 : MRP group은, 계획 제어파라미터를 할당하기 위해 자재소요량계획의 관점에서 material들을 함께 묶는다. 제어파라미터는, 예를들어, 계획 구간(planning horizon)이나 생성 지시자를 포함한다.
+---
+- 영문용어 : MRP indicator
+- 한글용어 : MRP 지시자
+- 설명 : 지시자는 다음을 제어한다 <br>- 저장위치(storage location) 재고가 공장 레벨에서 MRP에 포함되는지 <br>- 저장위치(storage location) 재고가 MRP에 포함되지 않는지 <br>- 재고가 모든 저장위치에 대해 개별적으로 계획되고 MRP 리스트에 개별 영역으로 보여지는지
+---
+- 영문용어 : MRP list
+- 한글용어 : MRP 리스트
+- 설명 : Material 소요계획 결과를 표시. MRP 리스트는 소요의 직접적인 근거, 초기 재고, 동일 시간 축 상의 모든 입고와 출고를 보여준다.
+---
+- 영문용어 : MRP profile
+- 한글용어 : MRP profile
+- 설명 : 계획 목적으로 자재마스터레코드를 관리하는데 요구되는 데이터들의 집합. MRP 프로파일은 자재마스터의 관리를 용이하게 하며 다음 사항들을 결정한다 <br>- MRP 데이터 입력시 필요한 필드들 - 이들 필드들에 채워지는 값 <br>- 이들 필드 값 중 수정이 가능한 것(기본값)과 가능하지 않은것(고정값).
+---
+- 영문용어 : MRP type
+- 한글용어 : MRP type
+- 설명 : Material의 소요가 계획되어지는 방법과 정보를정보를 제공하는 지시자.
+---
+- 영문용어 : MSM (PM,SM)
+- 한글용어 : MSM (PM,SM)
+- 설명 : 유지보수 및 서비스 작업의 계획과 처리에 관련된 모든 활동들을 지원함. 설비에 대한 유지보수의 경우, 이 활동들은 고장 발생시 긴급한 수리 주문에서부터 유지보수와 검사 작업의 일정 수립에 이르기까지 제반 기능을 지원함.
+---
+- 영문용어 : Multi-level BOM
+- 한글용어 : 다중레벨 BOM
+- 설명 : 제품의 모든 assembly와 component를 리스트하는 BOM 레포팅 기능. BOM assembly에 포함되는 항목들은 assembly 바로 다음에 나타난다. 이들 항목들은 구조상에서 그들이 나타나는 레벨 번호가 주어진다.
+---
+- 영문용어 : Multi-level where-used list
+- 한글용어 : 다중레벨사용처리스트
+- 설명 : Material이 사용되는 BOM을 검색하는 BOM 레포팅 옵션. Material을 포함하는 assembly가 조회된다.
+---
+- 영문용어 : Multiple BOM
+- 한글용어 : 다중 BOM
+- 설명 : 같은 제품에 대하여 material들의 다른 조합을 허용하는 여러개의 BOM을 갖는다.
+---
+- 영문용어 : Negative stock (MM)
+- 설명 : Material이 재고의 일부로 이미 존재하지만, 관련 입고가 아직 처리되지 않았을 경우 발생할 수 있는 임시 재고 상황. 입고 전에 출고가 이루어지면, 재고는 마이너스 값을 갖게 된다.
+---
+- 영문용어 : Net (invoicing) procedure
+- 한글용어 : 현금할인차감후 순금액기록 절차
+- 설명 : invoice를 전기할 때 기대되는 현금할인 금액을 자동적으로 차감하여 원가나 재고자산을 기록하는 절차. 예를 들면 이 기능을 이용하여 현금할인을 차감한 정확환 고정자산의 취득금액으로 전기하는 것이 가능하게 된다. -> 유사어 현금할인차감후 순금액기표(net posting) 구매처 현금할인차감후 순금액기록절차(vendor net procedure)
+---
+- 영문용어 : Net change planning
+- 한글용어 : 순소요량계획
+- 설명 : 지난 계획실행 이후 변경이 일어난 Material들만 계획하는 계획실행 (Material planning run).
+---
+- 영문용어 : Net posting
+- 한글용어 : 현금할인차감후 순금액 기표
+- 설명 : 참고 현금할인차감후 순금액기록절차(net procedure)
+---
+- 영문용어 : Net price
+- 한글용어 : 기본단가
+- 설명 : Vendor의 초과청구와 할인을 고려한 가격.
+---
+- 영문용어 : Net requirement calculation
+- 한글용어 : 순소요량계산
+- 설명 : 시스템은 생산 또는 구매에 의해 예정되어 있는 예정 입고량이 계획 소요량을 충족시킬 수 있는지를 결정하게 되며, 충족되지 못한다면 시스템은 Order proposal을 생성.
+---
+- 영문용어 : Net value
+- 설명 : 견적 및 수주 금액 표시
+---
+- 영문용어 : Network (PS)
+- 설명 : Network은, 특정 방식, 특정 order, 특정 기간에 활동을 수행하는 방법에 관한 지시를 포함한다. Network의 기본 요소들은 활동들(activities)과 관계들(relationships)이다. R/3시스템에서, network은 노드상의 활동(activity-on-node) 구조로 실현된다.
+---
+- 영문용어 : Non-stock item
+- 한글용어 : 비재고항목
+- 설명 : Material이 BOM에 component로 입력되고 재고로 보관되지 않는다면, "non-stock item" 항목범주를 사용한다. 비재고 항목에 대한 구매 요청이 생성된다.
+---
+- 영문용어 : Noted item
+- 한글용어 : 비망항목
+- 설명 : 계정잔액에 영향을 미치지 않는(계정잔액을 수정하지 않는) 특별한 항목. 각각의 비망항목에 대해 시스템은 전표를 생성한다. 계정내의 다른 항목들과 함께 비망항목을 화면표시하는 것이 가능하다. 지급프로그램이나 독촉프로그램은 계약금(선급/선수금) 지급청구와 같은 비망항목들을 처리한다. <br>Cf) statistical items
+---
+- 영문용어 : Notification (PM)/(QM)
+- 설명 : 보전/품질관리/서비스관리 부서에 해당 영역에서 발생한 특별 사항을 알리는 수단. 다음과 같은 통지들이 있다 <br>·보전 통지(maintenance notifications) <br>·서비스 통지(service notifications) <br>·품질 통지(quality notifications)
+---
+- 영문용어 : Notification type (PM)
+- 설명 : 어떤 유형의 보전이나 품질 통지가 관련되는지 결정하는 key. 다음 유형의 보전 통지들이 존재한다 <br>·보전 통지 <br>- 오작동 보고(malfunction report) <br>- 조치 보고(activity report) <br>- 보전 소요(maintenance requirement) <br>·서비스 통지 <br>- 판매 통지(sales notification) <br>- 서비스 요청(service request) <br>- 활동 보고(activity report) <br>·품질 통지 <br>- 품질 통지(quality notifications) <br>- 결함 통지(notification of defects) <br>- 고객 불만(customer complaints)
+---
+- 영문용어 : Number range (FI)
+- 설명 : 문서 번호 할당에 사용되는 번호의 범위. 두가지 유형의 번호 할당이 있다. <br>·내부(internal) - 즉, 시스템에 의해 자동 수행된다 <br>·외부(external) - 즉, 사용자가 수동으로 수행한다.
+---
+- 영문용어 : Offsetting entry
+- 한글용어 : 상대계정입력
+- 설명 : 복식부기의 원리에 따라 거래를 기표하는 경우의 반대(상대)계정(차변이나 대변)의 입력.
+---
+- 영문용어 : One time delivery on requested delivery date
+- 설명 : 요청된 delivery 일자에 한번에 처리 할 수 있는 confirm 수량
+---
+- 영문용어 : One-step procedure (MM)
+- 설명 : 저장위치(storage location)에서 저장위치로 혹은 공장에서 공장으로 재고를 이전하는 입력 절차. 한 단계 절차를 사용하면, 출고에 대한 재고의 감소와 입고에 대한 재고의 증가에 대하여 시스템에서 한번에 처리할 수 있다. 시스템은 재고이전에 대해 하나의 material 문서만을 생성한다. 한단계절차 대신, SAP 시스템에서는 두 단계 절차(two-step procedure)를 사용하여 재고이전을 입력할 수도 있다.
+---
+- 영문용어 : One-time account
+- 한글용어 : 일회용계정
+- 설명 : 거래가 한번 혹은 매우 드물게 이루어지는 거래상대방을 관리하는 일회용계정. 모든 일회용계정에는 하나의 특별한 마스터 레코드가 필요하다. 주소나 은행관련 자료와 같은 거래상대방에 대한 데이터는 마스터 레코드에는 입력이 되지않고 전표 자체에만 입력이 된다.
+---
+- 영문용어 : One-time vendor (MM)
+- 설명 : 정규 공급자가 아닌 vendor와의 업무 거래시 사용되는 집합적 vendor 마스터레코드. 일회성 vendor에게 RFQ나 PO를 보낼 경우, 주소 내역을 수동으로 입력한다.
+---
+- 영문용어 : Open item management
+- 한글용어 : 미결항목관리
+- 설명 : 한 계정내의 미결항목은 같은 계정내의 다른 항목에 의해 반제가 되도록 하는 것. 한 계정내의 개별항목을 반제하는 경우 차변금액은 반드시 대변금액과 같아야 한다. 따라서, 계정잔액은 항상 미결항목의 합계이다.
+---
+- 영문용어 : Opening period (for planned order)
+- 한글용어 : Opening 기간
+- 설명 : Order 생성일자와 계획 시작일자 사이의 작업일 수. 이 시간은 MRP 통제자(controller)가 계획오더(planned order)를 구매요청(purchase requisition)이나 생산오더(production order)로 전환하는데 유용하게 사용한다.
+---
+- 영문용어 : Operating concern
+- 한글용어 : Operating concern
+- 설명 : CO의 PA(Profitability Analysis : 판매특성별 손익분석) 모듈에서는 Operating Concern 이라는 최상위 조직단위를 사용한다. Operating Concern은 Controlling Area의 상위 코드로서, 회사나 Controlling Area 이상의 차원에서 PA를 활용한 손익분석이 가능하다. 한편 회계자료의 집계 및 분석시에 재무회계(FI)상의 값과 관리회계(CO)상의 값을 Reconcile해 보는 것이 필요할 것인 바, Business Area, Cost Center/Profit Center가 각각 재무회계 및 관리회계를 위한 조직 단위라 하더라도 일정 수준에서는 Reconcile이 되어야 할 것이다. 따라서 Cost Center Hierarchy나 Profit Center Hierarchy상의 중간마디(Cost Center Group 또는 Profit Center Group)가 재무회계의 Business Area와 일치되거나, 같은 level이 되도록 형성하는 것이 일반적이다. (사업부나 사업본부 등의 level이 될 것임)
+---
+- 영문용어 : Operating facilities
+- 한글용어 : 작업시설
+- 설명 : 생산에 필요한 시설들로써 다음과 같은 항목들이 있음. <br>- 생산에 필요한 도구 (Machine, Plant 등) <br>- 공구 또는 검사도구와 같은 생산 자원 <br>- 자재 이동 도구 <br>- 저장 시설 <br>- 빌딩, 건물과 같은 시설 <br>- 에너지 또는 소비재와 같은 용품
+---
+- 영문용어 : Operating time
+- 한글용어 : 조업시간
+- 설명 : 기계등 생산능력이 효과적으로 작업할 수 있는 시간. 조업시간은 실제작업시간, 휴식, 조업률(capacity utilization)로 구성된다.
+---
+- 영문용어 : Operation
+- 한글용어 : 조업(작업)
+- 설명 : 검사계획(Inspection plan), 네트워크(Network), 또는 작업오더(Work order) 및 공정(Routing) 등의 각 단계(Step)을 나타냄. Operation의 형태는 다음과 같은 것 들이 있음. <br>- Production order에 할당된 routing내의 operation <br>- Process order에 할당된 recipe의 operation <br>- Inspection plan에 할당된 inspection operation <br>- Task list에 할당된 maintenance operation <br>- Network에 할당된 activity
+---
+- 영문용어 : Order
+- 한글용어 : 오더
+- 설명 : Company 조직 내에서 일을 수행하기 위한 Object로 다음과 같은 사항들을 기술함. <br>- 어떠한 Task를 실행할 것인가? <br>- 언제 Task를 실행할 것인가? <br>- Task 실행을 위해 무엇이 필요한가? <br>- 오더에 관련된 비용 처리는 어떻게 할 것인가?
+---
+- 영문용어 : Order & project accounting (OPA)
+- 한글용어 : Order & project accounting (OPA)
+- 설명 : Internal Order와 Project를 기초단위로 간접비를 관리함. 투자성 경비, 행사성 경비, 프로젝트성 경비 관리시 사용됨.
+---
+- 영문용어 : Order category
+- 한글용어 : 오더종류
+- 설명 : 오더에 대한 기술적 분류기준. 오더종류(Order category)는 해당 오더가 SAP 내에서 어떠한 어플리케이션의 어떠한 기능에 사용될 것인가를 규정함.
+---
+- 영문용어 : Order combination
+- 설명 : 기존 수주 진행중 신규 수주 진행가능 여부 선택(marking 하면 진행가능)
+--- 
+- 영문용어 : Order proposal
+- 한글용어 : 오더제안
+- 설명 : 자재소요량계획시 부족(shortage) 수량이 발생할 경우 생성되는 MRP element. Order proposal은 시스템에 계획 order나 구매 요청, delivery schedule의 형태로 저장된다
+---
+- 영문용어 : Order release (PM)
+- 설명 : Order 처리 단계. Create된 order에 대해서만 릴리즈가 수행된다. 상태 "released"를 할당함으로 order를 릴리즈한다. 일단 order가 릴리즈된 경우에만, material을 출고하고, shop paper를 프린트하고, 완료 확정을 생성하고, 물품 이동을 입력할 수 있다.
+---
+- 영문용어 : Order settlement
+- 한글용어 : 오더정산
+- 설명 : 오더에 대해서 부분적으로 또한 전체적으로 대변에 기입하는 작업. 오더에 대해서 발생된 비용들은 하나 또는 여러 개의 항목으로 재무 또는 관리회계에서 사용되는 여러 개의 계정에 나뉘어져 차변에 기입됨.
+---
+- 영문용어 : Order type
+- 한글용어 : 오더유형
+- 설명 : 목적에 따라 오더를 구분하기 위해 사용되며, 다음과 같은 종류가 있음. <br>- Production order <br>- Maintenance order <br>- Marketing order <br>- Capital expencityre order
+---
+- 영문용어 : Organization Structure
+- 한글용어 : 조직구조
+- 설명 : SAP를 올바로 활용하기 위해서는 각 모듈별로 존재하는 조직구조와 관련된 코드들의 의미와 활용방법을 정확히 이해하고 이를 회사의 실정에 맞도록 구성하는 것이 매우 중요하다. 이러한 각 모듈들의 조직구조와 관련된 코드들을 총칭하여 Organization Structure라고 한다. 한편 하나의 모듈에 존재하는 하나의 조직구조는 다른 모듈의 조직구조와 연관성을 갖게 되는데, 이렇게 하나의 조직구조 관련 코드가 다른 코드와 연결관계를 갖는 것을 Assignment 라고 한다. 특히 Integration 환경하에서의 조직구조의 Assignment 작업이 매우 중요하다. 회사의 실제 조직 구조들을 SAP가 표준으로 제공하고 있는 조직 구조들과 어떻게 mapping을 하여 각 모듈들을 어떻게 활용할 것인가를 정하는 작업은 특히 Enterprise Modeling 이라고도 한다. Enterprise Modeling 단계에서는 회사의 조직구조를 여러 View (재무회계,관리회계,자금,물류 등)에서 정리하고, 각 조직 level이 원하는 정보요건(예:사업부별 재무제표의 산출 등)을 정의 후, SAP에 존재하는 조직코드와 그것들이 제공할 수 있는 정보들을 감안하여 작업을 진행한다. Enterprise Modeling은 이후의 Implementation 전체의 작업에 영향을 미치므로 매우 신중하게 결정을 하여야 한다.
+---
+- 영문용어 : Organization Structure of Accounting
+- 한글용어 : 재무관련 조직구조
+- 설명 : Business Area는 Company Code와는 달리 그 자체로서 차/대 균형이 맞는 재무제표가 보장되지 않는다는 점에 유의해야 한다. 즉, 차/대변의 Business Area가 서로 다르거나 어느 한 쪽이라도 Business Area가 없이 기표되는 경우에는 특정 Business Area를 중심으로 하여 차/대 균형이 맞는 재무제표가 산출될 수 없다. SAP는 이러한 경우 차/대 균형을 맞출수 있는 분개를 추가적으로 자동 생성하여 주는 일종의 결산기능을 제공하여 주고 있는데, 이를 Business Area Breakdown (자동조정분개작업) 이라고 한다. 참고로 관리회계(CO)의 Profit Center를 기준으로 하여 재무제표를 산출할 수도 있다. 그러나 이 경우 본래의 목적은 주요 계정(매출채권, 매입채무, 고정자산, 재고자산 등)의 잔액을 책임회계단위(Profit Center)를 기준으로 집계하여 ROI(Return on Investment) 등을 계산하기 위한 것이므로, 차/대 균형이 맞는 대차대조표의 산출을 기대하기 어렵다. 여기서 Profit Center와 관련된 구체적인 내용은 생략 한다. 한편 연결회계(CS : Consolidation)에서는 Company라는 단위가 사용되는데, 이는 연결재무제표작성의 단위로서 여러 Company Code가 하나의 Company에 지정되게 된다.
+---
+- 영문용어 : Original document
+- 한글용어 : 원시증빙
+- 설명 : 기표가 정확함을 증명하는 역할을 하는 증빙.
+---
+- 영문용어 : Outline agreement
+- 한글용어 : 개괄계약
+- 설명 : "contracts"와 "scheduling agreements"에 대한 SAP의 포괄적인 용어. Outline agreement는 지정 조건에 따라 material이나 용역의 공급과 관련하여 vendor(외부공급자)와 맺는 장기협정이다. 협정은 정의된 기간에 대한 공급 물품/용역의 총량이나 전체 금액으로 이루어진다. Release order나 delivery schedule을 발행하는 각각의 절차에 material이 배달되어야 하는(혹은 작업이 수행되거나 용역이 제공되어야 하는) 날자를 지정한다.
+---
+- 영문용어 : Output tax
+- 한글용어 : 매출부가가치세
+- 설명 : 생산이나 매매의 경우 고객에게 부과되는 세금. 과세당국에 납부할 금액이 된다.
+---
+- 영문용어 : Overlapping
+- 한글용어 : 중복
+- 설명 : 현재의 작업(operation)이 종료되기 전에 다음의 작업을 시작하여 전체적인 리드타임(lead-time)을 줄이기 위한 기능. 이러한 기능을 위하여 minimum send-ahead quantity와 minimum overlap time이 설정되어야 함.
+---
+- 영문용어 : Overview
+- 설명 : 예상물량/견적/수주 order 입력후 입력 정보에 대하여 entry 별로 display하는 메뉴 기능 □ Single line entry 입력된 정보를 한줄로 display(많은 입력자재를 동시에 display가능) □ Double line entry 입력된 정보를 두줄로 display(하나의 입력자재에 대한 detail한 정보 display 가능
+---
+- 영문용어 : Part. div./item
+- 설명 : 부분 납품가능여부 선택(marking 안하면 납품가능)
+---
+- 영문용어 : Partial confirmation
+- 한글용어 : 부분확정
+- 설명 : 부분 확정은 아직 처리중인 operation에 대하여 수행한다.
+---
+- 영문용어 : Partial payment
+- 한글용어 : 부분지급
+- 설명 : 미결된 invoice금액의 일부만을 지급하는 것.
+---
+- 영문용어 : Partner
+- 설명 : sold-to party(주문처), payer(지불처), sales employee(영업담당자), ship-to party(인도처) 등의 정보를 볼수 있는 view
+---
+- 영문용어 : Payables
+- 한글용어 : 채무
+- 설명 : 은행차입금, 매입채무, 선수금과 같은 회사의 확정된 부채로서 발생원인, 금액, 만기일 등이 관련된다.
+---
+- 영문용어 : Payee, alternative
+- 한글용어 : 대체수취인
+- 설명 : 본래 채무액을 지급받아야 할 vendor가 아닌 자로서 지급을 받는 자. 예 채권의 양도
+---
+- 영문용어 : Payer
+- 한글용어 : Payer
+- 설명 : 납품된 물품과 제공된 서비스에 대한 청구서를 결재하는 개인 또는 회사.
+---
+- 영문용어 : Payment advice
+- 한글용어 : 지급명세서
+- 설명 : 물품의 수령, 지급액의 수령, 신용장(무역거래시)의 수령 등을 문서로서 통지하는 것.
+---
+- 영문용어 : Payment block
+- 한글용어 : 지급블럭
+- 설명 : 미결항목이나 계정에 대한 대금이 지급 프로그램에 의해 결제되는 것을 막는 표지. 고객이나 구매처 마스터레코드 또는 개별항목에 지급블럭을 설정할 수 있다.
+---
+- 영문용어 : Payment blocking indicator(payment block)
+- 한글용어 : 지급방지표시자
+- 설명 : 개별항목이나 한 계정에 대해 지급프로그램(payment program)에 의한 자동지급이되지 않도록 하는 표시자. 지급방지표시자는 customer나 vendor의 마스터 레코드 또는 개별항목에 표시할 수 있다.
+---
+- 영문용어 : Payment history
+- 한글용어 : 지급이력
+- 설명 : 고객의 지급형태를 분석한 것으로 특히 체불이나 현금 할인에 관한 내용을 다룬다.
+---
+- 영문용어 : Payment history analysis
+- 한글용어 : 지급추이분석
+- 설명 : customer에 대하여 만기일을 지나서 지급한 경우나 현금할인을 활용할 경우 등에 관한 분석.
+---
+- 영문용어 : Payment method
+- 한글용어 : 지급방법
+- 설명 : 대금처리를 어떻게 할 것인가(지불절차)를 의미함. 즉, 수표, 어음, 계좌이체 등을 이용한 외화지급 등이 있다.
+---
+- 영문용어 : Payment notice
+- 한글용어 : 지급내역확인요청
+- 설명 : 지급사실을 확인하거나 지급금액의 차이 또는 지급액의 해당항목을 확실히 밝혀 줄것을 요청하기위해 고객이나 내부부서에 의사전달을 하는 것.
+---
+- 영문용어 : Payment on account
+- 한글용어 : 계정지정지급
+- 설명 : 특정 invoice나 특정거래를 지정되지 않고 하나의 계정에 대해 이루어진 지급액. 이것은 계약금이나 부분지급과 다르다.
+---
+- 영문용어 : Payment term
+- 설명 : 수금 관리 형태
+--- 
+- 영문용어 : Payment transactions
+- 한글용어 : 지급거래
+- 설명 : 채권의 회수 또는 채무의 지급을 처리하는 것.
+---
+- 영문용어 : PDM (Product Data Management)
+- 한글용어 : PDM
+- 설명 : 개발업무 전 영역에 대한 프로세스를 분석하여 개발에 필요한 모든 정보를 하나의 시스템에서 관리할 수 있도록 구축한 통합설계정보시스템. SPDM(Samsung PDM) 시스템은 개발에 필요한 13개의 모듈로 구성되어 있으며 기능에 따라 기초모듈(기구 2D, 기구 3D, 회로, 부품정보, Document Control. WorkSpace, 문서관리)과 연계모듈(SAP I/F, 설계 변경관리, 제품구조, 표준설계, 모델사양, 과제관리)로 구분됨.
+---
+- 영문용어 : Pegging of requirement
+- 한글용어 : 소요량 pegging
+- 설명 : MRP element의 상위소요량(source requirements)이나 상위오더제안(source order proposal)을 추적하는 기능이며, 오더제안(order proposal)이 취소되거나 일자 또는 수량이 변경될 때, 어떤 계획 독립소요량이 영향을 받는지 점검하는데 사용됨.
+---
+- 영문용어 : Period lot-sizing procedure
+- 한글용어 : 기간별로트크기결정절차
+- 설명 : 하나 또는 여러 개의 기간에 걸쳐있는 소요량들을 묶어 하나의 lot를 구성하는 절차. 재고, 준비절차, 구매로부터 발생되는 비용이 고려되지 않는다. 하나의 order 제안에 포함되는 기간들의 수는 원하는 대로 선택할 수 있다. 다음과 같은 종류들이 있다 <br>- Daily lot size <br>- Weekly lot size <br>- Monthly lot size <br>- Lot size accordiing to flexible period length(accounting periods)
+---
+- 영문용어 : Permit (PM)
+- 설명 : 장비에 대해 보전 작업을 수행할 때 주의해야 하는 규칙이나 조건. 다음 객체들에 대해 permits를 할당할 수 있다 <br>·equipment <br>·functional locations <br>·maintenance orders
+---
+- 영문용어 : Phantom material
+- 한글용어 : 가상자재
+- 설명 : BOM에 component로 material을 입력하는데 사용되는 항목범주(item category). Phantom material은 생산과정에서 일시적으로 존재한다. Phantom material에 대해서 아무런 material 마스터도 관리되지 않는다. Phantom material은 회사내 다른 활동들과 아무런 관련이 없으므로, 이 항목 범주에 대해서는 상태 관리(status management)가 지원되지 않는다.
+---
+- 영문용어 : Physical inventory (MM)
+- 설명 : 실제 재고를 무게를 재거나, 계수하거나, 측정하여 확정한다. 실제 재고를 재고장부와 비교하여 나타나는 차이를 수정한다. 회계년도 동안 적어도 한번은 전체 material에 대하여 물리적 재고조사를 수행해야 한다.
+---
+- 영문용어 : Picking
+- 한글용어 : picking
+- 설명 : 판매나 생산부서의 소요량에 근거하여 material을 창고에서 출고처리 한다. Picking은 이전주문(transfer orders)이나 picking list를 통해 발생된다.
+--- 
+- 영문용어 : Plan cost
+- 한글용어 : 계획원가
+- 설명 : 생산 투입될 시점, 즉 Order가 생성되는 시점에서 생산계획 수량과 당시의 원가계산 요소에 의하여 계산된 사전원가.
+---
+- 영문용어 : Planned cost
+- 한글용어 : 계획원가
+- 설명 : 특장작업에 대해서 발생되어질 원가. 사용자는 특정계획방법을 사용하여 원가계산을 할 수 있으며, 계속적으로 발생되는 실적원가(Actual cost)와의 차이(Variance)를 비교 분석 가능.
+---
+- 영문용어 : Planned delivery time
+- 한글용어 : 계획납품시간
+- 설명 : Material을 외부 조달하는데 소요되는 일(day) 수.
+---
+- 영문용어 : Planned independent requirements
+- 한글용어 : 계획독립소요량
+- 설명 : 계획 독립 소요량은 판매 order에 근거하여 생성되지 않는다. 계획독립소요량은 실제 order와 관계없이, 미래의 판매량을 계획하기 위해 사용된다. "planning requirements(계획 소요량)"와 같은 의미로 사용된다.
+---
+- 영문용어 : Planned item
+- 한글용어 : 계획항목
+- 설명 : 예상되는 회수액이나 지급액을 계획항목으로 입력한다. 이러한 항목들은 현금예측과 관련된다.
+---
+- 영문용어 : Planned order
+- 한글용어 : 계획오더
+- 설명 : 오더제안(Order proposal)은 자재소요량계획에 의해 자동 생성되거나 MRP controller에 의해 수동으로 생성된다. 내부 생산에서 계획 orders는 생산 orders로 전환되고, 외부 조달시 구매 요청으로 전환된다.
+---
+- 영문용어 : Planning
+- 한글용어 : 계획
+- 설명 : Planning은 수요 관리(demand management)에서 마스터 계획(master plan)을 생성하기 위한 모든 활동들을 포함한다. Planning에 대해 다음 전략들이 유용하다 <br>- make-to-stock production <br>- planning with final assembly <br>- planning without final assembly <br>- planning with planning material <br>- planning at assembly level <br>- production by lot size for sales or stock orders <br>- make-to-order production
+---
+- 영문용어 : Planning file
+- 한글용어 : 계획파일
+- 설명 : 소요계획과 관련있는 변경이 발생한 모든 material들의 리스트를 포함하는 file. 그러한 변경이 일어나면, material은 자동으로 planning file에 등록된다. Planning file의 각 material들은 다음 계획실행에 포함된다.
+---
+- 영문용어 : Planning group
+- 한글용어 : 계획그룹
+- 설명 : 현금관리와 예측에 있어서 customer와 vendor를 계획그룹으로 지정하는데, 이러한 계획그룹은 다음과 같은 사항과 관련되는 특성, 거래의 위험이나 형식 등을 반영한다. <br>- customer 은행회수 <br>- customer 위기영역(crisisarea) <br>- vendor 연결그룹의 member 이렇게 함으로써 현금의 유입과 유출에 관한 예측의 신뢰성에 따라 현금예측을 구분하여 표시하는 것이 가능해진다.
+---
+- 영문용어 : Planning hierarchy
+- 한글용어 : 계획계층구조
+- 설명 : 판매생산계획(Sales & Operation Planning)에서 사용되는 정보구조(information structure) 특성들의 조합. 하향식(top-down)이나 상향식(bottom-up) 계획을 모두 허용한다
+---
+- 영문용어 : Planning level
+- 한글용어 : 계획수준
+- 설명 : 계획자료의 원천. 계획수준은 다음과 같은 전형적인 재무거래를 반영한다. <br>- 은행계정에의 FI기표 <br>- 관리목적용 임시계정(clearing account)에의 FI기표 <br>- 확인/미확인된 지급통지(payment advice) 계획수준은 현금관리포지션과 현금예측을 좀 더 분명하게 표시하게 해준다 계획수준은 자료의 원천을 설명하여줌으로써 그 신뢰성을 추정하는 것을 가능하게 해 준다.
+---
+- 영문용어 : Planning time fence
+- 한글용어 : planning time fence
+- 설명 : 자재소요량계획시 마스터계획(master planning)에 자동 변경이 일어나지 않도록 하는 기간. Planning time fence 안에서는 시스템에 의해 새로운 계획 order가 자동 생성되거나 이미 존재하는 계획 order가 자동으로 변경되지 않는다.
+---
+- 영문용어 : Planning version
+- 한글용어 : 계획버젼
+- 설명 : Sales & Operation Planning에서, 하나의 정보구조에 계획데이터 버젼이 하나 이상 존재할 수 있다. 이는 동일한 정보구조의 복수 계획들을 병행하여 관리하도록 해준다. 예를들어, 다른 예측 기술들을 이용하여 몇차례 계획을 수행하거나 미래에 발생할 것으로 기대되는 사건들을 포함 및 배제하여 계획할 수 있다. Active version은 A00이다. 일반적으로 active version이 확정 버젼이다. 다른 모든 버젼들은 inactive이다.
+---
+- 영문용어 : Plant
+- 한글용어 : Plant
+- 설명 : 제품/자재를 생산하거나 DRP(Distribution Requirement Planning) 개념에 따라 수요계획(Demand Planning)을 실행하는 장소가 될 수 있으며, 제품/자재를 저장하는 물리적 논리적 단위로써 지정할 수 있다. SAP 에서의 Material Master와 BOM은 각 Plant별로 생성되므로, PP 모듈에의 MRP/MPS 에서 중요한 실행단계로 사용된다. 또한 가용성 점검(Availability check) 및 재고평가(Valuation) 기능도 Plant 단계에서 실행되게 된다.
+---
+- 영문용어 : Plant Maintenance (PM)
+- 설명 : 작업을 수행하는 운영시스템(예를들어 기계, 생산 설비)을 관리하기 위해 취하는 수단. 운영시스템의 보전은 다음 활동들을 수반한다 ·검사 운영시스템의 실제 상태을 확증하는 모든 수단 ·유지보수 운영시스템의 이상적인 상태를 유지하는 모든 수단 ·수리 운영시스템의 이상적인 상태를 복구하는 모든 수단
+---
+- 영문용어 : PO date
+- 설명 : sales order 입력시 계약일을 입력하는 field로 사용
+---
+- 영문용어 : POR procedure
+- 한글용어 : POR지불요청절차
+- 설명 : 스위스에 본부를 두고 있는 회사에 대하여 Swiss Postal Service가 사용하는 지불요청절차. POR사용자는 그들의 vendor 마스터 레코드에 POR번호를 부여받는다.
+---
+- 영문용어 : Portfolio
+- 한글용어 : 자산구성
+- 설명 : Company Code별로 Portfolio를 구성하는데 이는 모든 자산의 평가 및 유동성분석을 위한 것으로 계좌별 혹은 상품별로 구성할수 있다.
+---
+- 영문용어 : Possible entry
+- 설명 : 필드에 입력가능한 data를 모아놓은것
+---
+- 영문용어 : Posting block
+- 한글용어 : 기표방지(전기블럭)
+- 설명 : 특정계정에 전기(posting)가 되지 못하도록 하는 표시. 중앙에서 모든 회사코드에 대하여 계정을 블럭하거나 하나의 회사코드만을 대상으로 계정을 블럭할 수 있다.
+---
+- 영문용어 : Posting key
+- 한글용어 : 전기키
+- 설명 : 전표의 개별항목의 입력을 통제하는 두자리수의 key. 포스팅 키는 다음과 같은 것을 특정한다 <br>- 계정유형 <br>- 차변 또는 대변기표의 구분 <br>- 입력용화면의 배치
+---
+- 영문용어 : Posting period
+- 한글용어 : 전기기간
+- 설명 : 회계연도를 구성하는 단위기간. 시스템은 전표표제부의 전기일자에 따라 모든 전표를 해당 전기기간에 기록하고 전기기간별로 계정잔액을 갱신한다.
+---
+- 영문용어 : Posting, automatic
+- 한글용어 : 자동기표
+- 설명 : 어떤 절차에 의하여 자동적으로 생성되는 기표. 다음과 같은 것이 예이다 <br>- 부가가치세관련 기표 <br>- 외환차손익관련 기표 <br>- 현금할인수입 또는 비용 관련 기표 각각의 자동기표는 별도의 전표상의 개별항목으로 표시된다.
+---
+- 영문용어 : Posting, cross-company
+- 한글용어 : 다회사코드간 기표
+- 설명 : 여러 회사코드(company code)가 관계되는 기표. 시스템이 자동적으로 각각의 관계되는 회사코드에 대한 전표를 생성하여 준다. 다회사코드간 기표는 중앙집중적인 구매나 지급을 하는 경우에 사용된다. 유사어 관계회사간 기표(intercompany posting)
+---
+- 영문용어 : Posting, statistical
+- 한글용어 : 전기.통계
+- 설명 : 상대계정입력(offsetting entry)이 특정한 관리목적용 임시계정(specified clearing account)에 자동적으로 이루어지는 특별 G/L거래(special G/L transaction)의 기표. 예지급보증을 받은 경우.
+---
+- 영문용어 : PP (Production Planning)
+- 한글용어 : SAP 생산계획/실행 모듈
+- 설명 : Production Planning and Control 의 개념으로 보는 것이 바람직하며, SAP R/3 Enterprise-wide solution component 중의 하나로서, 생산에 관련된 계획, 실행 및 제어 등 모든 프로세스를 관리하는 SAP의 모듈이다. PP 모듈은 전통적인 생산계획 시스템인 MRPⅡ(Manufacturing Resources Planning Ⅱ)뿐만 아니라 COMMS(Customer-Oriendted Manufacturing Management System)과 ERP(Enterprise Resources Planning)의 많은 기능적 측면을 지원하고 있다.
+---
+- 영문용어 : PP-BD (Basic Data for Production)
+- 한글용어 : 생산 기준정보
+- 설명 : 생산과정에서 요구되는 Products, Processes 및 Resources 등의 기준정보를 관리하는 PP 의 Sub Module.
+---
+- 영문용어 : PPC planning calendar
+- 한글용어 : PPC 계획달력
+- 설명 : 계획 달력은 공장의 수요관리와 자재소요량계획(MRP)을 위한 기간을 정의한다. PPC 계획달력으로, period lot size를 결정하는 조달일자를 정의하며, 재고/소요 리스트와 MRP 리스트에서는, PPC 계획달력에 지정된 대로 MRP 요소들을 기간별로 묶는다. 수요관리에서는, 계획독립소요량을 생성하는 계획기간들이 관리될 수 있다.
+---
+- 영문용어 : PP-CRP (Capacity Requirement Planning)
+- 설명 : Shop Floor 상에서의 병목현상에 대하여 유연하게 대처할 수 있도록 하며, 정확한 주문 전송을 실행하기 위하여 대강의 계획단계에서부터 Shop Floor 상에서의 세부적인 조정까지를 볼 수 있는 전반적인 기능을 갖고 있는 PP의 Sub Module임
+---
+- 영문용어 : PP-IS (Production Information System)
+- 한글용어 : 생산정보시스템
+- 설명 : LIS 의 일부분으로서, 생산에 관련된 중요한 자료들에 대한 유연한 분석기능을 갖고 있음
+---
+- 영문용어 : PP-MRP (Material Requirement Planning)
+- 한글용어 : 자재소요계획
+- 설명 : PP-SOP 에 의해서 얻어진 계획 결과에 근거하여 필요한 order proposal 을 생성하는 PP 모듈의 Sub Module 로서, 여러 전략적 계획들을 통하여 저가의 창고비용, 신뢰도 높은 Make-To-Stock, Make-To-Order 운송일자, Lot Size를 이용한 생산, 또는 복잡한 Variant들을 확실하게 실행될 수 있게 된다.
+---
+- 영문용어 : PP-PC (Product Costing)
+- 한글용어 : 제품원가계산
+- 설명 : 제품의 생산원가 관리에 대한 효율적이고 유연한 기능을 제공하는 PP 의 Sub Module로서, order 에 대한 costing 뿐만 아니라 non-order 에 대한 Production Order 또한 CO 모듈에 연결되어 있다.
+---
+- 영문용어 : PP-SFC (Shop Floor Control)
+- 한글용어 : 공정관리
+---
+- 영문용어 : PP-SOP (Sales and Operations Planning)
+- 한글용어 : 판매 및 생산운영계획
+- 설명 : 여러 생산 활동들이 계획 되어지는 PP의 Sub Module. CO 모듈의 PA 단계 및 SD 모듈의 SIS 와의 밀접한 연결로 어떠한 분야의 분석에서도 일관된 계획을 작성할 수 있다.
+---
+- 영문용어 : Preliminary costing
+- 한글용어 : 예비원가계산
+- 설명 : 계획원가(planned cost)를 수요프로그램(demand program)이 생성되기 전에 결정하는 단계. 수주생산방식(make-to-order) 생산제품에 대한 가격을 결정하는 기본이 됨.
+---
+- 영문용어 : Price control (MM)
+- 설명 : Material 평가에 사용되는 절차를 결정하는 지시자. 표준 SAP R/3 시스템에는 두가지 절차가 있다 <br>·표준가격(standard price)으로 평가 <br>·이동평균가격(moving average price)으로 평가
+---
+- 영문용어 : Price group
+- 설명 : 가격정책 지정(유통점 -> 예 영상영업 2그룹) 월말 일괄 계산서 발급거래선은 “01”로 입력
+---
+- 영문용어 : Price list type
+- 설명 : 제품 가격중 유통 가격을 운영하는부서
+---
+- 영문용어 : Price unit (MM)
+- 설명 : Material 마스터레코드의 평가 가격이 참조하는 단위.
+---
+- 영문용어 : Pricing procedure
+- 한글용어 : 가격결정절차
+- 설명 : 특정 전표에 허용된 조건과 가격결정을 위해 시스템이 이러한 조건을 접근하는 순서를 정의한다. 가격결정 절차에는 자재가격 및 다양한 할인, 부가금 등이 포함되어 있다.
+---
+- 영문용어 : Processing time
+- 한글용어 : 처리시간
+- 설명 : Operation에서 material을 처리하는데 요구되는 시간. 처리 시간은 order 수량에 의존한다. 준비시간(setup time)이나 해체시간(teardown time)은 포함하지 않는다. 처리시간은 실행시간(execution time)의 일부이다.
+---
+- 영문용어 : Procurement lead time
+- 한글용어 : Procurement lead time
+- 설명 : 구매오더가 승인된 후 발주 자재가 재고로 가용하게 되기까지 걸리는 시간.
+---
+- 영문용어 : Procurement type
+- 한글용어 : Procurement type
+- 설명 : 특정 자재가 내부 생산 자재인지, 외부 구매 자재인지, 아니면 두방식이 모두 가능한 자재인지를 결정.
+---
+- 영문용어 : Product categories
+- 한글용어 : 자금과목 범주
+- 설명 : Product Type을 크게 분류한 범주이다. 예적금,환상품,금리상품등..
+---
+- 영문용어 : Product Cost (CO)
+- 설명 : 비용 계획과 가격 설정을 위한 tool. PP 모듈의 데이터를 이용하여 제조 비용과 제품의 판매 비용을 계산한다.
+---
+- 영문용어 : Product cost planning
+- 한글용어 : 추정원가계산
+- 설명 : 추정원가계산. 제조원가의 효율성 관리를 위해 계획원가/예정원가/표준원가를 추정하는 기능 제공
+---
+- 영문용어 : Product group (LO)
+- 설명 : 제품 그룹은 제품들을 그룹화한다. 그룹화하는 기준은 사용자별로 정의할 수 있다. 예를들어, 제품들은 서로 어떤 식으로 유사하거나, 같은 기계에서 만들어지는 완제품일 수도 있다. 제품그룹은 다중 레벨이나 싱글 레벨로 구성된다. 제품그룹의 멤버가 또 다른 제품그룹이면 이는 다중 레벨이다. 하지만, 계층의 최하위 제품그룹은 멤버로서 material을 포함해야 한다.
+---
+- 영문용어 : Product hierarchy
+- 설명 : 연관 제품별 계층구조
+---
+- 영문용어 : Product proposal
+- 한글용어 : Product proposal
+- 설명 : 자주 수주하는 자재조합과 수량을 분류한 것으로 판매오더를 입력할 때 제품제안에 포함된 정보를 참조하고 복사함으로써 시간을 절약할 수 있다.
+---
+- 영문용어 : Product type
+- 한글용어 : 자금과목
+- 설명 : 자금부서에서 취급하는 상품을 유형별로 정리하여 과목으로 분류한것이다. 보통예금,정기적금,Spot,Forward등..
+---
+- 영문용어 : Production line
+- 한글용어 : 생산라인
+- 설명 : 반복적인 제조업에 사용되는 work center. 생산 라인을 통해 일정 기간동안 생산되는 양에 대한 개요를 얻을 수 있다. 따라서, 용량관련(capacity-related) 계획을 수행할 수 있다.
+---
+- 영문용어 : Production order
+- 한글용어 : 생산오더
+- 설명 : 생산 부서가 material을 생산하도록 하는 order. 생산 order는, 예를들어, operations, material components, 생산 자원/도구(producti-on resources/tools), 비용 데이타(costing data)를 포함한다.
+---
+- 영문용어 : Production overhead cost
+- 한글용어 : 생산간접비용
+- 설명 : 생산과정에서 발생하는 비용이지만 오브젝트에 간접적으로 배부할 수 밖에 없는 비용항목으로 다음과 같은 오브젝트에 할당 가능. <br>- Operating supplies <br>- Supervisor salaries <br>- Energy costs <br>- Imputed depreciation <br>- Imputed interest
+---
+- 영문용어 : Production plan
+- 한글용어 : 생산계획
+- 설명 : 생산 계획은 판매생산계획(SOP)의 계획 테이블(planning table)에서 생성된다. 생산 목표는 materials, 제품그룹, 정보구조의 특성값에 대하여 설정할 수 있고, 판매 목표로부터 도출할 수도 있다. 한 레벨에 생산할당(production quotas)을 설정하여 하위 레벨로 분배할 수도 있고 (예를들어, 제품 그룹 -> material), 한 레벨에 생산할당을 설정하여 상위 레벨로 취합할 수도 있다(예를들어, material -> 제품 그룹). 계획 구간(planning horizon)은 많은 기간들(일, 주, 월, 혹은 입력 기간)로 나뉘어진다. 판매생산계획(SOP)에서 계획된 생산 수량을 수요관리(Demand Management)로 넘길 수 있다.
+---
+- 영문용어 : Production resource/tool
+- 한글용어 : 생산자원/도구
+- 설명 : 생산 자원/도구(PRT)는 작업장(work center)에서 작업(operation)을 실행하기 위한 것으로 아래와 같은 것들이 있다 - 도구 - 지그와 비품(jigs and fixtures) - 측정 및 검사 설비 - NC(수치 제어) 프로그램 - 문서 및 도면 생산 자원/도구는 그들이 필요한 작업오더(work order)의 operation들에 할당된다.
+---
+- 영문용어 : Production system (ABAP)
+- 설명 : 회사의 실제 업무처리를 수용하는 시스템. 여기에 ‘살아있는(live)’생산 데이터가 입력된다.
+---
+- 영문용어 : Production version
+- 한글용어 : 생산버젼
+- 설명 : 생산 버젼은 material을 생산하는데 사용될 수 있는 다양한 생산기술들을 결정하며, 다음과 같은 사항들을 나타냄. <br>- BOM 전개를 위한 대체 BOM (BOM alternative) <br>- task list 유형, task list 그룹, task list에 할당하기 위한 그룹카운터 <br>- lot-size 제한사항
+---
+- 영문용어 : Profit center
+- 한글용어 : Profit center
+- 설명 : Profit Center도 관리회계상의 조직단위를 표현하고, 계층구조를 형성할 수 있다는 점에서는 Cost Center와 유사하다. 다만, Cost Center는 간접비의 관리단위로서 비용을 집계하고, 다른 CO의 Object(Cost Center, Order 등)로의 비용배부를 기본적인 기능으로 제공하는 데에 반해, Profit Center는 회사 내 손익을 관리하는 기본 단위이며 CO내의 Shadow Object로서, Profit Center(책임회계단위)별로 손익정보를 집계하여 그 정보를 조회할 수 있는 기능을 제공한다. <br>따라서 Profit Center에 집계된 손익정보를 다른 CO Object로 배부하는 것은 불가능하다. <br>다만, Profit Center간의 배부만이 가능하다. Profit Center에는 손익정보이외에 B/S 항목들을 집계/조회할 수 있는 기능이 제공되고 있는데, 이의 본래의 목적은 AR, AP, 고정자산, 재고자산 등의 주요 B/S 계정들의 금액을 Profit Center로 집계하여 그 금액들을 조회 하거나, 재무비율의 계산(ROI 등)에 활용하기 위한 것으로서, FI의 Business Area와 같이 차/대 균형이 맞는 대차대조표의 산출이 시스템적으로 지원되지는 않음에 주의하여야 한다. <br>모든 B/S 계정기표를 Profit Center기준으로 하기위해서는 <br>- Cash와 같은 B/S계정금액을 실질적으로 Profit Center별로 나눌 수 있는 기준이 정립되어 있어야 하며, <br>- 시스템적으로 어떻게 모든 계정기표시 Profit Center를 입력할 수 있을 것인가를 고려하여야 하며, 차/대 균형이 맞는 대차대조표를 구하기 위해서는 일종의 본/지사(또는 사내차입금)기표를 추가적으로 입력하는 등의 고려가 필요하다.
+---
+- 영문용어 : Profit Center Accounting (PCA)
+- 한글용어 : Profit Center Accounting
+- 설명 : 회사내부 손익단위인 Profit Center 단위로 손익 분석
+---
+- 영문용어 : Profitability analysis (PA)
+- 한글용어 : Profitability analysis
+- 설명 : Profit Center 이외의 여러 특성별로 손익 분석. 매출발생과 동시에 예정손익 분석을 Real-Time으로 지원
+---
+- 영문용어 : Purchase order
+- 한글용어 : 구매오더
+- 설명 : Vendor에게 material을 공급하거나 용역/작업을 제공/수행하도록 하는 요청하는 것. SAP 시스템에서, 구매 order는 내부적인 material 관리(공장간 재고 이전)에 사용될 수도 있다. 구매 order(PO)는 하나 이상의 항목들을 포함한다.
+---
+- 영문용어 : Purchase order no
+- 설명 : 수주명 또는 예상 수주명 입력 field로 사용
+---
+- 영문용어 : Purchase order price unit (MM)
+- 설명 : 구매 부서가 사용할 수 있는 대체 단위(order price unit이나 PO price unit로 불리기도 한다). 구매주문가격단위는 구매가격을 order 단위와 다른 단위로 표현하게 해준다. 예 주문(Ordered) 100 m2; 가격(Price) 10kg 당 $24.20 Order 단위는 m2이다, 여기서 구매주문가격단위는 kg 이다.
+---
+- 영문용어 : Purchase Organization
+- 한글용어 : 구매조직
+- 설명 : Plant에 자재 또는 서비스의 구매업무를 담당하는 조직 단위로 Vendor와 가격조건 등의 조건을 협상하는 단위이다.
+---
+- 영문용어 : Purchase requisition
+- 한글용어 : 구매요청
+- 설명 : 구매부서에 대해 지정일까지 일정량의 자재나 서비스 조달을 요구하거나 지시하는 것.
+---
+- 영문용어 : Purchasing document (MM)
+- 설명 : 구매 부서가 material이나 용역을 조달하기 위해 사용하는 도구. 표준 SAP 시스템에는 다음과 같은 구매 문서들이 있다 <br>·구매 요청(purchase requisition) <br>·견척 요청(request for quotation RFQ) <br>·구매 주문(purchase order PO) <br>·계약(contract) <br>·스케쥴링 협약(scheduling agreement).
+---
+- 영문용어 : Purchasing document category (MM)
+- 설명 : 구매 문서 구분자. 구매 문서 범주는 다음들이 있다 <br>·견척 요청(request for quotation RFQs) <br>·구매 요청(purchase requisitions) <br>·구매 주문(purchase orders POs) <br>·계약(contracts) <br>·스케쥴링 협약(scheduling agreements) 구매문서범주는 구매문서유형(purchasing document type)에 의해 더 세분화될 수 있다.
+---
+- 영문용어 : Purchasing group
+- 한글용어 : 구매그룹
+- 설명 : 구매에 대한 책임을 지는 구매담당자나 구매담당자 그룹을 나타내는 키. 구매 그룹은 <br>- material의 조달에 대해 내부적으로 책임을 지고, <br>- 회사와 vendor와의 거래에 대한 주경로 역할을 담당한다.
+---
+- 영문용어 : Purchasing info record
+- 한글용어 : Purchasing info record
+- 설명 : 구매 부서에서 이용할 수 있는 material/vendor 관련 정보. 구매 인포레코드는 구매 부서에 다음과 같은 데이터를 제공한다 <br>- Vendor가 지금까지 견적을 제출했거나 공급한 materials - Material의 가격을 매기거나 material을 공급한 vendor
+---
+- 영문용어 : Purchasing organization (MM)
+- 설명 : 구매 조직은 회사 단위로서, 물품이나 용역을 확보하고, 공급자와 구매 조건을 협상하고, 이러한 처리들의 책임을 진다.
+---
+- 영문용어 : QM (Quality Management)
+- 한글용어 : 품질관리
+- 설명 : SAP Module중 품질관리 부문을 말하며 크게 수입검사출하검사 부문을 관리하는 영역을 말한다. 물류 공급 체인의 각 단계에서 높은 수준의 품질 표준을 이룰 수 있도록 제반 절차를 효과적으로 구축하며, 그 결과를 활용하여 연구조사 및 설계에서 생산계획, 생산, 판매/유통, 그리고 유지보수에 이르기까지 한 제품의 전체 라이프사이클이 가지는 모든 면에 영향을 미침.
+---
+- 영문용어 : Quality Level
+- 한글용어 : 검사수준
+- 설명 : 각 자재별 검사수준을 정하는 것으로서 관리검사 자재를 지정시에 사용하며, 미등록시에는 초기검사 Lot생성시 보통검사로 자동등록되어 검사의뢰가
+---
+- 영문용어 : Quality level (QM)
+- 설명 : 자재의 품질 수준.
+---
+- 영문용어 : Quality notification (QM)
+- 설명 : 품질관리 영역에서, 회사의 materials, 제품, 용역의 부재나 불만족스러운 품질과 관련한 모든 정보를 기록하고 관리하는 수단. 이는 다음을 포함한다 <br>·내부 문제 메시지 <br>·고객의 불만과 결함 통지 <br>·손상 보고와 비교 정보
+---
+- 영문용어 : Quant Data
+- 한글용어 : 품질정보
+- 설명 : AP에서 정의하는 Quant Data는 해당자재의 정량부분(치수,중량,경도,회전수 등등..)의 Spec을 말한다. 만일 해당자재를 검사규격에 등록하고 정확한 정량 Spec를 입력치 않을시는 검사규격에서 정한 대표 치수를 인식한다.
+---
+- 영문용어 : Queue time
+- 한글용어 : 작업전대기시간
+- 설명 : 이동시간(move time)의 종료시점과 실행시간(execution time)의 시작시점 사이의 시간 간격.
+---
+- 영문용어 : Quota arrangement
+- 한글용어 : Quota 배정
+- 설명 : 각 공급원에 쿼타를 배정함으로써 특정 공급원간에 총 자재 소요량을 배분하는 방법. 쿼타에는 해당 소요량 중 어떤 부분을 특정 공급원으로부터 조달할 것인지가 명시된다. 시스템에서는 쿼타를 이용하여 구매요청 및 구매오더에 공급원을 제안한다.
+---
+- 영문용어 : Quotation (MM)
+- 설명 : Material을 공급하거나 용역을 제공하는 vendor의 의사 표명. Vendor의 가격과 조건들이포함되있고 견적 요청(RFQ)에 응답하여 제출된다.
+---
+- 영문용어 : Quotation type
+- 설명 : 견적 업무를 수행하기 위한 견적 type으로 QT(customer quotation type)을 입력하여 사용
+---
+- 영문용어 : Range (QM)
+- 설명 : 정량 특성에 대한 관찰값의 최대치와 최소치의 차이.
+---
+- 영문용어 : Rate
+- 설명 : 판매제품의 표준 판가 및 견적원가등을 입력하는 field
+---
+- 영문용어 : Rate routing
+- 한글용어 : 비율공정
+- 설명 : 반복적인 제조업에서 생산 수량/볼륨을 계획하기 위해 사용되는 routing. 비율 라우팅의 각 operation에 대한 생산량과 고정참조점(fixed reference point)을 정의함으로 생산 비율을 결정할 수 있다.
+---
+- 영문용어 : Ratios
+- 한글용어 : 비율
+- 설명 : 한 기업의 영업실적등을 측정하기위한 모든 종류의 계량화된 수치들. 업적평가, 수익성, 생산성, 유동성의 회사내부 또는 회사간 비교에 비율들이 사용된다. <br>예) 종업원 1인당 매출액. 재고자산회전율.
+---
+- 영문용어 : Receivable
+- 한글용어 : 매출채권
+- 설명 : 대차대조표에 유동자산으로 구분되며 일반상거래에서 발생한 외상매출금. 관계회사외상매출금 등으로 구분된다.
+---
+- 영문용어 : Recipient system (ABAP)
+- 설명 : SAP 시스템 그룹에서, 결합시스템(consolidation system)의 변경 요청(change request)들을 받는 시스템.
+---
+- 영문용어 : Reconciliation account
+- 한글용어 : 조정계정
+- 설명 : 보조부(Customer, Vendor, Asset)의 거래가 자동적으로 반영이 되는 G/L계정.
+---
+- 영문용어 : Recurring entry
+- 한글용어 : 반복분개
+- 설명 : 정기적으로 반복되어 입력되는 Data. 반복입력 프로그램은 반복적으로 발생하는 Data를 반복적으로 전표를 기준으로 전기(posting)한다. 예를 들면 은행이 지속적으로 일정금액을 지급하는 경우와 비슷하게 임차료, 보험료, 융자 등을 반복 입력 사항으로 설정할 수 있다.
+---
+- 영문용어 : Recurring entry document
+- 한글용어 : 반복분개전표
+- 설명 : 반복입력 프로그램에 의해 전기되는 개별항목들을 담고 있는 특수 EDP 전표.
+---
+- 영문용어 : Reference document
+- 한글용어 : 참조전표
+- 설명 : 전표를 입력하는 경우 참조로 사용되는 전표. 이미 기표가 이루어진 일반적인 전표나 견본전표(sample document)를 참조전표로 사용할 수 있다.
+---
+- 영문용어 : Reference functional location (PM)
+- 설명 : 같은 구조를 갖는 기능위치들(functional locations)을 생성하는데 참조하는 기능위치. 참조 기능 위치는 시스템에 실제로 존재하는 기능위치를 나타내는 것이 아니라, 관리 tool의 역할을 한다. 참조 location의 마스터레코드를 변경함으로써, 이를 참조하는 기능위치들의 마스터레코드를 한번에 변경할 수 있다.
+---
+- 영문용어 : Regional code
+- 한글용어 : 지역코드
+- 설명 : SAP 시스템에서 주소를 구분하기위해 사용되는 key. 지역코드는 몇 나라에서 주소의 일부로 정해져 있다.(우편번호와 유사한 기능을 하는 것으로 보임)
+---
+- 영문용어 : Release order
+- 설명 : 계약에서 합의된 자재나 서비스의 총 수량중 일부를 협력업체에서 요구할 때 이용하는 구매 오더의 한 형태
+---
+- 영문용어 : Reorder point
+- 한글용어 : 재발주점
+- 설명 : Material의 재고량이 재발주점 밑으로 떨어지면, MRP 파일에 material이 자동 입력된다. 동의어로 reorder level이 종종 사용된다.
+---
+- 영문용어 : Repetitive manufacturing
+- 한글용어 : 반복생산
+- 설명 : 반복적인 생산의 계획과 통제를 위해 사용되는 components. 반복 제조에서, 다음의 기능들을 사용할 수 있다; <br>- 기간과 수량에 기초한 실행 스케쥴(run schedule)의 생성과 처리 <br>- 생산 통제에 요구되는 노력의 감소 및 backflushing의 단순화
+---
+- 영문용어 : Req. deliv. date
+- 설명 : 견적/수주 order에 대한 요구납기일 지정(server 제품) 견적/수주 order에 대한 납품완료일 지정(N/W, SI제품)
+---
+- 영문용어 : Reservation
+- 한글용어 : 예약
+- 설명 : 미래 일자에 material이 출고되도록 창고/저장소에 보내는 요청이나 지시. 예약의 목적은 material이 요구되는 때 가용하도록 보장하는 것이다. 예를들어, material이 cost center나 asset, 주문에 대해 예약된다.
+---
+- 영문용어 : Reserve for bad debt
+- 한글용어 : 대손충당금
+- 설명 : 채권금액 중 미래에 회수가 불가능하다고 추정되는 금액에 대하여 설정하는 충당금.
+---
+- 영문용어 : reserved stock (MM)
+- 설명 : Material이 출고용으로 예약된 총량.
+---
+- 영문용어 : Residual item
+- 한글용어 : 잔여항목
+- 설명 : 송장항목의 금액과 지불된 금액간의 차이를 나타내는 항목. 고객이 지급한 부분 대금을 전기하면서 미결항목을 반제할 때 시스템은 잔여항목을 이월시킨다.
+---
+- 영문용어 : Restricted-use stock (MM)
+- 설명 : 사용 용도에 제한이 따르며 batch로 관리되는 material 재고. 이 범주의 재고는 배치상태관리(batch status management)가 활성화되있는 경우에만 사용된다.
+---
+- 영문용어 : Reversal
+- 한글용어 : 역분개
+- 설명 : 같은 금액의 다른 전표를 동일한 계정의 반대쪽에 전기함으로써 전표를 역분개 하는 것.
+---
+- 영문용어 : Reverse document
+- 한글용어 : 역분개전표
+- 설명 : 역분개를 하는 경우에 만드는 전표.
+---
+- 영문용어 : Revision level
+- 한글용어 : 개정레벨
+- 설명 : Plant와 같은 조직 또는 Part 등이 잠시 일정기간 동안 사용되지 않아 유지보수가 필요한 기간
+---
+- 영문용어 : Rework order
+- 한글용어 : 재작업오더
+- 설명 : 제조 및 생산단계가 완료된 제품에 대하여 불량(defects)을 수리하기 위해 사용되는 오더.
+---
+- 영문용어 : RFC (BC)
+- 설명 : Remote Function Call. RFC는 원격 SAP시스템에 정의되있는 프로그램 모듈(functions)을 불러서 처리하도록 해준다. RFC는 통신 통제, 파라미터 전송, 에러 처리를 관리한다.
+---
+- 영문용어 : Rough-cut capacity planning
+- 한글용어 : 개략생산능력계획-RCCP
+- 설명 : 주생산계획(master production schedule)을 노동자, 기계 등 주 자원에 대한 소요량으로 전환하는 절차.
+---
+- 영문용어 : Rounding value
+- 한글용어 : 올림값
+- 설명 : 조달(procurement)하는 수량을 이 값의 배수로 올림한다.
+---
+- 영문용어 : Route
+- 한글용어 : Route
+- 설명 : 출발점과 도착점간의 거리. 특정운송경로는 여러운송구간으로 구성된다.
+---
+- 영문용어 : Routing
+- 한글용어 : 공정
+- 설명 : Order에 대한 참조 없이, material을 생산하거나 용역을 제공하는데 요구되는 일련의 처리 단계들을 기술한다. Routing의 주된 객체들은 routing header, operations, material 할당, 생산 자원/도구, 검사 특성들이다. 일자 및 수량과 함께, routing 데이터는 order의 중요한 부분이다.
+---
+- 영문용어 : Routing type
+- 한글용어 : 공정유형
+- 설명 : Routing을 구분하는 특성으로 다음과 같은 유형들이 있다. <br>- Routing(type N) <br>- Reference routing(type S) <br>- Rate routing(type R) <br>- Reference rate routing(type L)
+---
+- 영문용어 : Safety stock
+- 한글용어 : 안전재고
+- 설명 : 예기치 않은 많은 소요량을 충당하기 위해 가져가는 재고량. 안전 재고의 목적은 material의 부족을 방지하는 것이다.
+---
+- 영문용어 : Sales & Operations Planning
+- 한글용어 : 판매생산계획-SOP
+- 설명 : 판매생산계획(SOP)은 과거의, 현재의, 예측된 미래의 데이터에 기초하여 판매와 생산목표를 설정할 수 있는 예측 및 계획 tool이다. 또한 이들 목표를 달성하기 위해 요구되는 용량(amounts of capacities)을 결정하기 위해 용량 계획(capacity planning)을 수행할 수 있다. SOP는 Application Link Enabling(ALE)을 이용하여 분산 환경에서 실행될 수 있다.
+---
+- 영문용어 : Sales area
+- 한글용어 : 판매영역
+- 설명 : 판매조직, 유통경로, 제품군으로 구성되는 조직단위. 판매영역은 동일한 방식으로 판매할 수 있는 모든 자재를 분류하기 위해 이용된다. 또한 판매영역은 통계 뿐만 아니라 가격결정을 위한 토대를 제공한다.
+---
+- 영문용어 : Sales district
+- 설명 : 사업장 소재지 15개 시도로 입력
+---
+- 영문용어 : Sales group
+- 설명 : 소속 영업그룹별 line code
+---
+- 영문용어 : Sales office
+- 설명 : 영업 기본 단위 조직
+---
+- 영문용어 : Sales office (SD)
+- 설명 : 판매조직(sales organization)의 지리적인 면을 반영하는 조직 단위. 판매 사무소는 회사와 지역 시장과의 거래를 담당한다.
+---
+- 영문용어 : Sales order (SD)
+- 설명 : 판매조직(sales organization)과 판매처(sold-to party)간의 물품 배달이나 용역 제공의 협약. 판매 order는 가격, 양, 일자에 관한 정보를 포함한다.
+---
+- 영문용어 : Sales organization
+- 한글용어 : 판매조직
+- 설명 : 자재 및 서비스의 유통과 판매조건 협상을 책임지는 조직단위. 판매조직은 지리적 기준 또는 산업기준 등에 따라 기업이 시장을 세분하는 방식을 나타낼 수 있다. 모든 판매관련 업무가 Sales Organization에서 실행되며, 여러 개의 Plant 또는 Company Code에 할당될 수 있다. 이 조직구조 단계에서 사용자는 제품의 판매가격, Rebates, Discounts 및 납기 리드타임 등을 결정할 수 있다. 또한 Sales Organization은 하위 판매조직인 Sales Area, Marketing Region 등과 같은 다른 판매 조직으로 구분되어 분할될 수 있다.
+---
+- 영문용어 : Sales organization (SD)
+- 설명 : 제품을 판매 및 유통하고, 판매 조건을 협상하고, 이러한 거래의 책임을 지는 조직 단위.
+---
+- 영문용어 : Sales plan
+- 한글용어 : 판매계획
+- 설명 : 미래의 판매량의 명세. 판매 계획은 얼마나 많은 제품이나 제품그룹이 판매될 수 있는지를 상술한다. 판매 계획은 수요관리(demand management)와 주생산계획(master production scheduling)의 출발점이다.
+---
+- 영문용어 : Sales relevant
+- 한글용어 : 판매관련거래
+- 설명 : 포스팅 키에 의해 표시되는 거래의 특성. 예를 들어 U라는 포스팅 키는 "판매관련거래"라는 것을 표시하며 따라서 그 거래는 customer의 매출액 기록을 새롭게 수정하게 된다.
+---
+- 영문용어 : Sales status
+- 설명 : 자재판매 가능여부 상황설정
+---
+- 영문용어 : Sample account
+- 한글용어 : 견본계정
+- 설명 : 특수 G/L 계정 마스터 레코드로 G/L 계정 마스터 레코드 중 특정 회사 코드에 공통적인 부분을 만들고자 할 때 사용자가 이용할 수 있는 기본값들을 담고 있다.
+---
+- 영문용어 : Sample document
+- 한글용어 : 견본전표
+- 설명 : 회계전표를 입력할때 사용자가 하나의 보기로 참조할 수 있도록 기본 Data를 포함하고 있는 특수한 유형의 참조 전표이다. 회계전표와는 다르게 샘플전표는 계정잔액에 영향을 미치지않고 회계전표에 Data를 제공하는 기능만을 가지고 있다.
+---
+- 영문용어 : Sample size (QM)
+- 설명 : 검사하기 위해 모집단(population)이나 부분 모집단에서 취하는 단위 수량.
+---
+- 영문용어 : Sampling (QM)
+- 설명 : Lot에서 샘플을 선택하여 출고하기위해 계획된 절차.
+---
+- 영문용어 : Sampling Procedure
+- 한글용어 : 샘플링절차
+- 설명 : 검사시 정성검사와 정량검사에 있어 각각 검사시에 샘플링스케마를 이용하여 검사수량을 정할것인가 샘플링스케마에 관계없이 5개만을 검사할 것인가를 정해주는 절차를 정의한다. <br>-.정성검사의경우 샘플링스케마를 이용하며 <br>-.정량검사는 FIX-5 (5개고정)를 이용한다.
+---
+- 영문용어 : Sampling Scheme
+- 한글용어 : 샘플링스키마
+- 설명 : 검사엄격도 레벨에 따른 샘플링 수량을 결정하기 위하여 정해놓은 것이며, 동일한 입고LOT수량이라도 검사수준에따라 검사할 샘플수량을 달리하는 것을 말한다.
+---
+- 영문용어 : Sampling scheme (QM)
+- 설명 : 샘플링 계획들의 조합이며 100% 검사를 구현하는 준비라고도 볼 수 있다.
+---
+- 영문용어 : SAP R/3
+- 한글용어 : SAP R/3
+- 설명 : SAP는 클라이언트 서버 표준 어플리케이션 소프트웨어 시장에서 세계 1위를 달리고 있는 기업임. 현재 SAP는 유럽의 소프트웨어 회사 가운데 1위, 전세계 소프트웨어 회사 순위에서는 5위에 랭크되어 있음. SAP 제품의 특징은 기업의 실질적 통합을 실현시켜 주는 통합 응용 소프트웨어로서, 메인 프레임용 R/2와 클라이언트 서버 아키텍쳐용인 R/3는 회계, 물류, 인사관리, 개발 환경, 기술적 기능 지원 등과 같은 주요 응용분야 모두에서 사용되고 있음.
+---
+- 영문용어 : Schedule line
+- 설명 : 수주오더 입력된 자재에 대한 가용납기를 확인할 수 있는 view
+---
+- 영문용어 : Scheduling
+- 한글용어 : 일정계획
+- 설명 : 일정계획에서는, 시스템이 order나 order의 operation들의 시작 및 종료 일자를 계산한다. 일정계획은 다음에서 기술된 기능들에서 수행된다 <br>- MRP material 마스터레코드에 지정된 내부생산시간과 배달시간이 고려된다. <br>- Capacity planning 일정계획은 task list(routing이나 검사 계획)를 통해 수행된다. 리드타임 scheduling과 용량(capacity) scheduling에는 차이가 있다. 전자는 용량부하(capacity loads)를 고려하지 않고, 후자는 용량 부하를 고려한다. <br>- Networks scheduling은 용량 소요(capacity reqiurements), floats, 활동(activities) 실행의 earliest/latest 일자를 계산한다. 다음과 같은 일정계획 유형이 있다 <br>- Forward scheduling 일정계획이 시작일자로부터 시작한다. <br>- Backward scheduling 일정계획이 종료일자로부터 시작한다. <br>- 현재일자 scheduling 일정계획이 현재일자로부터 시작한다. <br>- "Today" scheduling network/order의 시작일자가 과거에 있는 경우 일정을 다시 잡는데 사용되는 일정계획 유형.
+---
+- 영문용어 : Scheduling agreement
+- 한글용어 : 납품일정계약
+- 설명 : 개괄계약(outline agreement)의 한 형태(장기간, volume 구매 협약). Delivery scheduling agreement는 vendor와 고객의 장기 협약으로, 협약의 각 항목에 지정되있는 material들의 배달 일정(vendor 일정)의 생성 및 갱신을 수반한다.
+---
+- 영문용어 : Scheduling margin key
+- 한글용어 : 일정마진키
+- 설명 : Material 소요계획과 관련된 시간 간격 그룹(group of time intervals)을 참조하는 material 마스터레코드의 지시자.
+---
+- 영문용어 : Scrap
+- 한글용어 : 스크랩
+- 설명 : 품질 요구에 맞지않는 material의 비율.
+---
+- 영문용어 : SD (Sales and Distribution)
+- 한글용어 : SD
+- 설명 : 고객의 첫 문의에서 마지막 대금 청구까지 전 판매 및 유통 프로세스를 지원함. 고객정보관리(Customer Master), 주문(Sales Order) 처리, 배달(Delivery), 대금청구(Billing) 등이 주요 기능임.
+---
+- 영문용어 : Seasonal model
+- 한글용어 : 계정성모델
+- 설명 : 소비 흐름이 계절적인 주기를 갖는 경우 사용하는 모델. 평균값에 비해 많이 높거나 낮은 값이 주기적으로 나타나면, seasonal model이 존재하는 것이다.
+---
+- 영문용어 : Seasonal trend model
+- 한글용어 : 계정추세성모델
+- 설명 : 계절적이면서 일정한 기울기를 갖는 소비 성향에 사용되는 모델. 이러한 소비 흐름은 평균값이 일정하게 증가하거나 감소하는 특성이 있다.
+---
+- 영문용어 : Select view
+- 설명 : 자재 마스타 등록시 관련된 프로세스별 data field를 연결하는 정보 속성
+---
+- 영문용어 : Selection date
+- 설명 : <br>□ Delivery note를 만들기 위하여 Sales order 상에서 출고하고자 하는 자재의 confirm date를 입력하는 field <br>□ Billing document 생성하기 위하여 Billing plan에 date를 입력하는 field
+---
+- 영문용어 : Select-Set
+- 설명 : 여러개의 Code-Group 중 필요에의해 해당되는 Code-Group을 모아놓은 것을 말하며 Select-Set이검사규격에 연결되어 실제검사시 불량항목 선택용으로 사용된다.
+---
+- 영문용어 : Semi-finished product
+- 한글용어 : 반제품
+- 설명 : 완성되지 않은 제품. 이는 material 유형이다.
+---
+- 영문용어 : Setup time
+- 한글용어 : 가동준비시간
+- 설명 : 작업(operation)이 수행되는 작업장(work center)을 준비하는데 요구되는 시간. 가동준비시간(setup time)은 리드타임의 일부이다.
+---
+- 영문용어 : Shift definition
+- 한글용어 : 교대정의
+- 설명 : 근무(shift) 시작, 종료, 휴식 시간이 근무정의(shift definition)에서 결정된다. 근무 정의는 모든 work center에 대해 유효하다. 근무 정의는 중앙집중식으로 관리되기 때문에 작업 시간이 변경될 때 가용 capacity를 결정하는데 소요되는 일을 줄일 수 있다.
+---
+- 영문용어 : Shift sequence
+- 한글용어 : 교대순서
+- 설명 : 특정기간 동안에 여러 개의 작업장(work center)에 대한 교대조(shift)의 순서를 지정한 교대순서(shift sequence). 하나의 shift sequence에 대한 유지보수 작업은 shift definition의 오더에 대한 변경작업 시간을 감소시킨다.
+---
+- 영문용어 : Shipping condition
+- 한글용어 : 출하조건
+- 설명 : 제품을 고객에게 인도하기 위한 전반적인 전략. 예를 들어 제품이 가급적 빨리 고객 위치에 도착되어야 한다고 출하조건에 규정되어 있는 경우 제품을 가장 빨리 납품할 수 있는 출하점과 운송경로가 시스템에 의해 자동적으로 제안된다.
+---
+- 영문용어 : Shipping point
+- 한글용어 : 출하장소
+- 설명 : 특정장소에 고정되어 출하활동을 수행하는 조직단위. 출하점은 기업의 발송부서 또는 Plant의 철도역 등이 될 수 있다.
+---
+- 영문용어 : Ship-to party
+- 한글용어 : Ship-to party
+- 설명 : 제품이 인도되는 배달처.
+---
+- 영문용어 : Shop floor papers
+- 한글용어 : 작업현장지시서
+- 설명 : 작업 order를 수행하는데 요구되는 문서. 다음을 포함한다 <br>- operation control ticket <br>- job ticket <br>- pick ticket <br>- time ticket <br>- confirmation slip
+---
+- 영문용어 : Shop papers (PM)
+- 설명 : 다음과 같은 보전 order를 실행하는데 요구되는 문서 <br>·operation control ticket <br>·job ticket <br>·material provision list <br>·wage slips <br>·completion confirmation slips
+---
+- 영문용어 : Singel-level where-used list
+- 한글용어 : Single-level where-used list
+- 설명 : Material이 사용된 assembly들과 사용된 material의 양을 추적하는 BOM 레포팅 기능. Material을 직접 포함하는 assembly들만(single-level BOM) 나열된다.
+---
+- 영문용어 : Single-level BOM
+- 한글용어 : Single-level BOM
+- 설명 : 하나이상의 어셉블리를 표현하는데 사용되는 구성부품(component)들의 수량.
+---
+- 영문용어 : SIS
+- 설명 : sales information system의 약어로 영업 정보 시스템임 <br>□ Characteristics 분석대상 <br>□ Parameter 매개변수 <br>□ Key figure 분석항목 <br>□ Drill down 조회하고자 하는 조회 항목에 대하여 조회 순서별로 우선순위 선택 <br>□ Value display 조회되는 data를 absolute(절대값)/percent로 조회 <br>□ Character display 조회하고자하는 분석대상을 key 값 또는 description으로 선택하여 조회 <br>□ Column with 분석대상/분석 항목 field 폭 <br>□ Cumulative 누적곡선 <br>□ Correlation 상관관계 <br>□ Classification 분류 <br>□ Dual classification 이중분류 <br>□ Comparision 비교분석
+---
+- 영문용어 : Skip (QM)
+- 설명 : 일정 수의 선행 검사에서 견본추출 결과가 기준과 일치했다면, 특성이나 material이 검사 없이 받아들여 진다. 달리 말하면, skip은 과거의 좋은 품질로 인해 검사가 요구되지 않는다는 것을 의미한다.
+---
+- 영문용어 : Sold-to party
+- 한글용어 : Sold-to party
+- 설명 : 제품 또는 서비스를 발주하는 사람 또는 회사. 판매처는 지급처, 청구처, 인도처의 역할을 수행할 수도 있다.
+---
+- 영문용어 : Sorting conception
+- 한글용어 : 분류개념
+- 설명 : 계정의 개별 항목들이 화면 출력될 때 분류되는 방식 즉 서로에게 할당되거나 그룹으로 묶인다.
+---
+- 영문용어 : Source list (MM)
+- 설명 : Material에 대한 가용한 공급원들의 리스트로서, 그러한 공급원들로부터 조달이 가능한 기간을 보여준다. 공급원 리스트는 어느 시점에서의 적절한(효과적인) 공급원(vendor, 내부 공장, 개략협약 항목)을 결정하도록 돕는다
+---
+- 영문용어 : Spare part
+- 한글용어 : 예비부품
+- 설명 : 결함이 있는 부품을 대체하는 material. 이 material은 재고로 보관되거나 그러지 않을 수 있다. 예비 부품은 유지보수 BOM(maintenance BOMs)에 입력할 수 있다. 공장 유지보수 목적으로, 예비품은 설비의 다양한 operation들에 할당될 수 있다.
+---
+- 영문용어 : Special G/L account
+- 한글용어 : 특수 총계정원장 계정
+- 설명 : 보조부상의 특별한 거래(선수금, 선급금, 어음, 보증금, 지급보증 등 판매나 구매와 직접적으로 관련이 되지 않는 거래)를 기록하기 위한 조정계정(reconciliation account)으로 일반적인 조정계정과 구분된다.
+---
+- 영문용어 : Special G/L indicator
+- 한글용어 : 특수 총계정원장 표시자
+- 설명 : 특별 G/L거래를 구분해 주는 한 자리로 된 표시자. 특별 G/L거래에는 계약금과 (환)어음, 보증금, 지급보증 등이 있다.
+---
+- 영문용어 : Special G/L transaction
+- 설명 : 총계정원장과 보조부(customer계정, vendor계정)에 별도로 표시되는 매출채권과 매입채무의 특별한 거래. (환)어음, 계약금과 지급보증 등이 있다.
+---
+- 영문용어 : Special liabil
+- 설명 : 특별 여신 금액
+---
+- 영문용어 : Special period
+- 한글용어 : 특별거래기록대상기간
+- 설명 : 결산업무를 위해 마지막 거래기록대상기간(예를 들면 12월)과 구분되는 특별히 설정한 거래기록을 하는 기간.
+---
+- 영문용어 : Special procurement type
+- 한글용어 : 특별조달유형
+- 설명 : Material 마스터레코드의 지시자로서, 이것으로 material의 조달유형이 좀더 정밀하게 결정된다.
+---
+- 영문용어 : Special stock (MM)
+- 설명 : 보관 위치와 관련한 소유권에 따라 개별적으로 관리되어야 하는 material들의 재고. 예를들어, vendor의 위탁 재고(consignment stock)가 그것이다.
+---
+- 영문용어 : Splitting
+- 한글용어 : 분할
+- 설명 : 하나의 작업(operation)에 대한 일정계획 수립시 동일한 프로세스를 동시에 수행하는 여러 개의 처리 단계로 나누는 것.
+---
+- 영문용어 : Standard analysis
+- 설명 : 영업정보의 drill down 형태의 분석 방법
+---
+- 영문용어 : Standard BOM
+- 한글용어 : 표준 BOM
+- 설명 : 표준 객체에 대해 생성된 한 BOM. 표준 BOM은 공장 레벨에서 관리되지 않는다. 표준 BOM은 단순한 BOM으로 표준 BOM에 변형(variants)이나 대안(alternatives)들을 생성할 수 없다.
+---
+- 영문용어 : Standard cost
+- 한글용어 : 표준원가
+- 설명 : 주기적인 표준설정시기에 계산된 제품(Material)의 단가.
+---
+- 영문용어 : Standard cost estimate
+- 한글용어 : 표준원가계산
+- 설명 : 제조원가 계산에서 가장 중요한 원가계산 방법이며 이익 계획 혹은 차이분석에 중점을 두는 제품원가 관리를 위한 기초가 된다. 표준원가는 일반적으로 모든 제품에 대하여 특정 회계연도 혹은 분기가 시작될 때 한번 계산된다. 표준원가 계산에서는 반제품과 완제품의 표준가격을 계산하며 표준가격관리를 받는 자재의 평가와 관련된다.
+---
+- 영문용어 : Standard price (MM)
+- 설명 : 물품 이동과 송장을 고려하지 않고 material을 평가하는 가격.
+---
+- 영문용어 : Statistical key figure (SKF)
+- 한글용어 : Statistical key figure
+- 설명 : 비용의 배부 또는 통계적 목적으로 사용되는 값으로서, Cost element 이외의 여러 관리 Factor들의 측정단위. <br>예) 인원수, 사무실 면적, 결근률 등 <br>- Fixed Value : 한 Period에 데이터를 입력하면 나머지 Period에서도 자동적으로 같은 값을 반영함 <br>- Total Value : 하나의 Period 에서만 Posting 됨
+---
+- 영문용어 : Statistical key figure group
+- 한글용어 : Statistical key figure group
+- 설명 : SKF의 Group
+---
+- 영문용어 : Stock
+- 한글용어 : Stock
+- 설명 : 회사의 현재의 유동자산을 나타내는 자재관리 용어. 이는 회사의 저장소/창고 시설에 있는 원자재, 운영 공급품(operating supplies), 반제품, 완제품, 상거래 물품(trading goods)의 양을 언급한다. "inventory"로도 알려져 있다.
+---
+- 영문용어 : Stock in quality inspection
+- 한글용어 : 품질검사재고
+- 설명 : 현재 품질 검사중에 있는 재고. 품질 검사 재고는 가용재고(unrestricted-use) 재고가 아니다.
+---
+- 영문용어 : Stock in transfer (MM)
+- 설명 : 두 단계 절차를 이용한 재고 이전에서, 출고 관점에서는 재고가 이미 출고되었으나 입고 관점에서는 아직 도착하지 않은 material의 양을 이른다. 이전중인 재고는 입고 관점에서 평가되는 재고이다.
+---
+- 영문용어 : Stock material (MM)
+- 설명 : 항상 재고로 보관되는 material(예를들어, 원자재). 재고 material은 material 마스터레코드를 가지며 material 재고계정에 있는 값(value)에 근거하여 관리된다.
+---
+- 영문용어 : Stock overview
+- 설명 : 전 조직 레벨에 걸친 특정자재 재고에 대한 전체적인 내용을 보여주는 것 (공장별, 저장위치별 재고 현황)
+---
+- 영문용어 : Stock overview (MM)
+- 설명 : 조직 레벨(예를들어, 공장과 저장 위치) 전반에 걸쳐 있는 material 재고 개요. 재고 개요에 나타나는 각 버젼들은 각각의 재고 유형과 그들이 나타나는 order에 해당된다.
+---
+- 영문용어 : Stock transfer
+- 한글용어 : 재고이전
+- 설명 : 한 저장소에서 material을 이동하여 다른 저장소로 옮기는 이전. 재고 이전은 한 공장내에서 일어날 수도 있고 공장간에 발생할 수도 있다. 재고 이전은 시스템에서 한 단계나 두 단계로 처리할 수 있다.
+---
+- 영문용어 : Stock/requirements list
+- 한글용어 : 재고/소요량리스트
+- 설명 : 가장 최근의 material 재고현황의 개요. 개요는 현재 관련된 모든 데이터(생산 주문, 판매 주문 등)를 모으는 기능을 통해 생성된다. 따라서, MRP 리스트가 최근 계획실행시의 재고/소요 현황를 반영하는데 비해 재고/소요 리스트는 material에 대한 가장 최근의 가용성 현황을 보여준다.
+---
+- 영문용어 : Storage location
+- 한글용어 : 상업적 창고
+- 설명 : SAP R/3 에서는 두가지 측면을 가지는 저장 형태를 제공하는데, 상업적 측면에서의 "창고"개념은 Storage Location으로, 물리적 측면에서의 "창고"개념은 Warehouse 로써 지정하게 된다. <br>- Storage Location : 하나의 Plant에 여러 Storage Location이 할당될 수 있으며, 이러한 연결관계를 통하여 모든 저장소들은 Company Code와 직접 연결되게 된다. 모든 재고관리의 기본단위 또한 Storage Location 단계에서 이루어지게 된다. <br>- Warehouse : 복잡한 저장장소에서 자재를 관리하기 위해 일반적으로 사용하게 된다. 창고관리시스템(Warehouse Management System)에서는 보다 효율적인 자재관리를 위하여 Storage Type 이라는 세분화된 조직구조를 사용하고 있다. Storage Type은 저장방법의 차이에 따라 정해지게 되며, High-rack, Container area, Goods Receipt area, Picking area 등으로 나누어 볼 수 있으며, Storage Section으로 나눌 수 있다.
+---
+- 영문용어 : Subcontracting (MM)
+- 설명 : SAP R/3 시스템에서, 외부 공급자가 고객이 제공하는 material을 처리하는 것.
+---
+- 영문용어 : Sub-ledger accounting
+- 한글용어 : 보조원장회계
+- 설명 : 채권, 채무, 고정자산 등과 같은 보조원장을 사용하는 회계보조원장을 통해 G/L 조정계정이 전기된 전표의 내역을 알 수 있다.
+---
+- 영문용어 : Sub-operation
+- 한글용어 : 하부작업
+- 설명 : Sub-operation은 operation에 종속된다. 하위 operation은 몇몇의 사람이나 기계들이 동시에 요구되는 operation에 사람과 기계를 할당하는데 사용된다. 하위 operation을 비용계산에 포함시킬 수 있으나, 계획은 세울 수 없다. 예를들어, 다음과 같은 유형의 하위 operation들이 있다 - routing에 있는 operation의 sub-operation - maintenance task list에 있는 operation의 sub-operation
+---
+- 영문용어 : Subsidiary ledger(sub-ledger accounting)
+- 한글용어 : 보조부
+- 설명 : 외상매출금, 외상매입금, 고정자산 등의 기록에 사용된다. 보조부는 G/L의 조정계정(reconciliation account)에 전기(posting)된 전표들에 대한 자세한 설명을 해주는 역할을 한다.
+---
+- 영문용어 : Summarized BOM
+- 한글용어 : 요약 BOM
+- 설명 : 제품에 포함되는 assembly들과 components의 전체 리스트를 보여주는 BOM 분석. 한번 이상 나타나는 assembly나 부품들은 그 양이 합쳐진다. 시스템은 여기에 요구 수량만큼 곱하여 하나의 항목으로 나타낸다.
+---
+- 영문용어 : Summary data
+- 한글용어 : 요약자료
+- 설명 : 기표된 금액이나 수량에 관한 정보의 (분석목적의) 요약형태.
+---
+- 영문용어 : Supplementation
+- 한글용어 : 보충작업
+- 설명 : 전표입력과정 중 자동으로 생성된 전표의 개별항목을 수작업으로 보충하는 것.
+---
+- 영문용어 : SWIFT code (SWIFT코드)
+- 설명 : Society for Worldwide Interbank Financial Telecommunnication. 해외지급거래에 있어서 은해의 주소나 번호가 없이도 SWIFT코드(세계적으로 표준화되어 있음)를 통해 은행을 확인하는 것이 가능하다. 이것은 자동지급거래를 위하여 필요하다.
+---
+- 영문용어 : Target cost
+- 한글용어 : 목표원가
+- 설명 : 완성시점의 생산량에 의한 재무회계 기표원가. 표준원가 * 생산량(실제완성 입고 수량). 재무에 기표되는 금액.
+---
+- 영문용어 : Task (PM)/(QM)
+- 설명 : 보전, 서비스, 품질 통보의 관리와 계획을 나타내는 활동. Task는 보전, 서비스, 품질 보증 수단을 수행하는데 있어서 사람들의 협동을 결정하는데 사용된다.
+---
+- 영문용어 : Task list
+- 한글용어 : 직무리스트
+- 설명 : 특정 자재/제품(Material)을 생산하기 위한 단계들을 표시하며, 오더를 참조하지 않고 Activity를 실행하는데 사용됨. 직무리스트의 필수항목은 헤더(header), 작업(operation), 자재할당(material component allocation), 생산자원/도구(PRT), 검사특성(inspection characteristics) 등이 있음. 수량/일자와 함께 직무리스트 정보들은 오더의 중요한 부분을 이루고 있고, 다음과 같은 종류가 제공됨. <br>- Routings <br>- Reference operation sets <br>- Rate routings <br>- Inspection plans <br>- Maintenance task lists <br>- Standard networks <br>- Master recipe
+---
+- 영문용어 : Tax amount
+- 한글용어 : 세금
+- 설명 : 영업세, 원천징수된 세금, 매출부가가치세, 매입부가가치세 등으로 기표되어 과세당국에 보고해야 하는 금액.
+---
+- 영문용어 : Tax base amount
+- 한글용어 : 과세표준
+- 설명 : 세금계산의 대상이 되는 금액. 나라에 따라 현금할인액이 (부가가치세의)과세표준에 포함되거나 제외된다.
+---
+- 영문용어 : Tax classification
+- 설명 : 세금관련 정보, 면세 또는 과세
+---
+- 영문용어 : Tax code
+- 한글용어 : 세금코드
+- 설명 : 세금을 구분하고 계산하는데에 필요한 정보를 나타내는 두자리 코드. 세금코드에서 규정하는 정보에는 다음과 같은 것들이 있다 <br>- 세율 <br>- 세금종류(매입부가가치세 또는 매출부가가치세) <br>- 계산방법(%포함 또는 %제외)
+---
+- 영문용어 : Taxes on Sales/Purchases
+- 한글용어 : 판매/구입세
+- 설명 : 매입부가가치세와 매출부가가치세에 사용하는 일반용어. 나라에 따라 다음과 같이 구분된다 <br>- 미국 GST, PST <br>- 영국 VAT <br>- 프랑스 TVA <br>- 스웨덴 MOMS
+---
+- 영문용어 : Teardown time
+- 한글용어 : 해체시간
+- 설명 : Operation이 처리된 뒤 work center를 보통(noramal) 상태로 복원하는데 요구되는 시간. 해체 시간은 실행 시간(execution time)의 일부이다.
+---
+- 영문용어 : Terms of payment
+- 한글용어 : 지급조건
+- 설명 : 거래대금의 지불에 대해 거래상대방과 합의한 조건.
+---
+- 영문용어 : Test system (IMG)
+- 설명 : 프로젝트팀이 시스템을 설정과 프로세스들을 포로토타입하고 테스트하는데 사용되는 환경.
+---
+- 영문용어 : Tolerance
+- 한글용어 : 허용편차
+- 설명 : 어떤 값으로부터 허용되는 편차.
+---
+- 영문용어 : Tolerance (FI)
+- 설명 : 지정한 값에 대하여 허용되는 편차.
+--- 
+- 영문용어 : Tolerance (PM)
+- 설명 : 보전계획 일자로부터 후속 일정에 영향을 미치지 않는 일자까지의 시간 길이.
+---
+- 영문용어 : TR (Treasury)
+- 한글용어 : 자금관리
+- 설명 : 유동성, 포트폴리오 및 리스크를 효과적으로 관리하기 위한 기초를 제공하는 것이며, 효과적인 유동성 분석을 위한 현금관리(TR-CM), 재무거래 및 포트폴리오 관리를 위한 자금관리(TR-TM), 그리고 위험분석을 위한 시장위험관리(TR-TM-MRM) 모듈 등으로 구성.
+---
+- 영문용어 : Trader
+- 한글용어 : 거래자 그룹
+- 설명 : 자기회사내의 거래자를 지칭하는것으로 UserID : Trader는 N:1로써 이용자를 그룹을 지어 권한한도를주기위함
+---
+- 영문용어 : Transfer posting
+- 한글용어 : 대체기표
+- 설명 : 이미 기표된 금액을 한 계정에서 다른 계정으로 기표하는 것. 예를 들어 대체기표는 예비적인 결산작업을 하는 경우에 생성된다.
+---
+- 영문용어 : Transfer posting (MM)
+- 설명 : 재고 이전이나 장부 기록에만 영향을 미치는(물리적 이동이 일어나지 않는) 변경들을 의미하는 용어로서, 그러한 변경으로는 재고의 분류상의 변경이 있다. <br>예 )<br>·공장 내부나 공장간의 재고 이전(stock transfer) <br>·품질 검사로부터 릴리즈 <br>·위탁 재고의 회사 소유 재고로 이전 <br>·배치 분할(batch splitting).
+---
+- 영문용어 : Translation date
+- 한글용어 : 환산일
+- 설명 : 금액을 다른 통화로 환산하는 기준일.
+---
+- 영문용어 : Transport system (ABAP)
+- 설명 : SAP 시스템 그룹의 R/3 시스템들 간에 객체들을 전송하는데 사용되는 기능들의 집합.
+---
+- 영문용어 : Trend model
+- 한글용어 : 추세성모델
+- 설명 : 소비 흐름이 일정한 기울기(trend)를 갖는 모델. 소비값들이 편차가 별로 없고 장기간에 걸쳐 일정하게 내려가거나 올라갈 경우, trend가 존재한다고 볼 수 있다.
+---
+- 영문용어 : Two-step procedure (MM)
+- 설명 : 저장위치에서 저장위치로 또는 공장에서 공장으로 재고이전하는 입력 절차. 이 절차에서, 재고가 "stock in transfer" 상태에 있을때 재고이전에 의해 영향받는 재고를 추적할 수 있다. 두 단계 절차의 대안으로, SAP 시스템은 한 단계 절차의 재고이전 입력을 지원한다.
+---
+- 영문용어 : UD Code
+- 한글용어 : 합격/불합격 코드
+- 설명 : 최종 합격, 불합격을 입력하는 항목들을 모아놓은것을 말하며, <br>보통 A:합격, R:불합격 코드를 나타낸다.
+---
+- 영문용어 : Unit of issue (MM)
+- 설명 : 창고에서 출고되는 material의 양을 표현하는 단위. 출고 단위는 재고보관(stockkeeping) 단위 이외의 단위로 material 소비, 재고이전, 이전입력(transfer posting), 재고조사를 기록하도록 해준다.
+---
+- 영문용어 : Unit of measure
+- 한글용어 : 측정단위
+- 설명 : Material의 치수 또는 수량을 결정하는 단위. 다음은 SAP R/3 시스템에서 사용하는 단위들이다 <br>- 기본 단위(base unit of measure) <br>- 입력 단위(unit of entry) <br>- 출고 단위(unit of issue) <br>- 주문 단위(order unit) <br>- 판매 단위(sales unit)
+---
+- 영문용어 : Unrestricted-use stock
+- 설명 : 즉시출고가 가능한 재고량
+---
+- 영문용어 : Unrestricted-use stock (MM)
+- 설명 : 아무런 사용 제한이 없는, 회사 소유의 material 재고.
+---
+- 영문용어 : Usage decision (QM)
+- 설명 : 검사 결과에 기초하여 이루어지는 검사 lot의 처리에 관한 결정. SAP 시스템에서, 검사 목록의 목록유형은 가능한 용도 결정을 포함한다.
+---
+- 영문용어 : Validation
+- 한글용어 : 검증
+- 설명 : 사전에 정의한 검증규칙에 의해 시스템이 전표입력시 자동으로 Check하는 기능.
+---
+- 영문용어 : Valuation
+- 한글용어 : 평가
+- 설명 : 법률상의 요건(일반적으로 인정된 회계원칙으로 해석됨)에 맞추어 특정 시점에 고정자산이나 유동자산에 속한 모든 상품이나 채무액의 가치를 계산하는 것.
+---
+- 영문용어 : Valuation area
+- 한글용어 : Valuation area
+- 설명 : 재고 가액이 관리되는 조직단위. Plant Level임
+---
+- 영문용어 : Valuation class (MM)
+- 설명 : G/L 계정그룹에 material을 할당하는 것. 평가 클라스는 평가관련 트랜잭션(예를들어, 물품 이동)의 결과로 갱신해야할 G/L 계정을 결정한다. 어느 평가클라스가 유효한가는 material 유형에 의존한다. 몇개의 평가클라스들이 하나의 material 유형에 적용된다. 또한 하나의 평가클라스는 몇개의 material 유형에 적용된다.
+---
+- 영문용어 : Value-added tax
+- 한글용어 : 부가가치세
+- 설명 : 매출부가가치세(output tax)와 매입부가가치세(input tax)에 관한 일반용어.
+---
+- 영문용어 : Variant (IS)
+- 설명 : 단지 일부 특성들(예를들어, 색상, 크기)이 다른 material들.
+---
+- 영문용어 : Variant BOM
+- 한글용어 : Variant BOM
+- 설명 : 특정 제품 또는 동일한 부품을 상당부분 공유하는 여러 제품을 나타낼 수 있도록 복수의 BOM을 결합한 형태.
+---
+- 영문용어 : Vendor
+- 한글용어 : 공급업체
+- 설명 : 외부에서 지불대상 material이나 용역을 조달하는 비즈니스 파트너. 더 넓은 의미의 "supplier(공급자)"도 그러한 의미로 많이 사용된다. supplier"는 판매와 관련없는 트랜잭션에 관계할 수도 있고 또한 내부 공급원이 해당될 수도 있다.
+---
+- 영문용어 : Vendor
+- 한글용어 : 구매처
+- 설명 : 재화나 용역을 제공하여 대가를 받는 거래의 상대방.
+---
+- 영문용어 : Vendor evaluation (MM)
+- 설명 : 공급원의 선택 및 통제와 관련한 결정근거를 제공하는 프로그램. Vendor를 평가하는 주된 기준을 선택하여 비중을 둘 수 있다. 주된 기준은 ·배달 신뢰도 ·가격 ·품질 ·서비스. 이들은 하위 기준으로 세분될 수 있다. 시스템은 기준에 두는 비중에 따라 vendor의 점수를 계산한다. 최대점수는 사용자가 정의한다.
+---
+- 영문용어 : Vendor master record
+- 설명 : 거래를 기록하는데에 필요한 vendor에 관한 모든 정보를 포함하고 있는 데이터 레코드로서 주소나 은행관련 자료가 그 예이다.
+---
+- 영문용어 : Vendor master record (FI)
+- 설명 : Vendor와 거래를 수행하는데 필수적인 모든 정보를 포함하는 데이터 레코드. 이 정보는, 예를들어, 주소 데이터와 은행 데이터를 포함한다.
+---
+- 영문용어 : Volume rebate group
+- 설명 : 자재 등록시 자재 그룹별 D/C 정책을 입력하는 field
+---
+- 영문용어 : Warehouse (LO)
+- 한글용어 : 물리적 창고
+- 설명 : SAP R/3 에서는 두가지 측면을 가지는 저장 형태를 제공하는데, 상업적 측면에서의 "창고"개념은 Storage Location으로, 물리적 측면에서의 "창고"개념은 Warehouse 로써 지정하게 된다. <br><br>- Storage Location : 하나의 Plant에 여러 Storage Location이 할당될 수 있으며, 이러한 연결관계를 통하여 모든 저장소들은 Company Code와 직접 연결되게 된다. 모든 재고관리의 기본단위 또한 Storage Location 단계에서 이루어지게 된다. <br>- Warehouse : 복잡한 저장장소에서 자재를 관리하기 위해 일반적으로 사용하게 된다. 창고관리시스템(Warehouse Management System)에서는 보다 효율적인 자재관리를 위하여 Storage Type 이라는 세분화된 조직구조를 사용하고 있다. Storage Type은 저장방법의 차이에 따라 정해지게 되며, High-rack, Container area, Goods Receipt area, Picking area 등으로 나누어 볼 수 있으며, Storage Section으로 나눌 수 있다.
+---
+- 영문용어 : Withholding tax
+- 한글용어 : 원천세
+- 설명 : invoice 금액의 일부. 몇몇 나라에서는 invoice금액의 일부를 vendor가 원천징수 하여 과세당국에 보고하고 납부하여야 한다.
+---
+- 영문용어 : Work center
+- 한글용어 : 작업장
+- 설명 : Work center는 작업을 수행하는 조직 단위이다. Work center는 operation이 어디에서 수행되며 누구에 의해 수행되는지를 정의한다. Work center 마스터레코드에서, cost center를 각 work center에 할당한다. Work center는 가용 용량(capacity)을 포함하며, Work center에서 수행되는 활동들은 비용 비율(charge rate)로 평가되는데, 비용비율은 cost center와 활동 유형(activity type)에 의해 결정된다. Work center는 다음과 같은 것들이 있다 <br>- 기계 <br>- 사람 <br>- 생산 라인 <br>- 장인 그룹
+---
+- 영문용어 : Work center hierarchy
+- 한글용어 : 작업장계층구조
+- 설명 : 작업장 관리시스템 내 구조로써 작업장 간의 관계가 계층구조로 표시되어 있음. Work center hierarchy는 가용능력(available capacity) 및 요구능력(required capacity)에 대한 누적합계(cumulated)의 계산을 실행하는 능력계획(capacity planning) 및 작업장(work center) 검색에 이용된다.
+---
+- 영문용어 : Work order
+- 한글용어 : 작업오더
+- 설명 : 작업(task) 수행을 지시하는 회사내의 order. work order는 다음 order 유형들에 대한 일반적인 용어이다 <br>- Production order <br>- process order <br>- Inspection order <br>- Maintenance order <br>- network
+---
+- 영문용어 : Workflow (WM)
+- 설명 : 작업이 지정된 시간에 실행되도록 한다. 작업흐름은 사람이나 기계에 의해 처리되는 일련의 작업 항목들로 구성된다. 작업 항목들의 시간과 순서는 작업흐름 관리자에 의해 관리되고 관련 응답장치(response mechanisms)를 통해 조절된다.
+---
+- 영문용어 : XXL List Viewer (GUI)
+- 설명 : R/3 어플리케이션 데이터를 Microsoft Excel에서 보여주고 처리하기 위해 사용하는 tool. XXX List Viewer는 다음 기능을 수행한다 <br>·R/3에서 넘어온 정보의 데이터 구조를 고려하여, Excel에서 R/3 데이터를 보여준다. <br>·Excel의 표준기능 외에 특정 기능을 가용케 한다. <br>·R/3에서 넘어온 데이터의 일관성(consistency)을 보장하기 위해 Excel의 기능을 제한한다.
+---
+- 영문용어 : Year-end closing
+- 한글용어 : 년말결산
+- 설명 : 년간 대차대조표와 손익계산서로 현지의 법 규정에 맞도록 작성되어야 한다. 모든 자산, 부채, 이연항목과 모든 수익과 비용은 GAAP에 따라 제시되어야 한다.
+---
+- 영문용어 : ZHA1
+- 설명 : 하도급 대금 지불 현황 입력 화면 지정 type
+---
+- 영문용어 : ZHAC
+- 설명 : 최초로 하도급 업체와 체결한 계약금액 지정 type
+---
+- 영문용어 : ZHAD
+- 설명 : 하도급대금 청구금액을 입력하기 위한 지정 type
+---
+- 영문용어 : ZHAY
+- 설명 : 하도급 실행 예산 입력하기 위한 지정 type

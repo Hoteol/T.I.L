@@ -20,7 +20,7 @@ groovy 사용이 미숙하여, 코드가 더러운 점은 양해 부탁드립니
 ## Stage
 젠킨스 Pipeline Script는 실행에 대한 단위인 node 와 파이프라인을 구성하는 stage가 있습니다. node 와 stage 간에는 먼저 선언되야 하는 것은 없이 작성할 수 있습니다.
 
-``` java
+``` js
 node('', {
   stage('example1', {
     echo ""
