@@ -11,4 +11,5 @@ MM 모듈은 아래 세 가지가 중요하다.
 
 
 MM의 커버 영역을 좀 더 상세히 보자면 아래와 같다.
+
 ![Alt text](/image/MMCover.png)
